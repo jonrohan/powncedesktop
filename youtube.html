@@ -1,0 +1,304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+        <title>Watch Video</title>
+        <script src="lib/AIRAliases.js" type="text/javascript">
+        </script>
+        <script src="lib/swfobject.js" type="text/javascript">
+        </script>
+        <script src="lib/prototype/prototype.js" type="text/javascript">
+        </script>
+        <script src="lib/scriptaculous/scriptaculous.js" type="text/javascript">
+        </script>
+        <style type="text/css">
+            body {
+                background-color: #000;
+                color: #fff;
+            }
+            
+            .mid-bar {
+                position: absolute;
+                bottom: 40px;
+                left: 0px;
+                right: 0px;
+                height: 14px;
+                background-color: #cfcfcf;
+            }
+            
+			#time {
+                position: absolute;
+                bottom: 40px;
+                right: 20px;
+                width:40px;
+				height: 14px;
+				color:#414141;
+			}
+			
+            #track1 {
+                position: absolute;
+                bottom: 42px;
+                left: 45px;
+                right: 70px;
+            }
+            
+            #vid-container {
+                position: absolute;
+                top: 20px;
+                left: 0px;
+                right: 0px;
+                bottom: 55px;
+				overflow:hidden;
+            }
+            
+            #close {
+                position: absolute;
+                top: 3px;
+                left: 5px;
+                height: 15px;
+                width: 15px;
+                background: url(skin/default/images/video-close.png) no-repeat;
+				cursor:hand;
+            }
+            
+            #top-bar {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                height: 20px;
+                background: url(skin/default/images/video-head.png) repeat-x;
+            }
+            
+            #title {
+                position: absolute;
+                top: 4px;
+                left: 0px;
+                right: 0px;
+                height: 20px;
+                color: #fff;
+				font-weight:bold;
+                text-align: center;
+				cursor:default;
+            }
+            
+            .tools {
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                height: 40px;
+                background-color: #414141;
+            }
+            
+            #resize {
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                height: 15px;
+                width: 15px;
+                background: url(skin/default/images/video-resize.png) no-repeat;
+                cursor: hand;
+            }
+			.fullscreen {
+                background: url(skin/default/images/video-full.png) no-repeat;
+                cursor: hand;
+				width:31px;
+				height:29px;
+				margin-left:auto;
+				margin-right:auto;
+				margin-top:10px;
+			}
+			
+			.restore {
+                background: url(skin/default/images/video-restore.png) no-repeat;
+                cursor: hand;
+				width:31px;
+				height:29px;
+				margin-left:auto;
+				margin-right:auto;
+				margin-top:10px;
+			}
+			
+			#full span {
+				display:none;
+				position:absolute;
+				margin-top:-30px;
+				margin-left:-35px;
+				width:100px;
+				font-size:13pt;
+				
+			}
+			
+			#full:hover span {
+				display:block;
+			}
+        </style>
+        <script language="JavaScript">
+            window.nativeWindow.alwaysInFront=true;
+            var ytplayer;
+            var vid;
+            var vtype;
+            var slider;
+            var yourDevKey = 'AI39si4B0moO3tMUtHg2o8Z8LqT2n_Kz_uEuGU4oWBBZ-jRvblar--REr3-irsdfsSEgJxSOaiWjC2BqI7PUA9KhGIIxTfmNEg';
+            function doLoad(){
+            
+                var result = function(t){
+                    var title = t.responseXML.getElementsByTagName("title")[0].firstChild.nodeValue;
+                    $('title').innerHTML = title;
+                };
+                vid = gup("vid");
+                new Ajax.Request("http://gdata.youtube.com/feeds/api/videos/" + vid, {
+                    onSuccess: result
+                });
+                
+                
+                document.getElementById("close").addEventListener('click', doClose);
+                document.getElementById("title").addEventListener('mousedown', doMove);
+                document.getElementById("top-bar").addEventListener('mousedown', doMove);
+                document.getElementById("tools").addEventListener('mousedown', doMove);
+                document.getElementById("resize").addEventListener('mousedown', doResize);
+                document.getElementById("resize").addEventListener('mouseup', resizeVideo);
+                document.getElementById("full").addEventListener("click", doFullScreen);
+                
+                
+                
+                var params = {
+                    allowScriptAccess: "always",
+                    bgcolor: "#000000",
+                    quality: "high"
+                };
+                
+                var atts = {
+                    id: "myytplayer"
+                };
+                swfobject.embedSWF("http://gdata.youtube.com/apiplayer?key=" + yourDevKey + "&enablejsapi=1&playerapiid=ytplayer", "ytapivid", "100%", "100%", "8", null, null, params, atts);
+            }
+            
+            function onYouTubePlayerReady(playerId){
+                ytplayer = document.getElementById("myytplayer");
+                vid = gup("vid");
+                vtype = gup("type");
+                loadNewVideo(vid, 0);
+                slider = new Control.Slider('handle1', 'track1', {
+                    duration: $('track1').offsetWidth
+                });
+                setInterval(updateytplayerInfo, 250);
+                updateytplayerInfo();
+				resizeVideo();
+                 //ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
+            }
+            
+            function updateytplayerInfo(){
+                if (ytplayer) {
+				   var curtime = ytplayer.getCurrentTime() + "";
+				   var min = "00";
+				   var sec = curtime.substring(0,curtime.indexOf("."));
+				   if(sec=="")
+				   		sec = "00";
+				   if(sec.length==1)
+				   		sec = "0" + sec;
+				   if (sec >= 60) {
+				   	sec = sec % 60;
+					min = Math.round(sec / 60);
+				   }
+				   var milsec = curtime.substring(curtime.indexOf(".") + 1);
+				   if(milsec.length==1)
+				   		milsec = "0" + milsec;
+					if(milsec.length==3)
+						milsec = milsec.substring(0,2);
+				   $('time').innerHTML = min + ":" + sec + ":" + milsec;
+                   slider.setValue(getCurrentPosition());
+                }
+            }
+            
+            function doResize(){
+                window.nativeWindow.startResize(air.NativeWindowResize.BOTTOM_RIGHT);
+             }
+			
+            function resizeVideo(){
+                if (ytplayer) {
+                    var width = $('vid-container').offsetWidth;
+                    var height = $('vid-container').offsetHeight;
+                    ytplayer.setSize(width, height);
+                }
+                
+            }
+            
+            function getCurrentPosition(){
+                if (ytplayer) {
+                    var curduration = ytplayer.getDuration();
+                    var curtime = ytplayer.getCurrentTime();
+                    var pos = (curtime / curduration);
+                    return pos;
+                }
+            }
+            
+            function loadNewVideo(id, startSeconds){
+                if (ytplayer) {
+                    ytplayer.loadVideoById(id, startSeconds);
+                }
+            }
+            
+            function doClose(){
+                window.nativeWindow.close();
+            }
+            
+            function doMove(){
+                window.nativeWindow.startMove();
+            }
+            
+            function doFullScreen(){
+				if(window.nativeWindow.stage.displayState ==runtime.flash.display.StageDisplayState.FULL_SCREEN_INTERACTIVE) {
+					$('full').className = "fullscreen";
+					$('full').getElementsByTagName("span")[0].innerHTML = "Full Screen";
+                	window.nativeWindow.stage.displayState = runtime.flash.display.StageDisplayState.NORMAL;
+				}
+				else {
+					$('full').className = "restore";
+					$('full').getElementsByTagName("span")[0].innerHTML = "Restore";
+                	window.nativeWindow.stage.displayState = runtime.flash.display.StageDisplayState.FULL_SCREEN_INTERACTIVE;
+				}
+                slider = null;
+                slider = new Control.Slider('handle1', 'track1', {
+                    duration: $('track1').offsetWidth
+                });
+				resizeVideo();
+            }
+            
+            function gup(name){
+                name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+                var regexS = "[\\?&]" + name + "=([^&#]*)";
+                var regex = new RegExp(regexS);
+                var results = regex.exec(window.location.href);
+                if (results == null) 
+                    return "";
+                else 
+                    return results[1];
+            }
+        </script>
+    </head>
+    <body onload="doLoad();">
+        <div id="top-bar">
+        </div>
+        <div id="title">
+        </div>
+        <div id="close">
+        </div>
+        <div id="vid-container">
+        	<div id="ytapivid"></div>
+        </div>
+        <div class="mid-bar">
+        </div>
+        <div id="track1" style="background-color:#404040;height:10px;">
+            <div id="handle1" style="width:5px;height:10px;background-color:#f00;cursor:move;">
+            </div>
+        </div>
+		<div id="time">00:00:00</div>
+        <div id="tools" class="tools">
+            <div id="full" class="fullscreen"><span>Full Screen</span></div>
+        </div>
+        <div id="resize">
+        </div>
+    </body>
+</html>
