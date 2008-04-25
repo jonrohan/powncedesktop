@@ -1,0 +1,5 @@
+Date: 
+Version: 0.26
+This version has:
+- Bug Fix: Collapsed notes has recipients tag visible
+- 
