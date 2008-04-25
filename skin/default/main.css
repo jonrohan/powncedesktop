@@ -381,7 +381,7 @@ span#play-sound {
     height: 1.5em;
 }
 
-.ncollapsed .note a, .ncollapsed .stars-note {
+.ncollapsed .note a, .ncollapsed .stars-note, .ncollapsed .recipients {
     display: none;
 }
 
