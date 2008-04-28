@@ -1,0 +1,5 @@
+Date: 
+Version: 0.27
+This version has:
+- Bug Fix: When < or + is used in posting messages it gets stripped out of the message
+- Muxtape Support
