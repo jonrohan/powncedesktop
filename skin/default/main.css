@@ -1,268 +1,288 @@
 body, pre {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     font-style: normal;
     font-weight: normal;
-	opacity:.97;
+    opacity: .97;
 }
 
-div.tooltip{
-        padding:2px 5px 2px 5px;
-        margin: 5px;
-        background-color: #FFFFDD;
-		border:1px dotted #AAAAAA;
-		z-index:3999;
-		color:#394244;
-      }
+div.tooltip {
+    padding: 2px 5px 2px 5px;
+    margin: 5px;
+    background-color: #FFFFDD;
+    border: 1px dotted #AAAAAA;
+    z-index: 3999;
+    color: #394244;
+}
 
 input[type=text], input[type=password], textarea {
     padding: 3px 0px 0px 3px;
-	border-width:1px;
-	border-style: solid;
+    border-width: 1px;
+    border-style: solid;
 }
 
 input[type=button], input[type=submit] {
     cursor: hand;
     font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
-	border-width:1px;
-	border-style:solid;
-	opacity:1!important;
+    border-width: 1px;
+    border-style: solid;
+    opacity: 1 !important;
 }
 
 #login-loading {
-	display:none;
+    display: none;
 }
 
 span#play-sound {
-	background:url(images/sound.png) no-repeat left center;
-	padding-left:20px;
-	margin-left:20px;
-	cursor:hand;
-	text-decoration:underline;
+    background: url(images/sound.png) no-repeat left center;
+    padding-left: 20px;
+    margin-left: 20px;
+    cursor: hand;
+    text-decoration: underline;
 }
 
 #divTopRight {
-	position: absolute; right: 10px; top: 10px;
-	width:14px;
-	height:14px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 14px;
+    height: 14px;
 }
 
 #divTop {
-	position: absolute; left: 18px; top: 10px; right:18px; height: 49px;
+    position: absolute;
+    left: 18px;
+    top: 10px;
+    right: 18px;
+    height: 49px;
 }
 
 #divBar {
-	position: absolute; z-index:2000;left: 10px; top: 10px; height: 20px;width:20px;
+    position: absolute;
+    z-index: 2000;
+    left: 10px;
+    top: 10px;
+    height: 20px;
+    width: 20px;
 }
 
 #toolbar {
-	display:none;
-	position: absolute; z-index:2000;left: 10px; top: 40px;right:10px; height: 25px;
-	padding:2px 0px 0px 5px;
+    display: none;
+    position: absolute;
+    z-index: 2000;
+    left: 10px;
+    top: 40px;
+    right: 10px;
+    height: 25px;
+    padding: 2px 0px 0px 5px;
 }
 
 #toolbar .tool-button {
-	float:left;
-	width:20px;
-	height:20px;
-	margin-right:5px;
-	cursor:hand;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    cursor: hand;
 }
 
 #toolbar-refresh {
-	background: url(images/arrow_rotate_clockwise.png) no-repeat center center;
+    background: url(images/arrow_rotate_clockwise.png) no-repeat center center;
 }
 
 #toolbar-notes {
-	background: url(images/comments.png) no-repeat center center;
+    background: url(images/comments.png) no-repeat center center;
 }
 
 #toolbar-music {
-	background: url(images/music.png) no-repeat center center;
+    background: url(images/music.png) no-repeat center center;
 }
 
 #toolbar-photos {
-	background: url(images/images.png) no-repeat center center;
+    background: url(images/images.png) no-repeat center center;
 }
 
 #toolbar-newnote {
-	background: url(images/comment_add.png) no-repeat center center;
+    background: url(images/comment_add.png) no-repeat center center;
 }
 
 #toolbar-files {
-	background: url(images/drive.png) no-repeat center center;
+    background: url(images/drive.png) no-repeat center center;
 }
 
 #toolbar-people {
-	background: url(images/group.png) no-repeat center center;
+    background: url(images/group.png) no-repeat center center;
 }
 
 #toolbar-filter {
-	background: url(images/cog_go.png) no-repeat center center;
+    background: url(images/cog_go.png) no-repeat center center;
 }
 
 .toolbutton {
-	padding:5px 5px 5px 20px;
-	cursor:hand;
+    padding: 5px 5px 5px 20px;
+    cursor: hand;
 }
 
 #divContentStrip {
-	position: absolute; left: 10px; top: 20px; bottom: 18px; right: 10px; 
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    bottom: 18px;
+    right: 10px;
 }
 
 #settings-decrease-font-size, #settings-increase-font-size {
-	cursor:hand;
-	margin:3px;
-	font-size:14pt;
+    cursor: hand;
+    margin: 3px;
+    font-size: 14pt;
 }
 
-#settings input[type=button]{
-	position:absolute;
-	bottom:0px;
+#settings input[type=button] {
+    position: absolute;
+    bottom: 0px;
 }
 
 #settings input[type=checkbox], #settings select {
-	float:left;
-	margin-right:5px;
+    float: left;
+    margin-right: 5px;
 }
 
 #settings label {
-	display:block;
-	height:20px;
-	padding:3px 0 0 0;
+    display: block;
+    height: 20px;
+    padding: 3px 0 0 0;
 }
 
 .pro-2 {
-	position:absolute;
-	bottom:-2px;
-	left:-2px;
-	z-index:3000;
-	display:block !important;
-	width:19px;
-	height:19px;
-	text-indent:-2000px;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    z-index: 3000;
+    display: block !important;
+    width: 19px;
+    height: 19px;
+    text-indent: -2000px;
 }
 
 #cancel-settings {
-	right:15px;
+    right: 15px;
 }
 
 #save-settings {
-	right:85px;
+    right: 85px;
 }
 
 #settings-tabs {
-	margin:0px;
-	margin-top:5px;
-	margin-left:20px;
-	padding:0px;
-	list-style-type:none;
+    margin: 0px;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding: 0px;
+    list-style-type: none;
 }
 
 #settings-tabs li {
-	position:relative;
-	display:inline;
-	height:30px;
-	padding:3px 5px 3px 5px;
-	cursor:hand;
-	z-index:2000;
+    position: relative;
+    display: inline;
+    height: 30px;
+    padding: 3px 5px 3px 5px;
+    cursor: hand;
+    z-index: 2000;
 }
 
 #settings-tabs li.tab-selected {
-	text-decoration:underline;
-	margin-bottom:-2px;
-	padding-bottom:7px;
-	border-width:2px;
-	border-style:solid;
-	border-bottom:none;
+    text-decoration: underline;
+    margin-bottom: -2px;
+    padding-bottom: 7px;
+    border-width: 2px;
+    border-style: solid;
+    border-bottom: none;
 }
 
 #settings .tab-pane {
-	display:none;
-	position:absolute;
-	bottom:30px;
-	right:15px;
-	left:15px;
-	top:22px;
-	padding:15px;
-	border-style:solid;
-	border-width:2px;
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+    left: 15px;
+    top: 22px;
+    padding: 15px;
+    border-style: solid;
+    border-width: 2px;
 }
 
 #appVersion {
-	position:absolute;
-	top:20px;
-	left:215px;
-	z-index:3006;
-	cursor:default;
+    position: absolute;
+    top: 20px;
+    left: 215px;
+    z-index: 3006;
+    cursor: default;
 }
 
 #login-error {
-	color:#ff0000;
-	display:none;
+    color: #ff0000;
+    display: none;
 }
 
 .media-link {
-	text-decoration:none;
-	margin:5px;
-	margin-left:-20px;
-	padding:5px;
-	display:block;
-	cursor:hand;
-	width:200px;
-	font-size:.9em!important;
-	font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 5px;
+    margin-left: -20px;
+    padding: 5px;
+    display: block;
+    cursor: hand;
+    width: 200px;
+    font-size: .9em !important;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .play-video-link {
-	padding-left:25px;
-	background-image:url(images/television.png);
-	background-position: 5px center;
-	background-repeat:no-repeat;
+    padding-left: 25px;
+    background-image: url(images/television.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
 }
 
 .photo-link {
-	padding-left:25px;
-	background-image:url(images/picture.png);
-	background-position: 5px center;
-	background-repeat:no-repeat;
+    padding-left: 25px;
+    background-image: url(images/picture.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
 }
 
 .media-object {
-	margin:15px;
-	margin-left:-20px;
+    margin: 15px;
+    margin-left: -20px;
 }
 
 .media-object .popout {
-	position:absolute;
-	height:20px;
-	width:20px;
-	margin-top:-22px;
-	margin-left:2px;
-	cursor:hand;
-	background: #fff url(images/arrow_out.png) no-repeat center center;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-top: -22px;
+    margin-left: 2px;
+    cursor: hand;
+    background: #fff url(images/arrow_out.png) no-repeat center center;
 }
 
 .media-object-title {
-	font-weight:bold;
-	font-size:0.9em;
+    font-weight: bold;
+    font-size: 0.9em;
 }
 
 .media-object-credits {
-	font-weight:bold;
-	font-size:0.9em;
+    font-weight: bold;
+    font-size: 0.9em;
 }
 
 .media-object-credits a {
-	cursor:hand;
+    cursor: hand;
 }
 
 .media-object img {
-	border:3px solid #fff;
-	max-width:200px;
-	cursor:hand;
+    border: 3px solid #fff;
+    max-width: 200px;
+    cursor: hand;
 }
 
 #divMenu {
@@ -287,55 +307,54 @@ span#play-sound {
 }
 
 #menu {
-	display:none;
+    display: none;
     position: absolute;
     z-index: 3005;
     top: 35px;
     left: 16px;
-	cursor:default;
-	width:100px;
-	margin:0px;
-	padding:0px;
-	list-style-type:none;
-	overflow:visible;
-	border-width:1px;
-	border-style:solid;
+    cursor: default;
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    overflow: visible;
+    border-width: 1px;
+    border-style: solid;
 }
 
 #menu li {
-	padding:5px;
+    padding: 5px;
 }
 
-
 #menu .menu-divider {
-	height:1px;
-	padding:0px;
-	margin: 0 3px 0 3px;
+    height: 1px;
+    padding: 0px;
+    margin: 0 3px 0 3px;
 }
 
 #menu-logout, #menu-home, #menu-new, #menu-settings, #menu-view {
-	display:none;
+    display: none;
 }
 
 #menu-new-note, #menu-view-more {
-	display:none;
-	position:absolute;
-	margin:0px;
-	margin-left:90px;
-	margin-top:-10px;
-	padding:0px;
-	list-style-type:none;
-	width:100px;
-	border-width:1px;
-	border-style:solid;
+    display: none;
+    position: absolute;
+    margin: 0px;
+    margin-left: 90px;
+    margin-top: -10px;
+    padding: 0px;
+    list-style-type: none;
+    width: 100px;
+    border-width: 1px;
+    border-style: solid;
 }
 
 #menu-new:hover #menu-new-note, #menu-view:hover #menu-view-more {
-	display:block;
+    display: block;
 }
 
 #file-view {
-	display:none;
+    display: none;
 }
 
 #divClose {
@@ -376,7 +395,6 @@ span#play-sound {
     cursor: default;
 }
 
-
 .ncollapsed .note {
     height: 1.5em;
 }
@@ -394,24 +412,24 @@ span#play-sound {
 }
 
 .ncollapsed .popout {
-	display:none;
+    display: none;
 }
 
 .nexpanded .note {
     padding: 10px 0px 5px 0px;
     height: auto;
     padding-left: 65px;
-	min-height:50px;
-	border-bottom-width:1px;
-	border-bottom-style:solid;
+    min-height: 50px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 }
 
 .nexpanded .note a.imglnk {
     position: absolute;
     left: 4px;
     cursor: hand;
-	border-width:2px;
-	border-style:solid;
+    border-width: 2px;
+    border-style: solid;
 }
 
 .nexpanded .reply a.imglnk {
@@ -428,7 +446,7 @@ span#play-sound {
 
 .nexpanded .note .details {
     display: block;
-	font-size:.8em;
+    font-size: .8em;
 }
 
 .nexpanded .note em {
@@ -439,11 +457,11 @@ span#play-sound {
     margin-top: 10px;
     margin-left: -20px;
     text-align: right;
-	font-size:.8em;
+    font-size: .8em;
 }
 
 .note .bottomdetails a, .note p a {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     cursor: hand;
     font-weight: bold;
@@ -490,35 +508,38 @@ span#play-sound {
 }
 
 .event dt {
-	font-weight:bold;
-	float:left;
+    font-weight: bold;
+    float: left;
 }
 
 .event dd {
-	margin-left:60px;
+    margin-left: 60px;
 }
 
 body.fontSize1 .note {
-	font-size:8pt!important;
+    font-size: 8pt !important;
     background-position: 0px 0px;
 }
+
 body.fontSize1 #settings-notes-text-size {
-	font-size:8pt;
+    font-size: 8pt;
 }
+
 body.fontSize1 .nexpanded .note {
     background-position: 45px 10px;
 }
 
 body.fontSize1 .media-link {
-	width:200px;
+    width: 200px;
 }
 
 body.fontSize2 .note {
-	font-size:10pt!important;
+    font-size: 10pt !important;
     background-position: 0px 3px;
 }
+
 body.fontSize2 #settings-notes-text-size {
-	font-size:10pt;
+    font-size: 10pt;
 }
 
 body.fontSize2 .nexpanded .note {
@@ -526,15 +547,16 @@ body.fontSize2 .nexpanded .note {
 }
 
 body.fontSize2 .media-link {
-	width:220px;
+    width: 220px;
 }
 
 body.fontSize3 .note {
-	font-size:12pt!important;
+    font-size: 12pt !important;
     background-position: 0px 5px;
 }
+
 body.fontSize3 #settings-notes-text-size {
-	font-size:12pt;
+    font-size: 12pt;
 }
 
 body.fontSize3 .nexpanded .note {
@@ -542,15 +564,16 @@ body.fontSize3 .nexpanded .note {
 }
 
 body.fontSize3 .media-link {
-	width:250px;
+    width: 250px;
 }
 
 body.fontSize4 .note {
-	font-size:14pt!important;
+    font-size: 14pt !important;
     background-position: 0px 5px;
 }
+
 body.fontSize4 #settings-notes-text-size {
-	font-size:14pt;
+    font-size: 14pt;
 }
 
 body.fontSize4 .nexpanded .note {
@@ -558,7 +581,7 @@ body.fontSize4 .nexpanded .note {
 }
 
 body.fontSize4 .media-link {
-	width:300px;
+    width: 300px;
 }
 
 #chat-area {
@@ -571,35 +594,35 @@ body.fontSize4 .media-link {
 }
 
 .paging {
-	height:18px;
-	list-style-type:none;
+    height: 18px;
+    list-style-type: none;
 }
 
 .paging div {
-	float:right;
-	cursor:hand;
+    float: right;
+    cursor: hand;
 }
 
 .paging .next-notes {
-	margin-left:20px;
+    margin-left: 20px;
 }
 
 .paging .first-notes {
-	float:left;
-	margin-left:5px;
+    float: left;
+    margin-left: 5px;
 }
 
-.ca-type-reply-message #reply,.ca-type-reply-link #reply,.ca-type-reply-file #reply,.ca-type-reply-event #reply {
-	display:block;
+.ca-type-reply-message #reply, .ca-type-reply-link #reply, .ca-type-reply-file #reply, .ca-type-reply-event #reply {
+    display: block;
 }
 
 .ca-type-message #reply {
     display: none;
 }
 
-.ca-type-reply-message #reply-notes,.ca-type-reply-link #reply-notes,.ca-type-reply-file #reply-notes,.ca-type-reply-event #reply-notes {
+.ca-type-reply-message #reply-notes, .ca-type-reply-link #reply-notes, .ca-type-reply-file #reply-notes, .ca-type-reply-event #reply-notes {
     bottom: 64px;
-	display:block;
+    display: block;
 }
 
 .ca-type-file #reply {
@@ -610,105 +633,103 @@ body.fontSize4 .media-link {
     display: none;
 }
 
-
-
-.ca-type-reply-message #body,.ca-type-reply-link #body,.ca-type-reply-file #body,.ca-type-reply-event #body {
-	height:90px;
+.ca-type-reply-message #body, .ca-type-reply-link #body, .ca-type-reply-file #body, .ca-type-reply-event #body {
+    height: 90px;
 }
 
 #replynotesummary {
-	border-bottom-width:1px;
-	border-bottom-style:solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 }
 
 #file-preview {
-	position:absolute;
-	left:5px;
-	width:125px;
-	bottom:10px;
-	top:45px;
-	text-align:center;
-	padding:5px;
-	overflow:hidden;
+    position: absolute;
+    left: 5px;
+    width: 125px;
+    bottom: 10px;
+    top: 45px;
+    text-align: center;
+    padding: 5px;
+    overflow: hidden;
 }
 
 #file-preview img {
-	margin-bottom:3px;
+    margin-bottom: 3px;
 }
 
 #file-preview div {
-	text-align:left;
-	margin-bottom:3px;
-	overflow:hidden;
+    text-align: left;
+    margin-bottom: 3px;
+    overflow: hidden;
 }
 
 .mp3-player {
-	width:200px;
-	height:40px;
-	margin:10px 0px 10px 0px;
+    width: 200px;
+    height: 40px;
+    margin: 10px 0px 10px 0px;
 }
 
 .mp3-player .progress {
-	background-color:#394244;
-	padding:0px!important;
-	margin:0px 0px 0px 0px!important;
+    background-color: #394244;
+    padding: 0px !important;
+    margin: 0px 0px 0px 0px !important;
 }
 
 .mp3-player .song-name {
-	height:15px;
-	line-height:15px;
-	overflow:hidden;
-	width:100%;
+    height: 15px;
+    line-height: 15px;
+    overflow: hidden;
+    width: 100%;
 }
 
 .mp3-player .artist-name {
-	height:10pt;
-	line-height:10pt;
-	overflow:hidden;
-	width:100%;
+    height: 10pt;
+    line-height: 10pt;
+    overflow: hidden;
+    width: 100%;
 }
 
 .mp3-player .progress-bar {
-	border-right:2px solid red;
-	height:5px;
-	width:0px;
-	padding:0px!important;
-	margin:0px!important;
+    border-right: 2px solid red;
+    height: 5px;
+    width: 0px;
+    padding: 0px !important;
+    margin: 0px !important;
 }
 
 .mp3-player .play-button {
-	float:left;
-	display:block;
-	background:url(images/control_play_blue.png) no-repeat top left;
-	width:16px;
-	height:16px;
-	margin:0px 3px 0px 0px;
-	cursor:hand;
-	text-align:center;
+    float: left;
+    display: block;
+    background: url(images/control_play_blue.png) no-repeat top left;
+    width: 16px;
+    height: 16px;
+    margin: 0px 3px 0px 0px;
+    cursor: hand;
+    text-align: center;
 }
 
 .mp3-player .stop-button {
-	background:url(images/control_stop_blue.png) no-repeat top left;
-	float:left;
-	display:block;
-	width:16px;
-	height:16px;
-	margin:0px 3px 0px 0px;
-	cursor:hand;
-	text-align:center;
+    background: url(images/control_stop_blue.png) no-repeat top left;
+    float: left;
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 0px 3px 0px 0px;
+    cursor: hand;
+    text-align: center;
 }
 
 #file-preview .mp3-player {
-	width:120px;
+    width: 120px;
 }
 
 #file-preview .mp3-player .progress {
-	margin:0px 0px 0px 0px!important;
+    margin: 0px 0px 0px 0px !important;
 }
 
 #file-preview div a {
-	cursor:hand;
-	font-weight:bold;
+    cursor: hand;
+    font-weight: bold;
 }
 
 #friends-files {
@@ -718,135 +739,130 @@ body.fontSize4 .media-link {
     top: 35px;
     bottom: 0px;
     border-width: 4px;
-	border-style:solid;
+    border-style: solid;
     padding: 0px;
     overflow: auto;
-	list-style-type:none;
-	font-family:Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #friends-files li {
-	cursor:default;
-	background:url(images/note-file.gif) no-repeat 5px center;
-	padding:3px;
-	padding-left:25px;
-	overflow:hidden;
-	height:20px;
-	line-height:20px;
+    cursor: default;
+    background: url(images/note-file.gif) no-repeat 5px center;
+    padding: 3px;
+    padding-left: 25px;
+    overflow: hidden;
+    height: 20px;
+    line-height: 20px;
 }
 
 #friends-files li .file-name {
-	display:block;
-	width:auto;
+    display: block;
+    width: auto;
 }
 
 #friends-files li .file-details {
-	float:right;
-	display:block;
-	position:absolute;
-	right:20px;
+    float: right;
+    display: block;
+    position: absolute;
+    right: 20px;
 }
 
 #friends-files li .file-type, #friends-files li .file-size, #friends-files li .file-user {
-	width:50px;
-	display:block;
-	float:left;
-	padding-bottom:3px;
-	text-align:center;
+    width: 50px;
+    display: block;
+    float: left;
+    padding-bottom: 3px;
+    text-align: center;
 }
 
 #friends-files li .file-user {
-	width:80px;
+    width: 80px;
 }
 
 #file-view h3 {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15.2833px;
     font-weight: bold;
     padding-bottom: 3px;
     z-index: 2001;
-	margin-left:10px;
-	margin-right:10px;
-	border-bottom-width:1px;
-	border-bottom-style:solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 }
-
-
 /************* Emoticons ******************/
-
-.emo_smile, .emo_grin, .emo_evilgrin, .emo_surprise, .emo_tongue, .emo_frown, .emo_wink{
-	width:20px;
-	height:20px;
-	padding:0px;
-	padding-left:20px;
+.emo_smile, .emo_grin, .emo_evilgrin, .emo_surprise, .emo_tongue, .emo_frown, .emo_wink {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    padding-left: 20px;
 }
 
 .emo_smile {
-	background:url(images/emoticon_smile.png) no-repeat center center;
+    background: url(images/emoticon_smile.png) no-repeat center center;
 }
 
 .emo_grin {
-	background:url(images/emoticon_grin.png) no-repeat center center;
+    background: url(images/emoticon_grin.png) no-repeat center center;
 }
 
 .emo_evilgrin {
-	background:url(images/emoticon_evilgrin.png) no-repeat center center;
+    background: url(images/emoticon_evilgrin.png) no-repeat center center;
 }
 
 .emo_surprise {
-	background:url(images/emoticon_surprised.png) no-repeat center center;
+    background: url(images/emoticon_surprised.png) no-repeat center center;
 }
 
 .emo_tongue {
-	background:url(images/emoticon_tongue.png) no-repeat center center;
+    background: url(images/emoticon_tongue.png) no-repeat center center;
 }
 
 .emo_frown {
-	background:url(images/emoticon_unhappy.png) no-repeat center center;
+    background: url(images/emoticon_unhappy.png) no-repeat center center;
 }
 
 .emo_wink {
-	background:url(images/emoticon_wink.png) no-repeat center center;
+    background: url(images/emoticon_wink.png) no-repeat center center;
 }
-
 /************* Reply View *****************/
 #reply-view {
-	display:none;
+    display: none;
 }
 
 #back-button {
     position: absolute;
     left: 5px;
     top: 0px;
-	text-decoration:underline;
-	cursor:hand;
+    text-decoration: underline;
+    cursor: hand;
 }
 
 #note-detail {
-	position: absolute;
-	left:5px;
-	right:5px;
-	top:20px;
-	height:147px;
-	border-bottom-width:1px;
-	border-bottom-style:solid;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 20px;
+    height: 147px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 }
 
 #note-details {
-	margin-left:60px;
-	padding-left:20px;
-	height:20px;
+    margin-left: 60px;
+    padding-left: 20px;
+    height: 20px;
 }
 
 #toggle-reply-list {
-	position:absolute;
-	right:0px;
-	width:5px;
-	top:65%;
-	height:50px;
-	cursor:hand;
+    position: absolute;
+    right: 0px;
+    width: 5px;
+    top: 65%;
+    height: 50px;
+    cursor: hand;
 }
-
 
 .details-event {
     background: url(images/note-event.gif) no-repeat left top;
@@ -865,75 +881,74 @@ body.fontSize4 .media-link {
 }
 
 #note-link {
-	position:absolute;
+    position: absolute;
     bottom: 30px;
-	left:80px;
+    left: 80px;
 }
 
 #note-detail-media-object .popout {
-	position:absolute;
-	bottom:37px;
-	left:288px;
-	cursor:hand;
-	height:19px;
-	width:19px;
-	background: #fff url(images/arrow_out.png) no-repeat center center;
+    position: absolute;
+    bottom: 37px;
+    left: 288px;
+    cursor: hand;
+    height: 19px;
+    width: 19px;
+    background: #fff url(images/arrow_out.png) no-repeat center center;
 }
 
 #note-detail-media-object img, #note-detail-media-object .media-object {
-	display:none;
+    display: none;
 }
 
 #user-note-image {
-	position:absolute;
+    position: absolute;
     top: 0px;
-	left:0px;
-	width:48px;
-	height:48px;
-	cursor:hand;
-	border-width:3px;
-	border-style:solid;
+    left: 0px;
+    width: 48px;
+    height: 48px;
+    cursor: hand;
+    border-width: 3px;
+    border-style: solid;
 }
 
 #note-stars {
-	position:absolute;
+    position: absolute;
     bottom: 10px;
-	left:80px;
+    left: 80px;
 }
 
 #note-bottom-details {
-	position:absolute;
+    position: absolute;
     bottom: 5px;
-	right:0px;
-	text-align:right;
+    right: 0px;
+    text-align: right;
 }
 
 #note-detail-body p {
-	position:absolute;
-	padding:5px;
-	padding-right:20px;
-	margin:0px;
+    position: absolute;
+    padding: 5px;
+    padding-right: 20px;
+    margin: 0px;
     top: 20px;
-	left:60px;
-	max-height:55px;
-	line-height:15px;
-	overflow:hidden;
-	border-width:1px;
-	border-style:solid;
-	border-color:transparent;
-	background:url(images/arrow_down.png) no-repeat bottom right;
+    left: 60px;
+    max-height: 55px;
+    line-height: 15px;
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    background: url(images/arrow_down.png) no-repeat bottom right;
 }
 
 #note-detail-body p:hover {
-	overflow:auto;
-	background-image:none;
-	max-height:2000px;
-	z-index:3900;
-	position:absolute;
-	border-width:1px;
-	border-style:dashed;
+    overflow: auto;
+    background-image: none;
+    max-height: 2000px;
+    z-index: 3900;
+    position: absolute;
+    border-width: 1px;
+    border-style: dashed;
 }
-
 
 #reply-button {
     position: absolute;
@@ -958,7 +973,7 @@ body.fontSize4 .media-link {
     top: 170px;
     left: 5px;
     right: 170px;
-	bottom: 95px;
+    bottom: 95px;
     margin: 0px;
     padding: 0px;
     border-width: 2px;
@@ -969,220 +984,257 @@ body.fontSize4 .media-link {
 }
 
 #reply-notes .stars-note {
-	float:right;
+    float: right;
 }
 
 #reply-body {
     margin: 0px;
-	padding: 5px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
     position: absolute;
     bottom: 30px;
     right: 170px;
     left: 5px;
-	height:60px;
+    height: 60px;
 }
 
 #rating, #rsvp_block {
-	display:none;
-	position:absolute;
-	bottom:5px;
-	right:260px;
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    right: 260px;
 }
 
 #rating ul {
-height:16px;
-position:relative;
-width:80px;
+    height: 16px;
+    position: relative;
+    width: 80px;
 }
+
 #rating strong, #rating ul {
-float:left;
-margin:0pt;
-padding:0pt;
+    float: left;
+    margin: 0pt;
+    padding: 0pt;
 }
+
 #rating strong {
-display:block;
-float:left;
-font-size:85%;
-padding:2px 5px 0pt 0pt;
+    display: block;
+    float: left;
+    font-size: 85%;
+    padding: 2px 5px 0pt 0pt;
 }
+
 #rating ul, #rating li {
-list-style-image:none;
-list-style-position:outside;
-list-style-type:none;
-margin:0pt;
-padding:0pt;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0pt;
+    padding: 0pt;
 }
+
 #rating ul a {
-display:block;
-height:16px;
-left:0pt;
-position:absolute;
-text-indent:-2000em;
-top:0pt;
-white-space:nowrap;
-width:16px;
-z-index:20;
+    display: block;
+    height: 16px;
+    left: 0pt;
+    position: absolute;
+    text-indent: -2000em;
+    top: 0pt;
+    white-space: nowrap;
+    width: 16px;
+    z-index: 20;
 }
+
 #rating ul a:hover {
-background-position:0pt 0pt;
-left:0pt !important;
-z-index:1;
+    background-position: 0pt 0pt;
+    left: 0pt !important;
+    z-index: 1;
 }
+
 #rating li.one-star a {
-left:0pt;
+    left: 0pt;
 }
+
 #rating li.one-star a:hover {
-width:16px;
+    width: 16px;
 }
+
 #rating li.two-stars a {
-left:16px;
+    left: 16px;
 }
+
 #rating li.two-stars a:hover {
-width:32px;
+    width: 32px;
 }
+
 #rating li.three-stars a {
-left:32px;
+    left: 32px;
 }
+
 #rating li.three-stars a:hover {
-width:48px;
+    width: 48px;
 }
+
 #rating li.four-stars a {
-left:48px;
+    left: 48px;
 }
+
 #rating li.four-stars a:hover {
-width:64px;
+    width: 64px;
 }
+
 #rating li.five-stars a {
-left:64px;
+    left: 64px;
 }
+
 #rating li.five-stars a:hover {
-width:80px;
+    width: 80px;
 }
+
 #rating li.current-rating {
-display:block;
-height:16px;
-position:absolute;
-text-indent:-2000em;
-z-index:1;
+    display: block;
+    height: 16px;
+    position: absolute;
+    text-indent: -2000em;
+    z-index: 1;
 }
+
 .rating {
-clear:left;
-height:16px;
-padding-top:10px;
-width:80px;
+    clear: left;
+    height: 16px;
+    padding-top: 10px;
+    width: 80px;
 }
 
 #rating ul {
-background:transparent url(images/stars.gif) repeat scroll 0pt -100px;
+    background: transparent url(images/stars.gif) repeat scroll 0pt -100px;
 }
+
 #rating ul a {
-background:transparent url(images/stars.gif) repeat scroll 0pt -50px;
+    background: transparent url(images/stars.gif) repeat scroll 0pt -50px;
 }
+
 #rating li.current-rating {
-background:transparent url(images/stars.gif) repeat scroll 0pt -200px;
+    background: transparent url(images/stars.gif) repeat scroll 0pt -200px;
 }
 
 .stars-note {
-clear:left;
-    font-family:Arial, Helvetica, sans-serif;
-height:16px;
-padding-top:5px;
-margin-left: -20px;
+    clear: left;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 16px;
+    padding-top: 5px;
+    margin-left: -20px;
 }
+
 .stars-note div {
-float:left;
-font-size:85%;
-font-weight:bold;
-margin-right:3px;
+    float: left;
+    font-size: 85%;
+    font-weight: bold;
+    margin-right: 3px;
 }
+
 .stars {
-float:left;
-height:16px;
-margin:2px 0pt 0pt;
-width:60px;
+    float: left;
+    height: 16px;
+    margin: 2px 0pt 0pt;
+    width: 60px;
 }
 
 .rating-05, .rating-10, .rating-15, .rating-20, .rating-25, .rating-30, .rating-35, .rating-40, .rating-45, .rating-50 {
-display:block;
-height:16px;
-text-indent:-2000em;
-width:8px;
+    display: block;
+    height: 16px;
+    text-indent: -2000em;
+    width: 8px;
 }
 
 .stars-05, .stars-10, .stars-15, .stars-20, .stars-25, .stars-30, .stars-35, .stars-40, .stars-45, .stars-50 {
-display:block;
-height:12px;
-text-indent:-2000em;
-width:6px;
+    display: block;
+    height: 12px;
+    text-indent: -2000em;
+    width: 6px;
 }
 
 .rating-10 {
-width:16px;
+    width: 16px;
 }
+
 .rating-15 {
-width:24px;
+    width: 24px;
 }
+
 .rating-20 {
-width:32px;
+    width: 32px;
 }
+
 .rating-25 {
-width:40px;
+    width: 40px;
 }
+
 .rating-30 {
-width:48px;
+    width: 48px;
 }
+
 .rating-35 {
-width:56px;
+    width: 56px;
 }
+
 .rating-40 {
-width:64px;
+    width: 64px;
 }
+
 .rating-45 {
-width:72px;
+    width: 72px;
 }
+
 .rating-50 {
-width:80px;
+    width: 80px;
 }
+
 .stars-10 {
-width:12px;
+    width: 12px;
 }
+
 .stars-15 {
-width:18px;
+    width: 18px;
 }
+
 .stars-20 {
-width:24px;
+    width: 24px;
 }
+
 .stars-25 {
-width:30px;
+    width: 30px;
 }
+
 .stars-30 {
-width:36px;
+    width: 36px;
 }
+
 .stars-35 {
-width:42px;
+    width: 42px;
 }
+
 .stars-40 {
-width:48px;
+    width: 48px;
 }
+
 .stars-45 {
-width:54px;
+    width: 54px;
 }
+
 .stars-50 {
-width:60px;
+    width: 60px;
 }
 
 .note-system-message img {
-	border-width:3px;
-	border-style:solid;
+    border-width: 3px;
+    border-style: solid;
 }
 
 .rating-05, .rating-10, .rating-15, .rating-20, .rating-25, .rating-30, .rating-35, .rating-40, .rating-45, .rating-50 {
-background:transparent url(images/stars.gif) repeat-x scroll 0pt -200px;
+    background: transparent url(images/stars.gif) repeat-x scroll 0pt -200px;
 }
-
 /************* New View *****************/
 #new-view {
-	display:none;
+    display: none;
 }
 
 #cancelnn {
@@ -1195,12 +1247,12 @@ background:transparent url(images/stars.gif) repeat-x scroll 0pt -200px;
     left: 5px;
     right: 5px;
     top: 0px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15.2833px;
     font-weight: bold;
     padding-bottom: 3px;
-	border-bottom-width:1px;
-	border-bottom-style:solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 }
 
 #sendtohead select {
@@ -1227,60 +1279,60 @@ background:transparent url(images/stars.gif) repeat-x scroll 0pt -200px;
 
 #body {
     margin: 0px;
-	padding: 5px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
     position: absolute;
     bottom: 70px;
     right: 5px;
     left: 5px;
-	height:auto;
+    height: auto;
 }
 
 #file-upload-progress {
-	display:none;
+    display: none;
     margin: 0px;
-	padding: 5px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
     position: absolute;
     bottom: 30px;
-	top:75px;
+    top: 75px;
     right: 5px;
     left: 5px;
-	height:auto;
+    height: auto;
 }
 
 #file-upload-message {
-	position:absolute;
-	top:30px;
-	left:20px;
-	right:20px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    right: 20px;
 }
 
 #file-upload-track {
-	height:50px;
-	position:absolute;
-	left:20px;
-	right:20px;
-	top:50px;
-	border-width:1px;
-	border-style:solid;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 50px;
+    border-width: 1px;
+    border-style: solid;
 }
 
 #file-upload-bar {
-	width:0px;
-	height:50px;
+    width: 0px;
+    height: 50px;
 }
 
 #load-template {
-	position:absolute;
-	bottom:40px;
-	left:5px;
+    position: absolute;
+    bottom: 40px;
+    left: 5px;
 }
 
 #save-template {
-	cursor:hand;
+    cursor: hand;
 }
 
 .ca-type-link #body {
-    top:75px;
+    top: 75px;
 }
 
 .ca-type-file #body {
@@ -1292,795 +1344,824 @@ background:transparent url(images/stars.gif) repeat-x scroll 0pt -200px;
 }
 
 .ca-type-message #body {
-	top:50px;
+    top: 50px;
 }
 
 #url {
-	position:absolute;
-	left:5px;
-	right:5px;
-	top:50px;
-	margin:0px;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 50px;
+    margin: 0px;
 }
 
-.ca-type-message #url, .ca-type-file #url,.ca-type-event #url {
-	display:none;
+.ca-type-message #url, .ca-type-file #url, .ca-type-event #url {
+    display: none;
 }
 
 #file {
-	position:absolute;
-	left:5px;
-	right:5px;
-	top:50px;
-	margin:0px;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 50px;
+    margin: 0px;
 }
 
 #file #file-browse {
-	position:absolute;
-	left:0px;
-	top:0px;
-	margin:0px !important;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0px !important;
 }
 
 #file #file-url {
-	position:absolute;
-	right:0px;
-	top:0px;
-	left:70px;
-	margin:0px !important;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    left: 70px;
+    margin: 0px !important;
 }
 
 .ca-type-link #file, .ca-type-message #file, .ca-type-event #file {
-	display: none;
+    display: none;
 }
 
 #what {
-	position:absolute;
-	left:5px;
-	right:5px;
-	top:50px;
-	margin:0px;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 50px;
+    margin: 0px;
 }
 
 .ca-type-link #what, .ca-type-message #what, .ca-type-file #what {
-	display: none;
+    display: none;
 }
 
 #where {
-	position:absolute;
-	left:5px;
-	right:5px;
-	top:73px;
-	margin:0px;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 73px;
+    margin: 0px;
 }
 
 .ca-type-message #where, .ca-type-file #where, .ca-type-link #where {
-	display:none;
+    display: none;
 }
 
 #when {
-	position:absolute;
-	left:5px;
-	right:5px;
-	top:96px;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 96px;
 }
 
 #when input {
-	margin:0px;
+    margin: 0px;
 }
 
 .ca-type-message #when, .ca-type-file #when, .ca-type-link #when {
     display: none;
 }
-
 /************* Photos View **************/
 #photos-view {
-	display:none;
+    display: none;
 }
 
-#photos-albums,#photos-albums ul,#photos-albums li {
-	margin:0px;
-	padding:0px;
-	list-style-type:none;
+#photos-albums, #photos-albums ul, #photos-albums li {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
 }
 
 #photos-albums {
-	position:absolute;
-	left:5px;
-	bottom:20px;
-	top:0px;
-	width:120px;
-	overflow:auto;
-	border-width:3px;
-	border-style:solid;
+    position: absolute;
+    left: 5px;
+    bottom: 20px;
+    top: 0px;
+    width: 120px;
+    overflow: auto;
+    border-width: 3px;
+    border-style: solid;
 }
 
 #photos-albums li {
-	padding:3px;
-	padding-left:20px;
+    padding: 3px;
+    padding-left: 20px;
 }
 
 #photos-albums .mseparator div {
-	font-weight:bolder;
-	font-style:italic;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 #photos-albums .mseparator {
-	margin-top:5px;
-	padding-left:0px;
+    margin-top: 5px;
+    padding-left: 0px;
 }
 
 #photos-albums #sets-albums {
-	display:none;	
+    display: none;
 }
 
 #photos-albums #sets-albums li {
-	padding:3px;
-	padding-left:25px;
-	background-image:url(images/group.png);
-	background-repeat:no-repeat;
-	background-position:5px center;
+    padding: 3px;
+    padding-left: 25px;
+    background-image: url(images/group.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
 }
 
 #photos-albums #friends-photos li {
-	padding:3px;
-	padding-left:25px;
-	background-image:url(images/user.png);
-	background-repeat:no-repeat;
-	background-position:5px center;
+    padding: 3px;
+    padding-left: 25px;
+    background-image: url(images/user.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
 }
 
 #all-photos {
-	background-image:url(images/pictures.png);
-	background-repeat:no-repeat;
-	background-position:left center;
+    background-image: url(images/pictures.png);
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
-
 #photos-info-bar {
-	position:absolute;
-	bottom:0px;
-	left:135px;
-	right:5px;
-	height:15px;
-	text-align:center;
+    position: absolute;
+    bottom: 0px;
+    left: 135px;
+    right: 5px;
+    height: 15px;
+    text-align: center;
 }
 
 #photos-notes {
-	position:absolute;
-	bottom:20px;
-	left:135px;
-	right:5px;
-	top:0px;
-	padding:0px;
-	overflow:auto;
-	text-align:center;
-	border-width:3px;
-	border-style:solid;
+    position: absolute;
+    bottom: 20px;
+    left: 135px;
+    right: 5px;
+    top: 0px;
+    padding: 0px;
+    overflow: auto;
+    text-align: center;
+    border-width: 3px;
+    border-style: solid;
 }
 
 #photos-notes .photo {
-	width:110px;
-	height:135px;
-	margin:10px;
-	float:left;
+    width: 110px;
+    height: 135px;
+    margin: 10px;
+    float: left;
 }
 
 #photos-notes .photo .photo-body {
-	height:16px;
-	overflow:hidden;	
-	line-height:16px;
+    height: 16px;
+    overflow: hidden;
+    line-height: 16px;
 }
 
 #photos-notes .photo .img-url {
-	cursor:hand;
-	height:16px;
-	width:16px;
-	float:left;
-	background:url(images/picture_link.png) no-repeat center center;
+    cursor: hand;
+    height: 16px;
+    width: 16px;
+    float: left;
+    background: url(images/picture_link.png) no-repeat center center;
 }
 
 #photos-notes .image img {
-	max-width:105px;
-	max-height:105px;
-	border-width:2px;
-	border-style:solid;
+    max-width: 105px;
+    max-height: 105px;
+    border-width: 2px;
+    border-style: solid;
 }
 
 .stars-photo {
-clear:left;
-    font-family:Arial, Helvetica, sans-serif;
-height:16px;
-width:60px;
+    clear: left;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 16px;
+    width: 60px;
 }
 
 .stars-photo div {
-font-size:85%;
-font-weight:bold;
-margin-right:3px;
+    font-size: 85%;
+    font-weight: bold;
+    margin-right: 3px;
 }
-
-
 /************* Music View **************/
 #music-view {
-	display:none;
+    display: none;
 }
 
-#music-playlists,#music-playlists ul,#music-playlists li {
-	margin:0px;
-	padding:0px;
-	list-style-type:none;
+#music-playlists, #music-playlists ul, #music-playlists li {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
 }
 
 #music-playlists {
-	position:absolute;
-	left:5px;
-	bottom:20px;
-	top:55px;
-	width:120px;
-	overflow:auto;
-	border-width:1px;
-	border-style:solid;
+    position: absolute;
+    left: 5px;
+    bottom: 20px;
+    top: 55px;
+    width: 120px;
+    overflow: auto;
+    border-width: 1px;
+    border-style: solid;
 }
 
 #music-playlists li {
-	padding:3px;
-	padding-left:20px;
+    padding: 3px;
+    padding-left: 20px;
 }
 
 #music-playlists .mseparator div {
-	font-weight:bolder;
-	font-style:italic;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 #music-playlists .mseparator {
-	margin-top:5px;
-	padding-left:0px;
+    margin-top: 5px;
+    padding-left: 0px;
 }
 
 #music-playlists #sets-playlists {
-	display:none;	
+    display: none;
 }
 
 #music-playlists #sets-playlists li {
-	padding:3px;
-	padding-left:25px;
-	background-image:url(images/group.png);
-	background-repeat:no-repeat;
-	background-position:5px center;
+    padding: 3px;
+    padding-left: 25px;
+    background-image: url(images/group.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
 }
 
 #music-playlists #friends-playlists li {
-	padding:3px;
-	padding-left:25px;
-	background-image:url(images/user.png);
-	background-repeat:no-repeat;
-	background-position:5px center;
+    padding: 3px;
+    padding-left: 25px;
+    background-image: url(images/user.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
 }
 
 #music-playlist {
-	background-image:url(images/music.png);
-	background-repeat:no-repeat;
-	background-position:left center;
+    background-image: url(images/music.png);
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
 #music-toolbar {
-	position:absolute;
-	top:0px;
-	left:5px;
-	right:5px;
-	height:50px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    right: 5px;
+    height: 50px;
 }
 
 #last-button {
-	position:absolute;
-	left:25px;
-	bottom:5px;
-	width:16px;
-	height:16px;
-	cursor:hand;
-	background:url(images/control_start_blue.png) no-repeat center center;
+    position: absolute;
+    left: 25px;
+    bottom: 5px;
+    width: 16px;
+    height: 16px;
+    cursor: hand;
+    background: url(images/control_start_blue.png) no-repeat center center;
 }
 
 #next-button {
-	position:absolute;
-	left:75px;
-	bottom:5px;
-	width:16px;
-	height:16px;
-	cursor:hand;
-	background:url(images/control_end_blue.png) no-repeat center center;
+    position: absolute;
+    left: 75px;
+    bottom: 5px;
+    width: 16px;
+    height: 16px;
+    cursor: hand;
+    background: url(images/control_end_blue.png) no-repeat center center;
 }
 
 #progress-tack {
-	position:absolute;
-	left:150px;
-	bottom:5px;
-	right:15px;
-	text-align:center;
-	height:5px;
-	border-width:1px;
-	border-style:solid;
+    position: absolute;
+    left: 150px;
+    bottom: 5px;
+    right: 15px;
+    text-align: center;
+    height: 5px;
+    border-width: 1px;
+    border-style: solid;
 }
 
 #progress-bar {
-	width:0%;
-	height:100%;
+    width: 0%;
+    height: 100%;
 }
 
 #song-name {
-	position:absolute;
-	left:150px;
-	bottom:15px;
-	right:15px;
-	text-align:center;
-	height:15px;
-	overflow:hidden;
+    position: absolute;
+    left: 150px;
+    bottom: 15px;
+    right: 15px;
+    text-align: center;
+    height: 15px;
+    overflow: hidden;
 }
 
 #artist-name {
-	position:absolute;
-	left:150px;
-	bottom:30px;
-	right:15px;
-	text-align:center;
-	height:15px;
-	overflow:hidden;
+    position: absolute;
+    left: 150px;
+    bottom: 30px;
+    right: 15px;
+    text-align: center;
+    height: 15px;
+    overflow: hidden;
 }
 
 #pause-play-button {
-	position:absolute;
-	left:50px;
-	bottom:5px;
-	width:16px;
-	cursor:hand;
-	height:16px;
+    position: absolute;
+    left: 50px;
+    bottom: 5px;
+    width: 16px;
+    cursor: hand;
+    height: 16px;
 }
 
 #music-toolbar .play-button {
-	background:url(images/control_play_blue.png) no-repeat center center;
+    background: url(images/control_play_blue.png) no-repeat center center;
 }
 
 #music-toolbar .pause-button {
-	background:url(images/control_pause_blue.png) no-repeat center center;
+    background: url(images/control_pause_blue.png) no-repeat center center;
 }
 
 #shuffle-button {
-	position:absolute;
-	left:0px;
-	bottom:3px;
-	width:16px;
-	height:16px;
-	cursor:hand;
+    position: absolute;
+    left: 0px;
+    bottom: 3px;
+    width: 16px;
+    height: 16px;
+    cursor: hand;
 }
 
 #music-info-bar .shuffle-off {
-	background:url(images/arrow_switch_off.png) no-repeat center center;
+    background: url(images/arrow_switch_off.png) no-repeat center center;
 }
 
 #music-info-bar .shuffle-on {
-	background:url(images/arrow_switch.png) no-repeat center center;
+    background: url(images/arrow_switch.png) no-repeat center center;
 }
 
 #repeat-button {
-	position:absolute;
-	left:22px;
-	bottom:3px;
-	width:16px;
-	height:16px;
-	cursor:hand;
+    position: absolute;
+    left: 22px;
+    bottom: 3px;
+    width: 16px;
+    height: 16px;
+    cursor: hand;
 }
 
 #music-info-bar .repeat-off {
-	background:url(images/arrow_refresh_off.png) no-repeat center center;
+    background: url(images/arrow_refresh_off.png) no-repeat center center;
 }
 
 #music-info-bar .repeat-on {
-	background:url(images/arrow_refresh.png) no-repeat center center;
+    background: url(images/arrow_refresh.png) no-repeat center center;
 }
 
 #music-info-bar {
-	position:absolute;
-	bottom:0px;
-	left:135px;
-	right:5px;
-	height:15px;
-	text-align:center;
+    position: absolute;
+    bottom: 0px;
+    left: 135px;
+    right: 5px;
+    height: 15px;
+    text-align: center;
 }
 
 #music-table-header {
-	position:absolute;
-	left:135px;
-	right:5px;
-	top:55px;
-	height:15px;
-	border-width:3px;
-	border-style:solid;
-	border-bottom:none;
+    position: absolute;
+    left: 135px;
+    right: 5px;
+    top: 55px;
+    height: 15px;
+    border-width: 3px;
+    border-style: solid;
+    border-bottom: none;
 }
 
 #music-notes {
-	position:absolute;
-	bottom:10px;
-	left:135px;
-	right:5px;
-	top:60px;
-	padding:0px;
-	list-style-position:inside;
-	overflow:auto;
-	border-width:3px;
-	border-style:solid;
-	border-top:none;
+    position: absolute;
+    bottom: 10px;
+    left: 135px;
+    right: 5px;
+    top: 60px;
+    padding: 0px;
+    list-style-position: inside;
+    overflow: auto;
+    border-width: 3px;
+    border-style: solid;
+    border-top: none;
 }
 
 #music-notes li {
-	padding:5px;
-	padding-left:5px;
-	height:15px;
-	line-height:18px;
+    padding: 5px;
+    padding-left: 5px;
+    height: 15px;
+    line-height: 18px;
 }
 
 #music-notes li .song-name, #music-table-header .song-name {
-	display:block;
-	width:auto;
-	height:15px;
-	overflow:hidden;
+    display: block;
+    width: auto;
+    height: 15px;
+    overflow: hidden;
 }
 
 #music-notes li .song-details, #music-table-header .song-details {
-	float:right;
-	display:block;
-	position:absolute;
-	right:20px;
+    float: right;
+    display: block;
+    position: absolute;
+    right: 20px;
 }
 
 #music-notes li .song-artist, #music-notes li .song-album, #music-table-header .song-artist, #music-table-header .song-album {
-	width:100px;
-	display:block;
-	float:left;
-	padding-bottom:3px;
-	padding-left:5px;
-	text-align:left;
-	overflow:hidden;
-	height:15px;
-	background:inherit;
+    width: 100px;
+    display: block;
+    float: left;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    text-align: left;
+    overflow: hidden;
+    height: 15px;
+    background: inherit;
 }
 
 #music-notes .playing {
-	padding-left:18px;
-	list-style-type:none;
-	background-image:url(images/sound.png);
-	background-repeat:no-repeat;
-	background-position:2px center;
+    padding-left: 18px;
+    list-style-type: none;
+    background-image: url(images/sound.png);
+    background-repeat: no-repeat;
+    background-position: 2px center;
 }
 
 #music-table-header span {
-	font-weight:bold;
-	overflow:hidden;
+    font-weight: bold;
+    overflow: hidden;
 }
-
 /************* Profile View ************/
-
 #profile-view #profile-image em.pro {
-	width:49px;
-	height:49px;
-	position:absolute;
-	margin-left:-156px;
-	margin-top:107px;
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    margin-left: -156px;
+    margin-top: 107px;
 }
 
 #profile-view {
-	overflow:auto;
+    overflow: auto;
 }
 
 #profile-view #profile-image {
-	position:absolute;
-	right:20px;
-	top:5px;
+    position: absolute;
+    right: 20px;
+    top: 5px;
 }
 
 #profile-view #profile-image img {
-	border-width:8px;
-	border-style:solid;
-	width:140px;
-	height:140px;
+    border-width: 8px;
+    border-style: solid;
+    width: 140px;
+    height: 140px;
 }
 
 #profile-view #profile-short-name {
-	position:absolute;
-	top:5px;
-	left:10px;
-	font-size:19pt;
-	letter-spacing:-1px;
-	font-weight:400;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 19pt;
+    letter-spacing: -1px;
+    font-weight: 400;
 }
 
 #profile-view #profile-username {
-	position:absolute;
-	left:10px;
-	top:34px;
-	font-size:12pt;
-	letter-spacing:-1px;
-	font-weight:400;
+    position: absolute;
+    left: 10px;
+    top: 34px;
+    font-size: 12pt;
+    letter-spacing: -1px;
+    font-weight: 400;
 }
 
 #profile-view #profile-details {
-	position:absolute;
-	left:10px;
-	top:54px;
-	margin-right:185px;
+    position: absolute;
+    left: 10px;
+    top: 54px;
+    margin-right: 185px;
 }
 
 #profile-view #profile-last-pownce span {
-	padding-left:20px;
-	padding-bottom:3px;
-	cursor:hand;
-	height:20px;
-	width:20px;
+    padding-left: 20px;
+    padding-bottom: 3px;
+    cursor: hand;
+    height: 20px;
+    width: 20px;
 }
 
 #profile-view #profile-last-pownce span.link_message {
-	background:url(images/note-message.gif) no-repeat center center;
+    background: url(images/note-message.gif) no-repeat center center;
 }
 
 #profile-view #profile-last-pownce span.link_link {
-	background:url(images/note-link.gif) no-repeat center center;
+    background: url(images/note-link.gif) no-repeat center center;
 }
 
 #profile-view #profile-last-pownce span.link_file {
-	background:url(images/note-file.gif) no-repeat center center;
+    background: url(images/note-file.gif) no-repeat center center;
 }
 
 #profile-view #profile-last-pownce span.link_event {
-	background:url(images/note-event.gif) no-repeat center center;
+    background: url(images/note-event.gif) no-repeat center center;
 }
 
 #profile-view #profile-blurb, #profile-view #profile-member-join {
-	margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
 #profile-view h3 {
-	margin:0px;
-	padding:0px;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
+    margin: 0px;
+    padding: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 }
 
 #profile-view #profile-facts {
-	position:absolute;
-	left:10px;
-	top:84px;
-	margin-right:185px;
+    position: absolute;
+    left: 10px;
+    top: 84px;
+    margin-right: 185px;
 }
 
 #profile-view #profile-actions {
-	position:absolute;
-	right:20px;
-	top:165px;
-	width:155px;
+    position: absolute;
+    right: 20px;
+    top: 165px;
+    width: 155px;
 }
 
 #profile-view #profile-link a {
-	height:20px;
-	cursor:hand;
-	display:block;
-	padding-left:25px;
-	padding-top:3px;
-	background:url(images/house.png) no-repeat 5px center;
+    height: 20px;
+    cursor: hand;
+    display: block;
+    padding-left: 25px;
+    padding-top: 3px;
+    background: url(images/house.png) no-repeat 5px center;
 }
 
 #profile-view #profile-send-note a {
-	height:20px;
-	cursor:hand;
-	display:block;
-	padding-left:25px;
-	padding-top:3px;
-	background:url(images/comment_add.png) no-repeat 5px center;
+    height: 20px;
+    cursor: hand;
+    display: block;
+    padding-left: 25px;
+    padding-top: 3px;
+    background: url(images/comment_add.png) no-repeat 5px center;
 }
 
 #profile-view #profile-unfriend a, #profile-view #profile-cancel-request a {
-	height:20px;
-	cursor:hand;
-	display:block;
-	padding-left:25px;
-	padding-top:3px;
-	background:url(images/delete.png) no-repeat 5px center;
+    height: 20px;
+    cursor: hand;
+    display: block;
+    padding-left: 25px;
+    padding-top: 3px;
+    background: url(images/delete.png) no-repeat 5px center;
 }
 
 #profile-view #profile-addfriend a {
-	height:20px;
-	cursor:hand;
-	display:block;
-	padding-left:25px;
-	padding-top:3px;
-	background:url(images/add.png) no-repeat 5px center;
+    height: 20px;
+    cursor: hand;
+    display: block;
+    padding-left: 25px;
+    padding-top: 3px;
+    background: url(images/add.png) no-repeat 5px center;
 }
 
 #profile-view #profile-other-profiles a {
-	height:20px;
-	cursor:hand;
-	display:block;
-	padding-left:25px;
-	padding-top:3px;
-	background-image:url(images/profile-network.gif);
-	background-repeat:no-repeat;
+    height: 20px;
+    cursor: hand;
+    display: block;
+    padding-left: 25px;
+    padding-top: 3px;
+    background-image: url(images/profile-network.gif);
+    background-repeat: no-repeat;
 }
 
 .network a.bebo {
-background-position:0pt -40px;
+    background-position: 0pt -40px;
 }
+
 .network a.catster {
-background-position:0pt -80px;
+    background-position: 0pt -80px;
 }
+
 .network a.delicious {
-background-position:0pt -120px !important;
+    background-position: 0pt -120px !important;
 }
+
 .network a.digg {
-background-position:0pt -160px !important;
+    background-position: 0pt -160px !important;
 }
+
 .network a.dodgeball {
-background-position:0pt -200px;
+    background-position: 0pt -200px;
 }
+
 .network a.dogster {
-background-position:0pt -240px;
+    background-position: 0pt -240px;
 }
+
 .network a.dopplr {
-background-position:0pt -280px;
+    background-position: 0pt -280px;
 }
+
 .network a.facebook {
-background-position:0pt -320px !important;
+    background-position: 0pt -320px !important;
 }
+
 .network a.flickr {
-background-position:0pt -360px !important;
+    background-position: 0pt -360px !important;
 }
+
 .network a.goodreads {
-background-position:0pt -400px;
+    background-position: 0pt -400px;
 }
+
 .network a.h15 {
-background-position:0pt -440px;
+    background-position: 0pt -440px;
 }
+
 .network a.jaiku {
-background-position:0pt -480px;
+    background-position: 0pt -480px;
 }
+
 .network a.lastfm {
-background-position:0pt -520px;
+    background-position: 0pt -520px;
 }
+
 .network a.linkedin {
-background-position:0pt -560px;
+    background-position: 0pt -560px;
 }
+
 .network a.lj {
-background-position:0pt -600px;
+    background-position: 0pt -600px;
 }
+
 .network a.mog {
-background-position:0pt -640px;
+    background-position: 0pt -640px;
 }
+
 .network a.multiply {
-background-position:0pt -680px;
+    background-position: 0pt -680px;
 }
+
 .network a.myspace {
-background-position:0pt -720px !important;
+    background-position: 0pt -720px !important;
 }
+
 .network a.newsvine {
-background-position:0pt -760px;
+    background-position: 0pt -760px;
 }
+
 .network a.ning {
-background-position:0pt -800px;
+    background-position: 0pt -800px;
 }
+
 .network a.orkut {
-background-position:0pt -840px;
+    background-position: 0pt -840px;
 }
+
 .network a.pandora {
-background-position:0pt -880px;
+    background-position: 0pt -880px;
 }
+
 .network a.pownce {
-background-position:0pt -920px;
+    background-position: 0pt -920px;
 }
+
 .network a.reddit {
-background-position:0pt -960px;
+    background-position: 0pt -960px;
 }
+
 .network a.sonicliving {
-background-position:0pt -1000px;
+    background-position: 0pt -1000px;
 }
+
 .network a.stumbleupon {
-background-position:0pt -1040px;
+    background-position: 0pt -1040px;
 }
+
 .network a.tabblo {
-background-position:0pt -1080px;
+    background-position: 0pt -1080px;
 }
+
 .network a.tagworld {
-background-position:0pt -1120px;
+    background-position: 0pt -1120px;
 }
+
 .network a.technorati {
-background-position:0pt -1160px;
+    background-position: 0pt -1160px;
 }
+
 .network a.tribe {
-background-position:0pt -1200px;
+    background-position: 0pt -1200px;
 }
+
 .network a.twitter {
-background-position:0pt -1240px !important;
+    background-position: 0pt -1240px !important;
 }
+
 .network a.upcoming {
-background-position:0pt -1280px;
+    background-position: 0pt -1280px;
 }
+
 .network a.vox {
-background-position:0pt -1320px;
+    background-position: 0pt -1320px;
 }
+
 .network a.youtube {
-background-position:0pt -1360px;
+    background-position: 0pt -1360px;
 }
+
 .network a.zooomr {
-background-position:0pt -1400px;
+    background-position: 0pt -1400px;
 }
 
 .network span {
-background-image:url(images/profile-im.gif) !important;
+    background-image: url(images/profile-im.gif) !important;
 }
 
 .network abbr {
-border-bottom-width:1px;
-border-style:dotted;
-cursor:help;
-font-weight:bold;
+    border-bottom-width: 1px;
+    border-style: dotted;
+    cursor: help;
+    font-weight: bold;
 }
 
 .network span.aim, .network a.aim, ul.import-friends li.menu-aim a, ul.import-friends li.menu-aim span {
-background-image:url(images/profile-im.gif) !important;
-background-position:0pt 0pt !important;
+    background-image: url(images/profile-im.gif) !important;
+    background-position: 0pt 0pt !important;
 }
 
 .network span.icq {
-background-position:0pt -40px;
+    background-position: 0pt -40px;
 }
 
 .network span.gtalk {
-background-position:0pt -80px;
+    background-position: 0pt -80px;
 }
 
 .network span.msn, .network a.msn, ul.import-friends li.menu-msn a, ul.import-friends li.menu-msn span {
-background-image:url(images/profile-im.gif) !important;
-background-position:0pt -120px !important;
+    background-image: url(images/profile-im.gif) !important;
+    background-position: 0pt -120px !important;
 }
 
 .network a.yahoo, .network span.yahoo, ul.import-friends li.menu-yahoo span, ul.import-friends li.menu-yahoo a {
-background-image:url(images/profile-im.gif) !important;
-background-position:0pt -160px !important;
+    background-image: url(images/profile-im.gif) !important;
+    background-position: 0pt -160px !important;
 }
+
 .network span.jabber {
-background-position:0pt -200px;
+    background-position: 0pt -200px;
 }
+
 .network span.skype {
-background-position:0pt -240px;
+    background-position: 0pt -240px;
 }
+
 .network span.gmail, .network a.gmail, ul.import-friends li.menu-gmail a, ul.import-friends li.menu-gmail span {
-background-image:url(images/profile-im.gif) !important;
-background-position:0pt -320px !important;
+    background-image: url(images/profile-im.gif) !important;
+    background-position: 0pt -320px !important;
 }
 
 .network a.site-url {
-background:transparent url(images/profile-im.gif) no-repeat scroll 0pt -280px !important;
+    background: transparent url(images/profile-im.gif) no-repeat scroll 0pt -280px !important;
 }
-
 /************* People View ************/
-
 #people-filter {
-	position: absolute;
+    position: absolute;
     left: 0px;
     right: 20px;
     top: 0px;
 }
 
 #clear-people-filter {
-	position: absolute;
+    position: absolute;
     right: 0px;
     top: 0px;
-	width:20px;
-	height:20px;
-	cursor:hand;
-	background:url(images/delete.gif) no-repeat center center;
+    width: 20px;
+    height: 20px;
+    cursor: hand;
+    background: url(images/delete.gif) no-repeat center center;
 }
 
 #people {
-	position: absolute;
+    position: absolute;
     left: 0px;
     right: 0px;
     top: 25px;
@@ -2090,104 +2171,102 @@ background:transparent url(images/profile-im.gif) no-repeat scroll 0pt -280px !i
     border-right-style: none;
     border-bottom-style: solid;
     border-left-style: none;
-    padding:0px;
+    padding: 0px;
     overflow: auto;
-	margin:0px;
+    margin: 0px;
 }
 
 .person {
-	padding:5px;
-	height:70px;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-	list-style-type:none;
-	margin:0px;
+    padding: 5px;
+    height: 70px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    list-style-type: none;
+    margin: 0px;
 }
 
 .person .img-link {
-	float:left;
-	cursor:hand;
-	margin-right:20px;
+    float: left;
+    cursor: hand;
+    margin-right: 20px;
 }
 
 .person .img-link img {
-	border-width:2px;
-	border-style:solid;
-	width:48px;
-	height:48px;
+    border-width: 2px;
+    border-style: solid;
+    width: 48px;
+    height: 48px;
 }
 
 .person .details {
-	height:16px;
-	overflow:hidden;
-	line-height:16px;
+    height: 16px;
+    overflow: hidden;
+    line-height: 16px;
 }
 
 .person .name {
-	font-size:14pt;
+    font-size: 14pt;
 }
 
 .person .online {
-	background:url(images/status_online.png) no-repeat left center;
-	padding-left:18px;
-	padding-top:3px;
-	margin-left:5px;
-	height:16px;
-	font-size:9pt;
+    background: url(images/status_online.png) no-repeat left center;
+    padding-left: 18px;
+    padding-top: 3px;
+    margin-left: 5px;
+    height: 16px;
+    font-size: 9pt;
 }
 
 .person .away {
-	background:url(images/status_away.png) no-repeat left center;
-	padding-left:18px;
-	padding-top:3px;
-	margin-left:5px;
-	height:16px;
-	font-size:9pt;
+    background: url(images/status_away.png) no-repeat left center;
+    padding-left: 18px;
+    padding-top: 3px;
+    margin-left: 5px;
+    height: 16px;
+    font-size: 9pt;
 }
 
 .person .offline {
-	background:url(images/status_offline.png) no-repeat left center;
-	padding-left:18px;
-	padding-top:3px;
-	margin-left:5px;
-	height:16px;
-	font-size:9pt;
+    background: url(images/status_offline.png) no-repeat left center;
+    padding-left: 18px;
+    padding-top: 3px;
+    margin-left: 5px;
+    height: 16px;
+    font-size: 9pt;
 }
 
 .person .bottom-details {
-	height:16px;
-	padding-left:70px;
+    height: 16px;
+    padding-left: 70px;
 }
 
 .person .bottom-details div {
-	height:16px;
-	padding-top:3px;
-	cursor:hand;
-	float:left;
-	margin-right:8px;
-	padding-left:17px;
+    height: 16px;
+    padding-top: 3px;
+    cursor: hand;
+    float: left;
+    margin-right: 8px;
+    padding-left: 17px;
 }
 
 .person .bottom-details .private-note {
-	background:url(images/comment_add.png) no-repeat left center;
+    background: url(images/comment_add.png) no-repeat left center;
 }
 
 .person .bottom-details .unfriend {
-	background:url(images/delete.gif) no-repeat 5px center;
+    background: url(images/delete.gif) no-repeat 5px center;
 }
 
 .person .bottom-details .cancel {
-	background:url(images/delete.png) no-repeat left center;
+    background: url(images/delete.png) no-repeat left center;
 }
-
 /************* Notes View *************/
-
 #note-view {
-	display:none;
+    display: none;
 }
 
 #notes {
-	position: absolute;
+    position: absolute;
     left: 0px;
     right: 0px;
     top: 0px;
@@ -2197,61 +2276,61 @@ background:transparent url(images/profile-im.gif) no-repeat scroll 0pt -280px !i
     border-right-style: none;
     border-bottom-style: solid;
     border-left-style: none;
-    padding:0px;
+    padding: 0px;
     overflow: auto;
-	margin:0px;
+    margin: 0px;
 }
 
 .recipients {
-	float:right;
-	padding:3px 5px 3px 5px;
-	position:absolute;
-	right:15px;
-	margin-right:15px;
+    float: right;
+    padding: 3px 5px 3px 5px;
+    position: absolute;
+    right: 15px;
+    margin-right: 15px;
 }
 
 .filter {
-	display:none;
-	position: absolute;
+    display: none;
+    position: absolute;
     left: 0px;
     right: 0px;
     top: 0px;
-	height:20px;
-	padding:3px 5px 0px 5px;
-	font-weight:bold;
+    height: 20px;
+    padding: 3px 5px 0px 5px;
+    font-weight: bold;
 }
 
 .filter #delete-filter {
-	width:15px;
-	height:15px;
-	float:right;
-	cursor:hand;
-	background: url(images/delete.gif) no-repeat center center;
+    width: 15px;
+    height: 15px;
+    float: right;
+    cursor: hand;
+    background: url(images/delete.gif) no-repeat center center;
 }
 
 .filter #filter-message {
-	display:block;
-	position:absolute;
-	left:40px;
-	right:30px;
-	top:3px;
-	bottom:3px;
-	overflow:hidden;
-	font-weight:normal;
+    display: block;
+    position: absolute;
+    left: 40px;
+    right: 30px;
+    top: 3px;
+    bottom: 3px;
+    overflow: hidden;
+    font-weight: normal;
 }
 
 #toggle-contact-list {
-	position:absolute;
-	right:0px;
-	width:5px;
-	top:45%;
-	height:50px;
-	cursor:hand;
+    position: absolute;
+    right: 0px;
+    width: 5px;
+    top: 45%;
+    height: 50px;
+    cursor: hand;
 }
 
 #reply-people h3 {
-	border-bottom-width:1px;
-	border-bottom-style:solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 }
 
 .disclose-open {
@@ -2290,29 +2369,29 @@ background:transparent url(images/profile-im.gif) no-repeat scroll 0pt -280px !i
 #reply-people ul li img {
     margin-right: 5px;
     vertical-align: middle;
-	border-width:2px;
-	border-style:solid;
+    border-width: 2px;
+    border-style: solid;
 }
 
 .usrunselected {
     font-weight: normal !important;
-	text-decoration:none;
+    text-decoration: none;
 }
 
 .usrselected {
     font-weight: bold !important;
-	text-decoration:underline;
+    text-decoration: underline;
 }
 
 .forwardlink {
-	background: url(images/arrow_right.png) no-repeat center right;
-	padding-right:20px;
+    background: url(images/arrow_right.png) no-repeat center right;
+    padding-right: 20px;
 }
 
 .deletelink {
-	background: url(images/delete.gif) no-repeat center center;
-	padding-right:10px;
-	width:15px;
+    background: url(images/delete.gif) no-repeat center center;
+    padding-right: 10px;
+    width: 15px;
 }
 
 #ntmessage {
@@ -2403,16 +2482,16 @@ background:transparent url(images/profile-im.gif) no-repeat scroll 0pt -280px !i
 }
 
 #settings {
-	display:none;
+    display: none;
 }
 
 #login-form {
-	margin-top:20px;
-	margin-left:auto;
-	margin-right:auto;
-	width:250px;
-	padding:20px;
-	padding-top:0px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    padding: 20px;
+    padding-top: 0px;
     border-width: 2px;
     border-top-style: solid;
     border-right-style: solid;
@@ -2421,184 +2500,187 @@ background:transparent url(images/profile-im.gif) no-repeat scroll 0pt -280px !i
 }
 
 #login-form h3 {
-	font-size:2em;
-	text-align:center;
+    font-size: 2em;
+    text-align: center;
 }
 
 #login-form label {
-	width:80px;
-	display:block;
-	float:left;
-	padding:3px 0px 0px 0px;
+    width: 80px;
+    display: block;
+    float: left;
+    padding: 3px 0px 0px 0px;
 }
 
 #auto-login-label, #remember-me-label {
-float:none!important;
-width:auto!important;
-display:inline!important;
-padding:0px!important;
+    float: none !important;
+    width: auto !important;
+    display: inline !important;
+    padding: 0px !important;
 }
 
-#login-form input[type=text],#login-form input[type=password] {
-	width:150px;
+#login-form input[type=text], #login-form input[type=password] {
+    width: 150px;
 }
 
 #alert-message {
-	position:absolute;
-	top:50px;
-	left:70px;
-	right:0px;
-	overflow:hidden;
-	bottom:50px;
-	font-size:10pt;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    right: 0px;
+    overflow: hidden;
+    bottom: 50px;
+    font-size: 10pt;
 }
 
 #alert-div img {
-	position:absolute;
-	top:50px;
-	left:0px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
 }
 
 #alert-ok {
-	position:absolute;
-	bottom:0px;
-	right:0px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
 
 #filter-ok {
-	position:absolute;
-	bottom:0px;
-	right:0px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
 
 #request-div, #forward-div, #filter-div {
-	position:absolute;
-	top:10px;
-	left:10px;
-	right:10px;
-	bottom:10px;
-	border-top-style:solid;
-	border-top-width:1px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-top-style: solid;
+    border-top-width: 1px;
 }
+
 #alert-div {
-	position:absolute;
-	top:10px;
-	left:10px;
-	right:10px;
-	bottom:10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
 }
 
 #request-confirm {
-	position:absolute;
-	left:60px;
-	top:10px;
-	margin:0px;
-	padding:0px;
-	font-size:15.2833px;
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15.2833px;
 }
 
 #filter-div dl {
-	margin:0px;
-	padding:0px;
-	position:absolute;
-	top:30px;
-	left:0px;
-	right:0px;
-	bottom:30px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
 }
 
 #filter-div dt {
-	font-weight:bold;
-	float:left;
-	padding:3px 0px 0px 5px;
+    font-weight: bold;
+    float: left;
+    padding: 3px 0px 0px 5px;
 }
 
-#forward-confirm, #alert-div h3, #filter-div h3{
-	position:absolute;
-	left:0px;
-	top:10px;
-	margin:0px;
-	padding:0px;
-	font-size:15.2833px;
+#forward-confirm, #alert-div h3, #filter-div h3 {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15.2833px;
 }
-#alert-div h3{
-	position:absolute;
-	left:0px;
-	top:10px;
-	right:0px;
-	margin:0px;
-	padding:0px 0px 3px 15px;
-	font-size:15.2833px;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
+
+#alert-div h3 {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    right: 0px;
+    margin: 0px;
+    padding: 0px 0px 3px 15px;
+    font-size: 15.2833px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 }
 
 #request-add-message {
-	position:absolute;
-	left:60px;
-	top:35px;
+    position: absolute;
+    left: 60px;
+    top: 35px;
 }
 
 #request-message {
-	position:absolute;
-	left:60px;
-	top:50px;
-	right:0px;
-	margin:0px;
-	bottom:30px;
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    right: 0px;
+    margin: 0px;
+    bottom: 30px;
 }
 
 #forward-message {
-	position:absolute;
-	left:0px;
-	top:35px;
-	right:0px;
-	margin:0px;
-	bottom:50px;
+    position: absolute;
+    left: 0px;
+    top: 35px;
+    right: 0px;
+    margin: 0px;
+    bottom: 50px;
 }
 
 #sendtoforwardgroup {
-	position:absolute;
-	left:0px;
-	right:0px;
-	bottom:30px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
 }
 
 #send-request, #forward-it {
-	position:absolute;
-	right:70px;
-	bottom:0px;
+    position: absolute;
+    right: 70px;
+    bottom: 0px;
 }
 
 #cancel-request, #cancel-forward {
-	position:absolute;
-	right:0px;
-	bottom:0px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }
 
 #request-img {
-	position:absolute;
-	left:0px;
-	top:10px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
 }
+
 #request-img img {
-	border-width:2px;
-	border-style:solid;
+    border-width: 2px;
+    border-style: solid;
 }
 
 .messagewin {
-	display:none;
+    display: none;
     position: absolute;
-	z-index:3999;
-	top:50px;
-	width:350px;
-	height:200px;
-	left:1%;
-	right:1%;
-	margin-left:auto;
-	margin-right:auto;
-	border-width:1px;
-	border-style:solid;
+    z-index: 3999;
+    top: 50px;
+    width: 350px;
+    height: 200px;
+    left: 1%;
+    right: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+    border-style: solid;
 }
 
 .toolwin {
@@ -2608,6 +2690,6 @@ padding:0px!important;
     right: 10px;
     bottom: 28px;
     z-index: 3001;
-	padding:0px;
+    padding: 0px;
 }
 

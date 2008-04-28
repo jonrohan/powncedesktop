@@ -1,5 +1,7 @@
 Date: 
 Version: 0.27
 This version has:
+- Muxtape widget added to stream
+- Revision3 video support
 - Bug Fix: When < or + is used in posting messages it gets stripped out of the message
-- Muxtape Support
+- Bug Fix: < in a message body is treated as actual html
