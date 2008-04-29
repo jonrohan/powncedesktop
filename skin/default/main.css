@@ -1246,11 +1246,10 @@ body.fontSize4 .media-link {
     margin: 0px;
     padding: 5px 0px 0px 0px;
     position: absolute;
-    bottom: 30px;
-    top: 75px;
+    bottom: 55px;
     right: 5px;
     left: 5px;
-    height: auto;
+    height: 85px;
 }
 
 #file-upload-message {
