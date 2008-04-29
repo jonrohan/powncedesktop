@@ -1,3 +1,14 @@
+Date: 04.29.2008
+Version: 0.27
+This version has:
+- Muxtape widget added to stream
+- Revision3 video support
+- Send to is now an autocomplete box
+- Removing extra views, for now
+- Posting notes ui change
+- Bug Fix: When < or + is used in posting messages it gets stripped out of the message
+- Bug Fix: < in a message body is treated as actual html
+
 Date: 04.26.2008
 Version: 0.26
 This version has:
