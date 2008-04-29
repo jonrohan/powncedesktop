@@ -17,10 +17,10 @@
         <maximizable>false</maximizable>
         <resizable>true</resizable>
         <width>370</width>
-        <height>400</height>
+        <height>600</height>
         <x>200</x>
         <y>200</y>
-        <minSize>370 350</minSize>
+        <minSize>370 600</minSize>
         <maxSize>1280 1024</maxSize>
     </initialWindow>
     

@@ -237,34 +237,33 @@
 		</div>
 		
 		<div id="new-view" class="toolwin ca-type-message">
-	        <div id="sendtohead">
-	            Send to: <input type="text" id="send-to-text" value="the public"/>
-				<input type="hidden" id="send-to-id" value="public"/>
-				<ul id="send-to-filter" style="display:none;"></ul>
-	        </div>
-	        <div id="notetypehead">
-	            <span id="cancelnn">cancel</span>
-	            <span id="ntmessage" class="toolbutton ntt-selected">Message<span></span></span>
-	            <span id="ntlink" class="toolbutton ntt-unselected">Link<span></span></span>
-	            <span id="ntfile" class="toolbutton ntt-unselected">File<span></span></span>
-	            <span id="ntevent" class="toolbutton ntt-unselected">Event<span></span></span>
-	        </div>
-			<input type="text" value="Where at?" id="where" onfocus="if(this.value=='Where at?')this.value='';" onblur="if(this.value==''||this.value=='Where at?')this.value='Where at?';"/>
-            <input type="text" value="What's Happening?" id="what" onfocus="if(this.value=='What\'s Happening?')this.value='';" onblur="if(this.value==''||this.value=='What\'s Happening?')this.value='What\'s Happening?';"/>
-            <div id="when">
-                <input type="text" value="" id="time"/> on <input type="text" value="" id="date"/>
-            </div>
-			<input type="hidden" id="note-type" value="message"/>
-			<div id="file"><input type="button" id="file-browse" value="browse"/><input type="text" id="file-url"/></div>
-			<div id="file-upload-progress">
-				<div id="file-upload-message"></div>
-				<div id="file-upload-track">
-					<div id="file-upload-bar">&nbsp;</div>
+		</div>
+
+		<div id="note-view" class="toolwin">
+			<!-- Messages --->
+			<div id="new-box" class="ca-type-message">
+		        <div id="notetypehead">
+		            <span id="cancelnn">cancel</span>
+		            <span id="ntmessage" class="toolbutton ntt-selected">Message<span></span></span>
+		            <span id="ntlink" class="toolbutton ntt-unselected">Link<span></span></span>
+		            <span id="ntfile" class="toolbutton ntt-unselected">File<span></span></span>
+		            <span id="ntevent" class="toolbutton ntt-unselected">Event<span></span></span>
+		        </div>
+	            <div id="when">
+	                <input type="text" value="" id="time"/> on <input type="text" value="" id="date"/>
+	            </div>
+				<input type="hidden" id="note-type" value="message"/>
+	            <input type="text" value="What's Happening?" id="what" onfocus="if(this.value=='What\'s Happening?')this.value='';" onblur="if(this.value==''||this.value=='What\'s Happening?')this.value='What\'s Happening?';"/>
+				<input type="text" value="Where at?" id="where" onfocus="if(this.value=='Where at?')this.value='';" onblur="if(this.value==''||this.value=='Where at?')this.value='Where at?';"/>
+				<input type="text" value="http://" id="url" onfocus="if(this.value=='http://')this.value='';" onblur="if(this.value==''||this.value=='http://')this.value='http://';"/>
+		        <textarea id="body" onfocus="if(this.value=='post a note...')this.value='';" onblur="if(this.value==''||this.value=='post a note...')this.value='post a note...';">post a note...</textarea>
+				<div id="file"><input type="button" id="file-browse" value="browse"/><input type="text" id="file-url"/></div>
+				<div id="file-upload-progress">
+					<div id="file-upload-message"></div>
+					<div id="file-upload-track">
+						<div id="file-upload-bar">&nbsp;</div>
+					</div>
 				</div>
-			</div>
-			<input type="text" value="http://" id="url" onfocus="if(this.value=='http://')this.value='';" onblur="if(this.value==''||this.value=='http://')this.value='http://';"/>
-			<textarea id="body" onfocus="if(this.value=='post a note...')this.value='';" onblur="if(this.value==''||this.value=='post a note...')this.value='post a note...';">post a note...</textarea>
-			<input id="postit" type="button" value="Post it!"/>
 			<div id="load-template">
 				Load Template:
 				<select id="templates">
@@ -272,10 +271,13 @@
 				</select>
 				<span id="save-template">Save as Template</span>
 			</div>
-		</div>
-
-		<div id="note-view" class="toolwin">
-			<!-- Messages --->
+				<div id="send-to-box">
+		            Send to: <input type="text" id="send-to-text" value="the public"/>
+					<input type="hidden" id="send-to-id" value="public"/>
+					<ul id="send-to-filter" style="display:none;"></ul>
+		        </div>
+				<input id="postit" type="button" value="Post it!"/>
+			</div>
 			<div id="filter-box" class="filter">
 				filter: <span id="filter-message">type:message,links user:dburka</span>
 				<span id="delete-filter"></span>

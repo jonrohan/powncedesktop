@@ -1149,10 +1149,10 @@ body.fontSize4 .media-link {
 	overflow:auto;
 	margin-top:-2px;
 	margin-left:45px;
+	margin-bottom:-200px;
 }
 
 #forward-to-filter {
-	margin-bottom:-200px;
 	margin-left:55px;
 }
 
@@ -1183,22 +1183,35 @@ body.fontSize4 .media-link {
 	font-size:8pt;
 }
 
+#new-box {
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+}
+
+.ca-type-message {
+	height:170px;
+}
+
+.ca-type-event {
+	height:240px;
+}
+
+.ca-type-link, .ca-type-file {
+	height:190px;
+}
+
 #cancelnn {
     cursor: hand;
     text-decoration: underline;
 }
 
-#sendtohead {
+#send-to-box {
     position: absolute;
-    left: 5px;
-    right: 5px;
-    top: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#sendtohead select {
-    font-size: 10px;
-    font-weight: normal;
+    right: 70px;
+    bottom: 5px;
+	width:250px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -1206,7 +1219,7 @@ body.fontSize4 .media-link {
     position: absolute;
     left: 5px;
     right: 5px;
-    top: 24px;
+    top: 0px;
     height: 25px;
     overflow: hidden;
     line-height: 23px;
@@ -1215,17 +1228,17 @@ body.fontSize4 .media-link {
 #postit {
     position: absolute;
     bottom: 5px;
-    right: 10px;
+    right: 5px;
 }
 
 #body {
     margin: 0px;
     padding: 5px 0px 0px 0px;
     position: absolute;
-    bottom: 70px;
+    bottom: 55px;
     right: 5px;
     left: 5px;
-    height: auto;
+	height: 85px;
 }
 
 #file-upload-progress {
@@ -1264,7 +1277,7 @@ body.fontSize4 .media-link {
 
 #load-template {
     position: absolute;
-    bottom: 40px;
+    bottom: 30px;
     left: 5px;
 }
 
@@ -1272,27 +1285,11 @@ body.fontSize4 .media-link {
     cursor: hand;
 }
 
-.ca-type-link #body {
-    top: 75px;
-}
-
-.ca-type-file #body {
-    top: 75px;
-}
-
-.ca-type-event #body {
-    top: 120px;
-}
-
-.ca-type-message #body {
-    top: 50px;
-}
-
 #url {
     position: absolute;
     left: 5px;
     right: 5px;
-    top: 50px;
+    top: 26px;
     margin: 0px;
 }
 
@@ -1304,7 +1301,7 @@ body.fontSize4 .media-link {
     position: absolute;
     left: 5px;
     right: 5px;
-    top: 50px;
+    top: 26px;
     margin: 0px;
 }
 
@@ -1331,7 +1328,7 @@ body.fontSize4 .media-link {
     position: absolute;
     left: 5px;
     right: 5px;
-    top: 50px;
+    top: 26px;
     margin: 0px;
 }
 
@@ -1343,7 +1340,7 @@ body.fontSize4 .media-link {
     position: absolute;
     left: 5px;
     right: 5px;
-    top: 73px;
+    top: 50px;
     margin: 0px;
 }
 
@@ -1355,7 +1352,7 @@ body.fontSize4 .media-link {
     position: absolute;
     left: 5px;
     right: 5px;
-    top: 96px;
+    top: 76px;
 }
 
 #when input {
