@@ -20,7 +20,7 @@
         <height>600</height>
         <x>200</x>
         <y>200</y>
-        <minSize>370 600</minSize>
+        <minSize>370 400</minSize>
         <maxSize>1280 1024</maxSize>
     </initialWindow>
     
