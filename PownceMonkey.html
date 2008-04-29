@@ -82,8 +82,8 @@
 		<div id="toolbar">
 			<div id="toolbar-refresh" class="tool-button" title="Refresh"></div>
 			<div id="toolbar-notes" class="tool-button" title="Notes"></div>
-			<div id="toolbar-people" class="tool-button" title="Peeps"></div>
 			<div id="toolbar-newnote" class="tool-button" title="Create New Note"></div>
+			<div id="toolbar-people" class="tool-button" title="Peeps"></div>
 			<div id="toolbar-filter" class="tool-button" title="Filter Notes"></div>
 		</div>
 		
@@ -122,8 +122,10 @@
 				<input type="hidden" value="" id="forward-username"/>
 				<input type="hidden" value="" id="forward-noteid"/>
 		        <div id="sendtoforwardgroup">
-		            Send to: 
-		            <select id="sendtoforward"></select>
+		            Forward to: <input type="text" id="forward-to-text" value="the public"/>
+					<input type="hidden" id="forward-to-id" value="newbies"/>
+					<ul id="forward-to-filter" style="display:none;"></ul>
+		            <select id="sendtoforward" style="display:none;"></select>
 		        </div>
 				<input type="button" value="Forward It!" id="forward-it"/>
 				<input type="button" value="Cancel" id="cancel-forward"/>
@@ -236,7 +238,9 @@
 		
 		<div id="new-view" class="toolwin ca-type-message">
 	        <div id="sendtohead">
-	            Send to: <select id="sendto"></select>
+	            Send to: <input type="text" id="send-to-text" value="the public"/>
+				<input type="hidden" id="send-to-id" value="public"/>
+				<ul id="send-to-filter" style="display:none;"></ul>
 	        </div>
 	        <div id="notetypehead">
 	            <span id="cancelnn">cancel</span>
