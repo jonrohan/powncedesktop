@@ -4,7 +4,7 @@
     <id>PownceMonkey</id>
     <filename>Pownce Monkey</filename>
     <name>Pownce Monkey</name>
-    <version>0.275</version>
+    <version>0.28</version>
     <description>The purpose of this project is to supply a chat client for Pownce.</description>
     <copyright>Copyright (c) 2008 Jon Rohan</copyright>
     <initialWindow>
