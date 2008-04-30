@@ -1,3 +1,8 @@
+Date: 04.30.2008
+Version: 0.275
+This version has:
+- Bux Fix: 404 hell!
+
 Date: 04.29.2008
 Version: 0.27
 This version has:
