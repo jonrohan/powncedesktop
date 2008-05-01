@@ -103,6 +103,10 @@ span#play-sound {
     background: url(images/group.png) no-repeat center center;
 }
 
+#toolbar-favorites {
+    background: url(images/heart.png) no-repeat center center;
+}
+
 #toolbar-filter {
     background: url(images/cog_go.png) no-repeat center center;
 }
@@ -444,6 +448,8 @@ span#play-sound {
 .note .bottomdetails {
     margin-top: 10px;
     margin-left: -20px;
+	margin-right: 5px;
+	height:20px;
     text-align: right;
     font-size: .8em;
 }
@@ -1816,6 +1822,25 @@ body.fontSize4 .media-link {
 .person .bottom-details .cancel {
     background: url(images/delete.png) no-repeat left center;
 }
+
+/************* Favorites View *************/
+
+#favorites {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    border-width: 2px;
+    border-top-style: solid;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    padding: 0px;
+    overflow: auto;
+    margin: 0px;
+}
+
 /************* Notes View *************/
 #note-view {
     display: none;
@@ -1941,6 +1966,16 @@ body.fontSize4 .media-link {
 
 .forwardlink {
     background: url(images/arrow_right.png) no-repeat center right;
+    padding-right: 20px;
+}
+
+.favoritelink {
+    background: url(images/heart_add.png) no-repeat center right;
+    padding-right: 20px;
+}
+
+.unfavoritelink {
+    background: url(images/heart_delete.png) no-repeat center right;
     padding-right: 20px;
 }
 

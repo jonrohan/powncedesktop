@@ -7,18 +7,18 @@
 	background:url(pro-small.gif) no-repeat; /* pro tag */
 }
 
-input[type=button],  input[type=submit], #friends-files, #reply-notes, #notes, #login-form, #settings-tabs li.tab-selected, #settings .tab-pane, #menu, #menu-new-note,  #menu-view-more, #file-upload-track, #photos-notes,  #photos-albums,  #music-table-header, #progress-tack, #music-notes,  #music-playlists, #people  {
+input[type=button],  input[type=submit], #reply-notes, #notes, #favorites, #login-form, #settings-tabs li.tab-selected, #settings .tab-pane, #menu, #menu-new-note,  #menu-view-more, #file-upload-track, #people  {
 	border-color:#870091;
 }
 
-input[type=button],  input[type=submit], #menu li:hover, #file-upload-bar, #music-table-header,  .mselected,  #photos-notes .selected,  #photos-notes .selected span , #music-notes .selected,  #music-notes .selected span, #friends-files .selected,  #friends-files .selected span, #progress-bar, #settings-app-transparency-handle {
+input[type=button],  input[type=submit], #menu li:hover, #file-upload-bar, #settings-app-transparency-handle {
 	background-color:#870091!important;
 }
 
-input[type=button],  input[type=submit], #music-table-header,  .mselected,  #photos-notes .selected,  #photos-notes .selected span ,  #progress-bar, #music-notes .selected,  #music-notes .selected span, #friends-files .selected,  #friends-files .selected span {
+input[type=button],  input[type=submit] {
     color: #E9BAED;
 }
 
-input[type=button]:hover,  input[type=submit]:hover, #menu li:hover, #music-table-header .song-name:hover,  #music-table-header .song-artist:hover,  #music-table-header .song-album:hover,  .mselected:hover,  #music-notes .selected:hover,  #music-notes .selected:hover span, #music-table-header .song-name:hover,  #music-table-header .song-artist:hover,  #music-table-header .song-album:hover,  .mselected:hover,  #photos-notes .selected:hover,  #photos-notes .selected:hover span {
+input[type=button]:hover,  input[type=submit]:hover, #menu li:hover {
     color: #ffffff; /* button hover color */
 }

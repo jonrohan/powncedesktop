@@ -61,7 +61,7 @@ body, pre, #menu li:hover #menu-new-note, #menu li:hover #menu-view-more {
     color: #393D22;
 }
 
-input[type=text], input[type=password], textarea, .nexpanded .note a.imglnk, .nexpanded .note, #replynotesummary, #file-view h3, #note-detail-body p:hover, #note-detail, #user-note-image, .note-system-message img, #sendtohead, .image img, #people h3, #reply-people h3, #request-div, .messagewin, #request-img img, #leftwintitle, #people ul li img, #reply-people ul li img, #filter-div, .person, .person .img-link img, #profile-view #profile-image img, #profile-view h3 {
+input[type=text], input[type=password], textarea, .nexpanded .note a.imglnk, .nexpanded .note, #replynotesummary, #note-detail-body p:hover, #note-detail, #user-note-image, .note-system-message img, #sendtohead, .image img, #people h3, #reply-people h3, #request-div, .messagewin, #request-img img, #leftwintitle, #people ul li img, #reply-people ul li img, #filter-div, .person, .person .img-link img, #profile-view #profile-image img, #profile-view h3 {
     border-color: #6E7E38;
 }
 
@@ -78,7 +78,7 @@ input[type=text], input[type=password], textarea, .nexpanded .note a.imglnk, .ne
     color: #393D22;
 }
 
-#settings-tabs li.tab-selected, #settings .tab-pane, #menu .menu-divider, #menu .menu-divider:hover, #friends-files, #friends-files li.row1, #friends-files li.row1 .file-details, #photos-notes, #photos-albums, #progress-tack, #photos-notes li.row1, #photos-notes li.row1 .song-details, #login-form, #reply-notes, #music-notes, #music-playlists, #progress-tack, #music-notes li.row1, #music-notes li.row1 .song-details, #notes, #people {
+#settings-tabs li.tab-selected, #settings .tab-pane, #menu .menu-divider, #menu .menu-divider:hover, #login-form, #reply-notes, #favorites, #notes, #people {
     background-color: #E3E8CE;
 }
 
@@ -92,17 +92,6 @@ input[type=text], input[type=password], textarea, .nexpanded .note a.imglnk, .ne
     font-weight: bold;
 }
 
-#friends-files li {
-}
-
-#friends-files li.row0, #friends-files li.row0 .file-details, #photos-notes li.row0, #photos-notes li.row0 .song-details, #music-notes li.row0, #music-notes li.row0 .song-details {
-    background-color: #ADB888; /* odd rows background color */
-}
-
-li.row0, li.row0 .file-details, li.row0 .song-details {
-}
-
 #people ul li, #reply-people ul li {
     color: #ADB888; /* people list text color */
 }
-

@@ -61,7 +61,7 @@ body, pre, #menu li:hover #menu-new-note, #menu li:hover #menu-view-more {
     color: #394244;
 }
 
-input[type=text], input[type=password], textarea, .nexpanded .note a.imglnk, .nexpanded .note, #replynotesummary, #file-view h3, #note-detail-body p:hover, #note-detail, #user-note-image, .note-system-message img, #sendtohead, .image img, #people h3, #reply-people h3, #request-div, .messagewin, #request-img img, #leftwintitle, #people ul li img, #reply-people ul li img, #filter-div, .person, .person .img-link img, #profile-view #profile-image img, #profile-view h3 {
+input[type=text], input[type=password], textarea, .nexpanded .note a.imglnk, .nexpanded .note, #replynotesummary, #note-detail-body p:hover, #note-detail, #user-note-image, .note-system-message img, #sendtohead, .image img, #people h3, #reply-people h3, #request-div, .messagewin, #request-img img, #leftwintitle, #people ul li img, #reply-people ul li img, #filter-div, .person, .person .img-link img, #profile-view #profile-image img, #profile-view h3 {
     border-color: #70A7C3;
 }
 
@@ -78,7 +78,7 @@ input[type=text], input[type=password], textarea, .nexpanded .note a.imglnk, .ne
     color: #fff;
 }
 
-#settings-tabs li.tab-selected, #settings .tab-pane, #menu .menu-divider, #menu .menu-divider:hover, #friends-files, #friends-files li.row1, #friends-files li.row1 .file-details, #photos-notes, #photos-albums, #progress-tack, #photos-notes li.row1, #photos-notes li.row1 .song-details, #login-form, #reply-notes, #music-notes, #music-playlists, #progress-tack, #music-notes li.row1, #music-notes li.row1 .song-details, #notes, #people {
+#settings-tabs li.tab-selected, #settings .tab-pane, #menu .menu-divider, #menu .menu-divider:hover, #login-form, #reply-notes, #favorites, #notes, #people {
     background-color: #BDDAE1;
 }
 
@@ -90,10 +90,6 @@ input[type=text], input[type=password], textarea, .nexpanded .note a.imglnk, .ne
     color: #fff; /* new note button text color */
     background-color: #9DC7D2 !important; /* new note background color */
     font-weight: bold;
-}
-
-#friends-files li.row0, #friends-files li.row0 .file-details, #photos-notes li.row0, #photos-notes li.row0 .song-details, #music-notes li.row0, #music-notes li.row0 .song-details {
-    background-color: #ffffff; /* odd rows background color */
 }
 
 #people ul li, #reply-people ul li {
