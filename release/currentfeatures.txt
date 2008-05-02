@@ -1,7 +1,7 @@
 * Reply to notes from client
 * Minimize to tray (Windows)
 * Audio notes alert
-* Play videos in full-screen/seperate window (youtube, qik, revision3)
+* Play videos in full-screen/seperate window (youtube, qik, revision3, viddler)
 * Image previews
 * Automatic notification of new version and update
 * Optional Allow notes to collapse
