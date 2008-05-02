@@ -1964,22 +1964,22 @@ body.fontSize4 .media-link {
     text-decoration: underline;
 }
 
-.forwardlink {
+.xforwardlink {
     background: url(images/arrow_right.png) no-repeat center right;
     padding-right: 20px;
 }
 
-.favoritelink {
+.xfavoritelink {
     background: url(images/heart_add.png) no-repeat center right;
     padding-right: 20px;
 }
 
-.unfavoritelink {
+.xunfavoritelink {
     background: url(images/heart_delete.png) no-repeat center right;
     padding-right: 20px;
 }
 
-.deletelink {
+.xdeletelink {
     background: url(images/delete.gif) no-repeat center center;
     padding-right: 10px;
     width: 15px;

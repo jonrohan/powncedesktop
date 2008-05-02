@@ -1,4 +1,6 @@
 Date: 
 Version: 0.28
 This version has:
+- Favorites
+- !username now takes you to the profile view
 - 
