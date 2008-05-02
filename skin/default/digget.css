@@ -30,6 +30,9 @@
 .digg-user img {
 	vertical-align:top;
 	margin-right:3px;
+	min-width:10px!important;
+	width:10px!important;
+	height:10px!important;
 }
 
 .digg-user {
