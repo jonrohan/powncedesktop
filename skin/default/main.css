@@ -87,6 +87,14 @@ span#play-sound {
     cursor: hand;
 }
 
+#toolbar .tool-button-right {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    cursor: hand;
+}
+
 #toolbar .sub-toolbar {
 	float:none;
     position: absolute;
@@ -185,6 +193,14 @@ span#play-sound {
 
 #toolbar-template-load {
     background: url(images/table.png) no-repeat center center;
+}
+
+#toolbar-settings {
+    background: url(images/wrench.png) no-repeat center center;
+}
+
+#toolbar-logout {
+    background: url(images/door_in.png) no-repeat center center;
 }
 
 .toolbutton {
