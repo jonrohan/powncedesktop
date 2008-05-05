@@ -31,8 +31,9 @@
 	vertical-align:top;
 	margin-right:3px;
 	min-width:10px!important;
-	width:10px!important;
-	height:10px!important;
+	width:15px!important;
+	height:15px!important;
+	border-width:1px!important;
 }
 
 .digg-user {

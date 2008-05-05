@@ -78,8 +78,8 @@ input[type=text], input[type=password], textarea, .nexpanded .note a.imglnk, .ne
     color: #fff;
 }
 
-#settings-tabs li.tab-selected, #settings .tab-pane, #menu .menu-divider, #menu .menu-divider:hover, #login-form, #reply-notes, #favorites, #notes, #people {
-    background-color: #BDDAE1;
+#settings-tabs li.tab-selected, #settings .tab-pane, #menu .menu-divider, #menu .menu-divider:hover, #login-form, #reply-notes, #favorites, #notes, #people, .tool-selected, .sub-toolbar {
+    background-color: #BDDAE1!important;
 }
 
 .nexpanded .reply, #settings-app-transparency-track {

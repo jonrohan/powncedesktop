@@ -75,16 +75,56 @@ span#play-sound {
     left: 10px;
     top: 40px;
     right: 10px;
-    height: 25px;
+    height: 20px;
     padding: 2px 0px 0px 5px;
 }
 
 #toolbar .tool-button {
     float: left;
-    width: 20px;
+    width: 30px;
     height: 20px;
     margin-right: 5px;
     cursor: hand;
+}
+
+#toolbar .sub-toolbar {
+	float:none;
+    position: absolute;
+    z-index: 2000;
+    left: 0px;
+    top: 22px;
+    right: 0px;
+    height: 29px;
+    padding: 2px 0px 0px 5px;
+}
+
+#toolbar .sub-toolbar .tool-button {
+	width:20px;
+}
+
+#toolbar .tool-select {
+    float: left;
+    width: 25px;
+    height: 20px;
+    margin-right: 5px;
+    cursor: hand;
+	padding-right:5px;
+	background: url(images/bullet_arrow_down.png) no-repeat center right;
+}
+
+#toolbar .toolbar-select {
+	display:none;
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+	position:absolute;
+	z-index:4031;
+}
+
+#toolbar .toolbar-select li {
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
 }
 
 #toolbar-refresh {
@@ -109,6 +149,42 @@ span#play-sound {
 
 #toolbar-filter {
     background: url(images/cog_go.png) no-repeat center center;
+}
+
+#toolbar-new-message {
+    background: url(images/note-message.gif) no-repeat center center;
+}
+
+#toolbar-new-link {
+    background: url(images/note-link.gif) no-repeat center center;
+}
+
+#toolbar-new-file {
+    background: url(images/note-file.gif) no-repeat center center;
+}
+
+#toolbar-new-event {
+    background: url(images/note-event.gif) no-repeat center center;
+}
+
+#toolbar-first-page {
+    background: url(images/resultset_first.png) no-repeat center center;
+}
+
+#toolbar-last-page {
+    background: url(images/resultset_previous.png) no-repeat center center;
+}
+
+#toolbar-next-page {
+    background: url(images/resultset_next.png) no-repeat center center;
+}
+
+#toolbar-template-save {
+    background: url(images/table_save.png) no-repeat center center;
+}
+
+#toolbar-template-load {
+    background: url(images/table.png) no-repeat center center;
 }
 
 .toolbutton {
@@ -1199,20 +1275,15 @@ body.fontSize4 .media-link {
 }
 
 .ca-type-message {
-	height:170px;
-}
-
-.ca-type-event {
-	height:240px;
+	height:125px;
 }
 
 .ca-type-link, .ca-type-file {
-	height:190px;
+	height:150px;
 }
 
-#cancelnn {
-    cursor: hand;
-    text-decoration: underline;
+.ca-type-event {
+	height:193px;
 }
 
 #send-to-box {
@@ -1223,11 +1294,11 @@ body.fontSize4 .media-link {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#notetypehead {
+#load-template {
     position: absolute;
     left: 5px;
     right: 5px;
-    top: 0px;
+    top: 4px;
     height: 25px;
     overflow: hidden;
     line-height: 23px;
@@ -1243,7 +1314,7 @@ body.fontSize4 .media-link {
     margin: 0px;
     padding: 5px 0px 0px 0px;
     position: absolute;
-    bottom: 55px;
+    bottom: 35px;
     right: 5px;
     left: 5px;
 	height: 85px;
@@ -1282,12 +1353,6 @@ body.fontSize4 .media-link {
     height: 50px;
 }
 
-#load-template {
-    position: absolute;
-    bottom: 30px;
-    left: 5px;
-}
-
 #save-template {
     cursor: hand;
 }
@@ -1296,7 +1361,7 @@ body.fontSize4 .media-link {
     position: absolute;
     left: 5px;
     right: 5px;
-    top: 26px;
+    top: 5px;
     margin: 0px;
 }
 
@@ -1308,7 +1373,7 @@ body.fontSize4 .media-link {
     position: absolute;
     left: 5px;
     right: 5px;
-    top: 26px;
+    top: 5px;
     margin: 0px;
 }
 
@@ -1335,7 +1400,7 @@ body.fontSize4 .media-link {
     position: absolute;
     left: 5px;
     right: 5px;
-    top: 26px;
+    top: 5px;
     margin: 0px;
 }
 
@@ -1347,7 +1412,7 @@ body.fontSize4 .media-link {
     position: absolute;
     left: 5px;
     right: 5px;
-    top: 50px;
+    top: 27px;
     margin: 0px;
 }
 
@@ -1359,7 +1424,7 @@ body.fontSize4 .media-link {
     position: absolute;
     left: 5px;
     right: 5px;
-    top: 76px;
+    top: 49px;
 }
 
 #when input {
@@ -2277,7 +2342,7 @@ body.fontSize4 .media-link {
 
 .toolwin {
     position: absolute;
-    top: 65px;
+    top: 90px;
     left: 10px;
     right: 10px;
     bottom: 28px;
