@@ -203,6 +203,18 @@ span#play-sound {
     background: url(images/door_in.png) no-repeat center center;
 }
 
+#toolbar-settings-general {
+    background: url(images/application.png) no-repeat center center;
+}
+
+#toolbar-settings-alerts {
+    background: url(images/bell.png) no-repeat center center;
+}
+
+#toolbar-settings-notes {
+    background: url(images/comments.png) no-repeat center center;
+}
+
 .toolbutton {
     padding: 5px 5px 5px 20px;
     cursor: hand;
@@ -249,50 +261,18 @@ span#play-sound {
     text-indent: -2000px;
 }
 
-#cancel-settings {
-    right: 15px;
-}
-
-#save-settings {
-    right: 85px;
-}
-
-#settings-tabs {
-    margin: 0px;
-    margin-top: 5px;
-    margin-left: 20px;
-    padding: 0px;
-    list-style-type: none;
-}
-
-#settings-tabs li {
-    position: relative;
-    display: inline;
-    height: 30px;
-    padding: 3px 5px 3px 5px;
-    cursor: hand;
-    z-index: 2000;
-}
-
-#settings-tabs li.tab-selected {
-    text-decoration: underline;
-    margin-bottom: -2px;
-    padding-bottom: 7px;
-    border-width: 2px;
-    border-style: solid;
-    border-bottom: none;
-}
-
 #settings .tab-pane {
     display: none;
     position: absolute;
-    bottom: 30px;
-    right: 15px;
-    left: 15px;
-    top: 22px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
     padding: 15px;
-    border-style: solid;
-    border-width: 2px;
+	border-top-width:2px;
+	border-top-style:solid;
+	border-bottom-width:2px;
+	border-bottom-style:solid;
 }
 
 #appVersion {
@@ -2345,7 +2325,7 @@ body.fontSize4 .media-link {
     display: none;
     position: absolute;
     z-index: 3999;
-    top: 50px;
+    top: 40px;
     width: 350px;
     height: 200px;
     left: 1%;

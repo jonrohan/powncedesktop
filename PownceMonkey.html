@@ -94,6 +94,11 @@
 				<div id="toolbar-last-page" class="tool-button" title="Last Page"></div>
 				<div id="toolbar-next-page" class="tool-button" title="Next Page"></div>
 			</div>
+			<div id="sub-toolbar-settings" class="sub-toolbar">
+				<div id="toolbar-settings-general" class="tool-button" title="General"></div>
+				<div id="toolbar-settings-notes" class="tool-button" title="Notes"></div>
+				<div id="toolbar-settings-alerts" class="tool-button" title="Alerts"></div>
+			</div>
 			<div id="sub-toolbar-new" class="sub-toolbar">
 				<div id="toolbar-new-message" class="tool-button" title="New Message"></div>
 				<div id="toolbar-new-link" class="tool-button" title="New Link"></div>
@@ -295,11 +300,6 @@
 		</div>
 		
         <div id="settings" class="toolwin">
-            <ul id="settings-tabs">
-                <li id="settings-general-tab" class="tab-selected">General</li>
-                <li id="settings-notes-tab" class="tab-unselected">Notes</li>
-                <li id="settings-alerts-tab" class="tab-unselected">Alerts</li>
-            </ul>
             <div id="settings-alerts-pane" class="tab-pane">
                 <fieldset>
                     <legend>Behavior</legend>
@@ -352,9 +352,6 @@
                     <input type="checkbox" id="settings-auto-login"/>
                     <label for="settings-auto-login">Auto Login</label>
                 </fieldset>
-            </div>
-            <div>
-                <input type="button" value="Cancel" id="cancel-settings"/><input type="button" value="Save" id="save-settings"/>
             </div>
         </div>
         <div id="login" class="toolwin login">
