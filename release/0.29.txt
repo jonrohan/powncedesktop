@@ -2,3 +2,6 @@ Date:
 Version: 0.29
 This version has:
 - UI Improvements
+- Settings improvements
+- Native menus
+- form validation

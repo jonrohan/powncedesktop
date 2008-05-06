@@ -583,12 +583,21 @@ span#play-sound {
     margin-left: 60px;
 }
 
-body.fontSize1 .note {
+#font-size-1, #font-size-2, #font-size-3, #font-size-4 {
+	cursor:hand;
+	margin:0 5px 0 5px;
+}
+
+.current-font-size {
+	text-decoration:underline;
+}
+
+body.fontSize1 .note, #font-size-1 {
     font-size: 8pt !important;
     background-position: 0px 0px;
 }
 
-body.fontSize1 #settings-notes-text-size {
+body.fontSize1 #settings-notes-text-size, #font-size-1 {
     font-size: 8pt;
 }
 
@@ -600,12 +609,12 @@ body.fontSize1 .media-link {
     width: 200px;
 }
 
-body.fontSize2 .note {
+body.fontSize2 .note, #font-size-2 {
     font-size: 10pt !important;
     background-position: 0px 3px;
 }
 
-body.fontSize2 #settings-notes-text-size {
+body.fontSize2 #settings-notes-text-size, #font-size-2 {
     font-size: 10pt;
 }
 
@@ -617,12 +626,12 @@ body.fontSize2 .media-link {
     width: 220px;
 }
 
-body.fontSize3 .note {
+body.fontSize3 .note, #font-size-3 {
     font-size: 12pt !important;
     background-position: 0px 5px;
 }
 
-body.fontSize3 #settings-notes-text-size {
+body.fontSize3 #settings-notes-text-size, #font-size-3 {
     font-size: 12pt;
 }
 
@@ -634,12 +643,12 @@ body.fontSize3 .media-link {
     width: 250px;
 }
 
-body.fontSize4 .note {
+body.fontSize4 .note, #font-size-4 {
     font-size: 14pt !important;
     background-position: 0px 5px;
 }
 
-body.fontSize4 #settings-notes-text-size {
+body.fontSize4 #settings-notes-text-size, #font-size-4 {
     font-size: 14pt;
 }
 
