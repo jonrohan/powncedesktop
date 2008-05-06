@@ -7,7 +7,7 @@
 	background:url(pro-small.gif) no-repeat; /* pro tag */
 }
 
-input[type=button],  input[type=submit], #reply-notes, #notes, #favorites, #login-form, #settings-tabs li.tab-selected, #settings .tab-pane, #menu, #menu-new-note,  #menu-view-more, #file-upload-track, #people  {
+input[type=button],  input[type=submit], #reply-notes, #notes, #favorites, #login-form, #settings-tabs li.tab-selected, #settings .tab-pane, #menu, #menu-new-note,  #menu-view-more, #file-upload-track, #people, .tool-divider  {
 	border-color:#2D2920;
 }
 
