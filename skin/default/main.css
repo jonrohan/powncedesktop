@@ -156,7 +156,7 @@ span#play-sound {
 	list-style-type:none;
 }
 
-#toolbar-refresh {
+#toolbar-refresh, #toolbar-refresh-people {
 	background-image: url(images/arrow_rotate_clockwise.png);
 }
 
@@ -235,6 +235,10 @@ span#play-sound {
 
 #toolbar-settings-notes {
     background-image: url(images/comments.png);
+}
+
+#toolbar-clear-favorites {
+    background-image: url(images/bin_empty.png);
 }
 
 .toolbutton {

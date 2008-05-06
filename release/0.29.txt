@@ -4,4 +4,4 @@ This version has:
 - UI Improvements
 - Settings improvements
 - Native menus
-- form validation
+- Form validation
