@@ -55,7 +55,7 @@
         <!-- Status bar message -->
         <div id="statusbar"></div>
 		
-		<div id="toolbar">
+		<div id="toolbar" class="toolbar-icon">
 			<div id="toolbar-logout" class="tool-button-right" title="Logout"></div>
 			<div id="toolbar-settings" class="tool-button-right" title="Settings"></div>
 			<div id="toolbar-notes" class="tool-button" title="Notes"><span>Notes</span></div>
@@ -72,10 +72,10 @@
 				<div id="toolbar-settings-alerts" class="tool-button" title="Alerts"><span>Alerts</span></div>
 			</div>
 			<div id="sub-toolbar-new" class="sub-toolbar">
-				<div id="toolbar-new-message" class="tool-button" title="New Message"><span>New Message</span></div>
-				<div id="toolbar-new-link" class="tool-button" title="New Link"><span>New Link</span></div>
-				<div id="toolbar-new-file" class="tool-button" title="New File"><span>New File</span></div>
-				<div id="toolbar-new-event" class="tool-button" title="New Event"><span>New Event</span></div>
+				<div id="toolbar-new-message" class="tool-button" title="New Message"><span>Message</span></div>
+				<div id="toolbar-new-link" class="tool-button" title="New Link"><span>Link</span></div>
+				<div id="toolbar-new-file" class="tool-button" title="New File"><span>File</span></div>
+				<div id="toolbar-new-event" class="tool-button" title="New Event"><span>Event</span></div>
 				<div class="tool-divider"></div>
 				<div id="toolbar-template" class="tool-select" title="Load Template">
 					<div id="toolbar-template-load" class="tool-button" title="Load Template"><span>Load Template</span></div>
@@ -314,6 +314,8 @@
                     <label style="display:none;" for="settings-hide-offline-users" title="Users who don't have a note on your screen">Hide "offline" users.</label>
                     <input type="checkbox" id="settings-hide-toolbar"/>
                     <label for="settings-hide-toolbar">Hide Toolbar</label>
+                    <input type="checkbox" id="settings-toolbar-text"/>
+                    <label for="settings-toolbar-text">Show Toolbar Icons Text</label>
 					<div>Transparency <span id="settings-app-transparency">95%</span>:</div>
 					<div id="settings-app-transparency-track" style="width:200px; height:10px;">
 						<div id="settings-app-transparency-handle" style="width:5px; height:10px; cursor:move;"></div>
