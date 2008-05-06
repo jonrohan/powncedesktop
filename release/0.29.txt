@@ -1,4 +1,4 @@
-Date: 
+Date: 05.06.2008
 Version: 0.29
 This version has:
 - UI Improvements
