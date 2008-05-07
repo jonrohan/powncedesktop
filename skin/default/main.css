@@ -84,7 +84,7 @@ span#play-sound {
     height: 20px;
     margin-right: 5px;
     cursor: hand;
-	padding-top:2px;
+	padding-top:5px;
 	padding-right:3px;
 	padding-left:20px;
 	background-position:3px center;
@@ -239,6 +239,10 @@ span#play-sound {
 
 #toolbar-clear-favorites {
     background-image: url(images/bin_empty.png);
+}
+
+#toolbar-back {
+    background-image: url(images/arrow_left.png);
 }
 
 .toolbutton {
@@ -840,19 +844,11 @@ body.fontSize4 .media-link {
     display: none;
 }
 
-#back-button {
-    position: absolute;
-    left: 5px;
-    top: 0px;
-    text-decoration: underline;
-    cursor: hand;
-}
-
 #note-detail {
     position: absolute;
     left: 5px;
     right: 5px;
-    top: 20px;
+    top: 0px;
     height: 147px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -979,7 +975,7 @@ body.fontSize4 .media-link {
 
 #reply-notes {
     position: absolute;
-    top: 170px;
+    top: 150px;
     left: 5px;
     right: 170px;
     bottom: 95px;
@@ -1495,7 +1491,7 @@ body.fontSize4 .media-link {
     position: absolute;
     top: 5px;
     left: 10px;
-    font-size: 19pt;
+    font-size: 16pt;
     letter-spacing: -1px;
     font-weight: 400;
 }
@@ -1503,7 +1499,7 @@ body.fontSize4 .media-link {
 #profile-view #profile-username {
     position: absolute;
     left: 10px;
-    top: 34px;
+    top: 30px;
     font-size: 12pt;
     letter-spacing: -1px;
     font-weight: 400;
@@ -1516,28 +1512,33 @@ body.fontSize4 .media-link {
     margin-right: 185px;
 }
 
+#profile-view #profile-last-pownce {
+	line-height:15px;
+	overflow:hidden;
+}
+
 #profile-view #profile-last-pownce span {
-    padding-left: 20px;
-    padding-bottom: 3px;
     cursor: hand;
     height: 20px;
     width: 20px;
+	display:block;
+	float:left;
 }
 
 #profile-view #profile-last-pownce span.link_message {
-    background: url(images/note-message.gif) no-repeat center center;
+    background: url(images/note-message.gif) no-repeat top left;
 }
 
 #profile-view #profile-last-pownce span.link_link {
-    background: url(images/note-link.gif) no-repeat center center;
+    background: url(images/note-link.gif) no-repeat top left;
 }
 
 #profile-view #profile-last-pownce span.link_file {
-    background: url(images/note-file.gif) no-repeat center center;
+    background: url(images/note-file.gif) no-repeat top left;
 }
 
 #profile-view #profile-last-pownce span.link_event {
-    background: url(images/note-event.gif) no-repeat center center;
+    background: url(images/note-event.gif) no-repeat top left;
 }
 
 #profile-view #profile-blurb, #profile-view #profile-member-join {
