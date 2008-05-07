@@ -1,0 +1,5 @@
+Date: 04.19.2008
+Version: 0.23
+This version has:
+- Profile View, view any user in the app before visiting website
+- Emoticons
