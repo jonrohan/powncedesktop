@@ -1,3 +1,9 @@
+Date: 05.08.2008
+Version: 0.30
+This version has:
+- Bug Fix: Logging in problem
+- View Photo in Separate Window (Flickr)
+
 Date: 05.06.2008
 Version: 0.29
 This version has:
