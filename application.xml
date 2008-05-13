@@ -21,7 +21,7 @@
         <x>200</x>
         <y>200</y>
         <minSize>370 400</minSize>
-        <maxSize>1280 1024</maxSize>
+        <!--maxSize>1280 1024</maxSize-->
     </initialWindow>
     
     <!-- The subpath of the standard default installation location to use. Optional. -->
