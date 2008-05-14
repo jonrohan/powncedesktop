@@ -1,7 +1,7 @@
-Date: 
+Date: 05.14.2008
 Version: 0.31
 This version has:
-- Bug Fix: Logging in problem
-- Peeps stored in Database for faster access and less strain on the API
+- Bug Fix: Popup login box
+- Peeps stored in DB for quick access and less strain on the API
 - Code cleaning and refactoring
-- 
+- Send files to public
