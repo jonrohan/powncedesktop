@@ -1513,16 +1513,22 @@ body.fontSize4 .media-link {
 }
 
 #profile-view #profile-last-pownce {
-	line-height:15px;
 	overflow:hidden;
 }
 
 #profile-view #profile-last-pownce span {
     cursor: hand;
-    height: 20px;
+    height: 16px;
     width: 20px;
 	display:block;
 	float:left;
+	margin:0px;
+}
+
+#profile-view #profile-last-pownce p {
+	line-height:17px;
+	margin:0px;
+	display:inline;
 }
 
 #profile-view #profile-last-pownce span.link_message {
