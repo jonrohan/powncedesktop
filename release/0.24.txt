@@ -1,9 +1,0 @@
-Date: 04.23.2008
-Version: 0.24
-This version has:
-- Bug Fix: Friend Request Confirm on profile view.
-- Bug Fix: Event time/date format
-- Bug Fix: Music/file view colors
-- Remember Size and Position from previous logon
-- Refresh button
-- Set Transparency
