@@ -1,0 +1,7 @@
+* Add Growl support to the mac version of the AIR Client - JakeCarter
+* Tabbed interface to avoid drop-down menues for other options; such as one for settings, another for the event reminders and other social network profiles, and another for notes. - Ash Laws
+* Add spelling correction functionality :) - btard
+* Show number of views or downloads for links and files, as on the website. - Ash Laws
+* Desktop notifications (explanation here) Tony Miller
+* Replies should include a link to the note the reply belongs to - Horst Gutmann
+* Web page thumbnail previews - Cupcake 5961
