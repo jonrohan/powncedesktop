@@ -1,6 +1,0 @@
-Date: 04.26.2008
-Version: 0.26
-This version has:
-- Bug Fix: Collapsed notes has recipients tag visible
-- Icon redesign
-- Update points to new website

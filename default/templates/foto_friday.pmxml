@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<pmtemplate>
-<name>Foto Friday</name>
-<type>link</type>
-<to>public</to>
-<body><![CDATA[[Foto Friday - Usually a picture taken during the week]
-
-]]></body>
-</pmtemplate>
