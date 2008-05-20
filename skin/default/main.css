@@ -43,23 +43,6 @@ span#play-sound {
     text-decoration: underline;
 }
 
-#divTop {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    height: 49px;
-}
-
-#divBar {
-    position: absolute;
-    z-index: 2000;
-    left: 0px;
-    top: 0px;
-    height: 20px;
-    width: 20px;
-}
-
 #toolbar {
     display: none;
     position: absolute;
@@ -240,14 +223,6 @@ span#play-sound {
 .toolbutton {
     padding: 5px 5px 5px 20px;
     cursor: hand;
-}
-
-#divContentStrip {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
 }
 
 #settings-decrease-font-size, #settings-increase-font-size {
@@ -2271,6 +2246,5 @@ body.fontSize4 .media-link {
     bottom: 28px;
     z-index: 3001;
     padding: 0px;
-	border:1px solid red;
 }
 
