@@ -1,3 +1,9 @@
+Date: 06/10/2008
+Version: 0.35
+This version has:
+- Fixed: Login problems by using 2.0 api sacrifices embeds for now
+- Fixed: File note type json structure changes
+
 Date: 05/19/2008
 Version: 0.32
 This version has:
