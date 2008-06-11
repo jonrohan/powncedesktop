@@ -2,14 +2,14 @@
 <application xmlns="http://ns.adobe.com/air/application/1.0">
     
     <id>PownceDesktop</id>
-    <filename>Pownce Desktop</filename>
-    <name>Pownce Desktop</name>
-    <version>0.32</version>
-    <description>The purpose of this project is to supply a chat client for Pownce.</description>
-    <copyright>Copyright (c) 2008 Megatechtronium</copyright>
+    <filename>Pownce</filename>
+    <name>Pownce</name>
+    <version>2.0</version>
+    <description>Pownce is a way to send stuff to your friends. What kind of stuff? You can send just about anything: music, photos, messages, links, events, and more.</description>
+    <copyright>Copyright (c) 2008 Megatechtronium Inc.</copyright>
     <initialWindow>
         <content>PownceDesktop.html</content>
-        <title>Pownce Desktop</title>
+        <title>Pownce</title>
         <systemChrome>standard</systemChrome>
         <transparent>false</transparent>
         <visible>true</visible>
