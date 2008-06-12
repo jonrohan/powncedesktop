@@ -315,6 +315,12 @@ div.tooltip {
 
 /************** BEGIN New View ****************/
 
+#new-view {
+	background-color: #EAE6D3;
+	top: 30px;
+	bottom: 22px;
+}
+
 #new-view .new-button {
 	float:left;
 	
