@@ -195,9 +195,9 @@ div.tooltip {
 	border-bottom: 1px solid #cfcfcf;
 }
 
-#notes .imglnk {
+#notes li .imglnk {
 	position: absolute;
-	left: 3px;
+	left: 6px;
 	top: 6px;
 }
 
@@ -217,7 +217,6 @@ div.tooltip {
 	padding: 2px;
 	width: 24px;
 	height: 24px;
-	margin-left: 5px;
 }
 
 #notes .recipients {
@@ -225,8 +224,37 @@ div.tooltip {
 	float: right;
 	color: #fff;
 	padding: 5px 5px 3px 5px;
-	margin: -10px 10px 5px 10px;
-	font-size: 9px !important;
+	margin: -10px -2px 5px 10px;
+	font-size: 10px !important;
+	-webkit-border-bottom-right-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+}
+
+#notes li .media-link {
+	min-height: 1.3em;
+}
+
+#notes li .media-link a {
+	background: #8fb4c7;
+	color: #355362;
+	-webkit-border-radius: 3px;
+	font-size: 10px !important;
+	padding: 3px 14px;
+	margin: 10px 0 6px 0;
+}
+
+#notes li .media-object {
+	margin-bottom: 10px;
+}
+
+#notes li .bottomdetails {
+	padding-top: 6px;
+	text-align: right;
+}
+
+#notes li .bottomdetails a {
+	margin-left: 1em;
+	font-weight: bold;
 }
 
 /************** END Notes View ****************/
