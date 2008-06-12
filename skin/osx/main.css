@@ -1,0 +1,262 @@
+/**
+ * Pownce Desktop Style
+ * 
+ * TOC
+ * - Login Win
+ * - Statusbar
+ * - Toolbar
+ * - Tool win
+ * - Notes View
+ * 
+ */
+
+
+a {
+	color:#004899;
+	text-decoration:none;
+	cursor:hand;
+}
+
+
+body {
+	font-family:"Lucida Grande";
+}
+
+.toolwin, .messagewin {
+	display:none;
+}
+
+div.tooltip {
+    padding: 2px 5px 2px 5px;
+    margin: 5px;
+    background-color: #FFFFDD;
+    border: 1px dotted #AAAAAA;
+    z-index: 6;
+    color: #394244;
+}
+
+/************** BEGIN Login Win ***************/
+.login {
+	background-color:#cfcfcf;
+	position:absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 22px;
+}
+
+.login div {
+	border-top: 1px inset #000;
+	margin:0 20px 0 20px;
+	padding: 30px 0 0 0;
+	text-align:center;
+}
+
+.login input[type=button] {
+	padding: 6px 20px;
+}
+
+.login img {
+	vertical-align: middle;
+}
+
+.login form {
+	margin: 30px 30px 0px 30px;
+}
+
+.login form div {
+	border:none;
+	margin:0 0 12px 0;
+	text-align:left;
+	padding: 0;
+}
+
+.login form label {
+	display: block;
+	margin-top: 3px;
+	font-weight: bold;
+	font-size: 7pt;
+}
+
+.login form input[type=text], .login form input[type=password] {
+	display:block;
+	font-size: 12pt;
+	width: 300px;
+	border:1px solid #7e7e7e;
+	padding: 3px 5px;
+}
+
+.login form input[type=checkbox] {
+	float: left;
+	clear: both;
+}
+
+.login form a {
+	float: right;
+	margin-top: 8px;
+}
+
+/************** END Login Win ****************/
+
+
+
+/************** BEGIN Statusbar ****************/
+
+#statusbar {
+	background-color: #cfcfcf;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #878787;
+	height: 22px;
+	padding: 0 0 0 10px;
+}
+
+#statusbar #status-message {
+	margin-top: 3px;
+}
+
+/************** END Statusbar ****************/
+
+
+/************** BEGIN Toolbar ****************/
+#toolbar {
+	background-color: #cfcfcf;
+	border-bottom: 1px solid #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-left: 10px;
+}
+
+#toolbar .toolbutton {
+	width: 30px;
+	height: 30px;
+	float: left;
+	padding-right: 3px;
+}
+
+#toolbar .selected-toolbutton {
+	background: url(images/selected-toolbutton.png) no-repeat top left;
+}
+
+/************** END Toolbar ****************/
+
+
+
+/************** BEGIN Tool win ****************/
+.toolwin {
+	position: absolute;
+	top: 31px;
+	left: 0;
+	right: 0;
+	bottom: 23px;
+	overflow: auto;
+}
+/************** END Tool win ****************/
+
+/************** BEGIN Notes View ****************/
+
+/*
+ * Note HTML Layout
+ * 
+ * <li>
+ * 		<div class="note link">
+ * 			<div class="recipients">Public</div>
+ * 			<a class="imglnk">
+ * 				<img src="http://api.pownce.com/profile_photos/b/l/o/blogkitten/14596_small.jpg">
+ * 			</a>
+ * 			<p>NOTE BODY</p>
+ * 			<div class="media-object">
+ * 				<a class="media-object-link">
+ * 					{embed object or image}
+ * 				</a>
+ * 			</div>
+ * 			<a class="media-link" href="#">http://blog.pownce.com/20...</a>
+ * 			<div class="bottomdetails"><a href="#" style="color: rgb(0, 72, 153); " id="2436127_replies">1 Reply</a><a style="color: rgb(0, 72, 153); " href="#" class="forwardlink">Forward</a><a style="color: rgb(0, 72, 153); " href="#" class="favoritelink">Favorite</a></div>
+ * 		</div>
+ * </li>
+ * 
+ */
+
+#notes {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#notes li {
+	padding: 6px 6px 6px 43px;
+	margin: 0;
+	display:block;
+	overflow: hidden;
+	text-overflow: ellipsis;	
+	position: relative;
+	border-bottom: 1px solid #cfcfcf;
+}
+
+#notes li .imglnk {
+	position: absolute;
+	left: 6px;
+	top: 6px;
+}
+
+#notes li p {
+	margin-top: 0;
+}
+
+#notes li .media-object img {
+	max-width: 90%;
+	border: 1px solid #8fb4c7;
+	padding: 2px;
+}
+
+#notes .imglnk img {
+	-webkit-border-radius: 3px;
+	border: 1px solid #8fb4c7;
+	padding: 2px;
+	width: 24px;
+	height: 24px;
+}
+
+#notes .recipients {
+	background: #999;
+	float: right;
+	color: #fff;
+	padding: 5px 5px 3px 5px;
+	margin: -10px -2px 5px 10px;
+	font-size: 10px !important;
+	-webkit-border-bottom-right-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+}
+
+#notes li .media-link {
+	min-height: 1.3em;
+	margin: 10px 0 6px 0;
+}
+
+#notes li div.media-link a {
+	background: #8fb4c7;
+	color: #355362;
+	-webkit-border-radius: 3px;
+	font-size: 10px !important;
+	padding: 3px 14px;
+}
+
+#notes li .media-object {
+	margin-bottom: 10px;
+}
+
+#notes li .bottomdetails {
+	padding-top: 6px;
+	text-align: right;
+}
+
+#notes li .bottomdetails a {
+	margin-left: 1em;
+	font-weight: bold;
+}
+
+/************** END Notes View ****************/

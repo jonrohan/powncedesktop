@@ -1,0 +1,97 @@
+/** Page Text Color: #DAD8D1 **/
+/** Input box border color: #51575C **/
+/** Background Color: #424241 **/
+/** tab background color: #505050 **/
+/** Media link background: #51575C **/
+
+/** IMAGES **/
+
+#divTopRight {
+    background: url(ne.png) top right;
+}
+
+#divBar {
+    background: url(nw.png) top left;
+}
+
+#divClose {
+    background: url('close.png') no-repeat; /* close button */
+}
+
+#divMin {
+    background: url('min.png') no-repeat; /* min button */
+}
+
+#divMax {
+    background: url('max.png') no-repeat; /* max button */
+}
+
+.stars {
+    background: transparent url(stars-small.gif) repeat-x scroll 0pt -100px;
+}
+
+.stars-05, .stars-10, .stars-15, .stars-20, .stars-25, .stars-30, .stars-35, .stars-40, .stars-45, .stars-50 {
+    background: transparent url(stars-small.gif) repeat-x scroll 0pt 0px;
+}
+
+.disclose-open {
+    background: url(disclose-open.png) no-repeat; /* disclose open image */
+}
+
+.disclose-close {
+    background: url(disclose-close.png) no-repeat; /* disclose close image */
+}
+
+#divBottomLeft {
+    background: url(sw.png) no-repeat bottom left; /* bottom left corner image */
+}
+
+#divHandle {
+    background: url(resize-handle.png) no-repeat; /* resize handle image */
+}
+
+/** Colors **/
+
+.filter, .private-to-you {
+	background-color:#FEF290;
+	color:#6B6008;
+}
+
+body, pre, #menu li:hover #menu-new-note, #menu li:hover #menu-view-more {
+    color: #DAD8D1;
+}
+
+input[type=text], input[type=password], textarea, .nexpanded .note a.imglnk, .nexpanded .note, #replynotesummary, #note-detail-body p:hover, #note-detail, #user-note-image, .note-system-message img, #sendtohead, .image img, #people h3, #reply-people h3, #request-div, .messagewin, #request-img img, #leftwintitle, #people ul li img, #reply-people ul li img, #filter-div, .person, .person .img-link img, #profile-view #profile-image img, #profile-view h3 {
+    border-color: #51575C;
+}
+
+#note-detail-body p {
+    border-bottom-color: #51575C !important;
+}
+
+#divTop, #divContentStrip, #menu, #menu-new-note, #menu-view-more, #statusbar, .toolwin, .messagewin, #note-detail-body p:hover {
+    background: #424241 url('head-bg.png');
+}
+
+.media-link {
+    background-color: #51575C;
+    color: #fff;
+}
+
+#settings-tabs li.tab-selected, #settings .tab-pane, #menu .menu-divider, #menu .menu-divider:hover, #login-form, #reply-notes, #favorites, #notes, #people, .tool-selected, .sub-toolbar {
+    background-color: #505050 !important;
+}
+
+.nexpanded .reply, #settings-app-transparency-track {
+    background-color: #51575C;
+}
+
+.ntt-selected {
+    color: #fff; /* new note button text color */
+    background-color: #2C4872 !important; /* new note background color */
+    font-weight: bold;
+}
+
+#people ul li, #reply-people ul li {
+    color: #51575C; /* people list text color */
+}
