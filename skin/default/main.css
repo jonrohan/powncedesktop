@@ -73,7 +73,9 @@ div.tooltip {
 
 .login form label {
 	display: block;
-	margin-top:3px;
+	margin-top: 3px;
+	font-weight: bold;
+	font-size: 7pt;
 }
 
 .login form input[type=text], .login form input[type=password] {
@@ -186,7 +188,7 @@ div.tooltip {
 }
 
 #notes li {
-	padding: 6px 6px 6px 45px;
+	padding: 6px 6px 6px 43px;
 	margin: 0;
 	display:block;
 	overflow: hidden;
@@ -232,15 +234,15 @@ div.tooltip {
 
 #notes li .media-link {
 	min-height: 1.3em;
+	margin: 10px 0 6px 0;
 }
 
-#notes li .media-link a {
+#notes li div.media-link a {
 	background: #8fb4c7;
 	color: #355362;
 	-webkit-border-radius: 3px;
 	font-size: 10px !important;
 	padding: 3px 14px;
-	margin: 10px 0 6px 0;
 }
 
 #notes li .media-object {
