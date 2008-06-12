@@ -39,59 +39,59 @@ div.tooltip {
 .login {
 	background-color:#cfcfcf;
 	position:absolute;
-	top:0px;
-	left:0px;
-	right:0px;
-	bottom:22px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 22px;
 }
 
 .login div {
-	border-top:1px inset #000;
+	border-top: 1px inset #000;
 	margin:0 20px 0 20px;
-	padding:30px 0 0 0;
+	padding: 30px 0 0 0;
 	text-align:center;
 }
 
 .login input[type=button] {
-	padding:5px 20px 5px 20px;
+	padding: 6px 20px;
 }
 
 .login img {
-	vertical-align:middle;
+	vertical-align: middle;
 }
 
 .login form {
-	margin:30px 30px 0px 30px;
+	margin: 30px 30px 0px 30px;
 }
 
 .login form div {
 	border:none;
 	margin:0 0 12px 0;
 	text-align:left;
-	padding:0 0 0 0;
+	padding: 0;
 }
 
 .login form label {
-	display:block;
+	display: block;
 	margin-top:3px;
 }
 
 .login form input[type=text], .login form input[type=password] {
 	display:block;
-	font-size:12pt;
-	width:300px;
+	font-size: 12pt;
+	width: 300px;
 	border:1px solid #7e7e7e;
-	padding:3px 5px 3px 5px;
+	padding: 3px 5px;
 }
 
 .login form input[type=checkbox] {
-	float:left;
-	clear:both;
+	float: left;
+	clear: both;
 }
 
 .login form a {
-	float:right;
-	margin-top:8px;
+	float: right;
+	margin-top: 8px;
 }
 
 /************** END Login Win ****************/
@@ -101,54 +101,57 @@ div.tooltip {
 /************** BEGIN Statusbar ****************/
 
 #statusbar {
-	background-color:#cfcfcf;
-	position:absolute;
-	bottom:0px;
-	left:0px;
-	right:0px;
-	border-top:1px solid #878787;
-	height:22px;
-	padding:0px 0px 0px 10px;
+	background-color: #cfcfcf;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #878787;
+	height: 22px;
+	padding: 0 0 0 10px;
 }
 
 #statusbar #status-message {
-	margin-top:3px;
+	margin-top: 3px;
 }
 
 /************** END Statusbar ****************/
 
+
 /************** BEGIN Toolbar ****************/
 #toolbar {
-	background-color:#cfcfcf;
-	border-bottom:1px solid #000;
-	position:absolute;
-	top:0px;
-	left:0px;
-	right:0px;
-	padding-left:10px;
+	background-color: #cfcfcf;
+	border-bottom: 1px solid #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-left: 10px;
 }
 
 #toolbar .toolbutton {
-	width:30px;
-	height:30px;
-	float:left;
-	padding-right:3px;
+	width: 30px;
+	height: 30px;
+	float: left;
+	padding-right: 3px;
 }
 
 #toolbar .selected-toolbutton {
-	background:url(images/selected-toolbutton.png) no-repeat top left;
+	background: url(images/selected-toolbutton.png) no-repeat top left;
 }
 
 /************** END Toolbar ****************/
 
+
+
 /************** BEGIN Tool win ****************/
 .toolwin {
-	position:absolute;
-	top:31px;
-	left:0px;
-	right:0px;
-	bottom:23px;
-	overflow:auto;
+	position: absolute;
+	top: 31px;
+	left: 0;
+	right: 0;
+	bottom: 23px;
+	overflow: auto;
 }
 /************** END Tool win ****************/
 
@@ -177,44 +180,53 @@ div.tooltip {
  */
 
 #notes {
-	margin:0px;
-	padding:0px;
-	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 #notes li {
-	padding:0px;
-	margin:0px;
-	display:block;	
-}
-
-#notes .note {
-	border-bottom:1px solid #cfcfcf;
-	padding:0 0 10px 0;
+	padding: 6px 6px 6px 45px;
+	margin: 0;
+	display:block;
+	overflow: hidden;
+	text-overflow: ellipsis;	
+	position: relative;
+	border-bottom: 1px solid #cfcfcf;
 }
 
 #notes .imglnk {
-	float:left;
+	position: absolute;
+	left: 3px;
+	top: 6px;
+}
+
+#notes li p {
+	margin-top: 0;
+}
+
+#notes li .media-object img {
+	max-width: 90%;
+	border: 1px solid #8fb4c7;
+	padding: 2px;
 }
 
 #notes .imglnk img {
 	-webkit-border-radius: 3px;
-	border:1px solid #cfcfcf;
-	padding:2px;
-	width:24px;
-	height:24px;
-	margin-left:5px;
-}
-
-#notes .note p {
-	margin-left:45px;
+	border: 1px solid #8fb4c7;
+	padding: 2px;
+	width: 24px;
+	height: 24px;
+	margin-left: 5px;
 }
 
 #notes .recipients {
-	background-color:#ababab;
-	float:right;
-	color:#fff;
-	padding:3px 5px 3px 5px;
-	margin:0 10px 0 10px;
+	background: #999;
+	float: right;
+	color: #fff;
+	padding: 5px 5px 3px 5px;
+	margin: -10px 10px 5px 10px;
+	font-size: 9px !important;
 }
+
 /************** END Notes View ****************/
