@@ -69,6 +69,18 @@
 			</div>
 		</div>
 		
+		<div id="screen" class="transparent-screen"></div>
+		
+		<div id="dialog" class="dialog">
+			<img src="icons/icon32.png"/>
+			<h3 id="dialog-title">What do you think?</h3>
+			<p id="dialog-message">
+				Should we do something really important or should we wait a while?
+			</p>
+			<input id="dialog-ok" type="button" value="OK"/>
+			<input onclick="chat.cancelDialog();" type="button" value="Cancel"/>
+		</div>
+		
 		<div id="forward-note" class="messagewin">
 			<div id="forward-div">
 				<h3 id="forward-confirm">Forward a Note</h3>
@@ -193,29 +205,46 @@
 	        <ul id="favorites"></ul>
 		</div>
 		
+		<div id="new-view" class="toolwin new-message-type">
+			<div>
+				<div id="new-message" class="new-button new-selected">
+					Message
+				</div>
+				<div id="new-link" class="new-button">
+					Link
+				</div>
+				<div id="new-file" class="new-button">
+					File
+				</div>
+				<div id="new-event" class="new-button">
+					Event
+				</div>
+			</div>
+            <div id="when">
+                <input type="text" value="" id="time"/> on <input type="text" value="" id="date"/>
+            </div>
+			<input type="hidden" id="note-type" value="message"/>
+            <input type="text" value="What's Happening?" id="what" onfocus="if(this.value=='What\'s Happening?')this.value='';" onblur="if(this.value==''||this.value=='What\'s Happening?')this.value='What\'s Happening?';"/>
+			<input type="text" value="Where at?" id="where" onfocus="if(this.value=='Where at?')this.value='';" onblur="if(this.value==''||this.value=='Where at?')this.value='Where at?';"/>
+			<input type="text" value="http://" id="url" onfocus="if(this.value=='http://')this.value='';" onblur="if(this.value==''||this.value=='http://')this.value='http://';"/>
+			<div id="file"><input type="button" id="file-browse" value="browse"/><input type="text" id="file-url" disabled="true"/></div>
+			<div id="file-upload-progress">
+				<div id="file-upload-message"></div>
+				<div id="file-upload-track">
+					<div id="file-upload-bar">&nbsp;</div>
+				</div>
+			</div>
+	        <textarea id="body" onfocus="if(this.value=='post a note...')this.value='';" onblur="if(this.value==''||this.value=='post a note...')this.value='post a note...';">post a note...</textarea>
+			<div id="send-to-box">
+	            Send to: <input type="text" id="send-to-text" value="the public"/>
+				<input type="hidden" id="send-to-id" value="public"/>
+				<ul id="send-to-filter" style="display:none;"></ul>
+	        </div>
+			<input id="postit" type="button" value="Post it!"/>
+		</div>
+		
 		<div id="DELETEMELATER" style="display:none;">
 			<div id="new-box" class="ca-type-message">
-	            <div id="when">
-	                <input type="text" value="" id="time"/> on <input type="text" value="" id="date"/>
-	            </div>
-				<input type="hidden" id="note-type" value="message"/>
-	            <input type="text" value="What's Happening?" id="what" onfocus="if(this.value=='What\'s Happening?')this.value='';" onblur="if(this.value==''||this.value=='What\'s Happening?')this.value='What\'s Happening?';"/>
-				<input type="text" value="Where at?" id="where" onfocus="if(this.value=='Where at?')this.value='';" onblur="if(this.value==''||this.value=='Where at?')this.value='Where at?';"/>
-				<input type="text" value="http://" id="url" onfocus="if(this.value=='http://')this.value='';" onblur="if(this.value==''||this.value=='http://')this.value='http://';"/>
-		        <textarea id="body" onfocus="if(this.value=='post a note...')this.value='';" onblur="if(this.value==''||this.value=='post a note...')this.value='post a note...';">post a note...</textarea>
-				<div id="file"><input type="button" id="file-browse" value="browse"/><input type="text" id="file-url" disabled="true"/></div>
-				<div id="file-upload-progress">
-					<div id="file-upload-message"></div>
-					<div id="file-upload-track">
-						<div id="file-upload-bar">&nbsp;</div>
-					</div>
-				</div>
-				<div id="send-to-box">
-		            Send to: <input type="text" id="send-to-text" value="the public"/>
-					<input type="hidden" id="send-to-id" value="public"/>
-					<ul id="send-to-filter" style="display:none;"></ul>
-		        </div>
-				<input id="postit" type="button" value="Post it!"/>
 			</div>
 			<div id="filter-box" class="filter">
 				filter: <span id="filter-message">type:message,links user:dburka</span>

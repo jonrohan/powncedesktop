@@ -7,6 +7,8 @@
  * - Toolbar
  * - Tool win
  * - Notes View
+ * - Dialog Style
+ * - New View
  * 
  */
 
@@ -24,6 +26,10 @@ body {
 
 .toolwin, .messagewin {
 	display:none;
+}
+
+input[type=button] {
+	padding: 6px 20px;
 }
 
 div.tooltip {
@@ -50,10 +56,6 @@ div.tooltip {
 	margin:0 20px 0 20px;
 	padding: 30px 0 0 0;
 	text-align:center;
-}
-
-.login input[type=button] {
-	padding: 6px 20px;
 }
 
 .login img {
@@ -254,9 +256,68 @@ div.tooltip {
 	text-align: right;
 }
 
-#notes li .bottomdetails a {
+#notes li .bottomdetails a, #notes li .bottomdetails span {
 	margin-left: 1em;
 	font-weight: bold;
 }
 
 /************** END Notes View ****************/
+
+/************** BEGIN Dialog Style ****************/
+
+.transparent-screen {
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#cfcfcf;
+	opacity: 0.7;
+	z-index:7;
+}
+
+.dialog {
+	display:none;
+	background-color: #EAE6D3;
+	position:absolute;
+	top:50px;
+    left: 1%;
+    right: 1%;
+	margin-left:auto;
+	margin-right:auto;
+	width:280px;
+	z-index:8;
+	border:2px solid #000;
+	-webkit-border-radius: 6px;
+	-webkit-box-shadow: 15px 15px 10px #000;
+	opacity:1;
+	padding:20px 10px 15px 10px;
+}
+
+.dialog img {
+	float:left;
+}
+
+.dialog input {
+	float:right;
+}
+
+.dialog h3 {
+	margin-left:40px;
+}
+
+.dialog p {
+	margin-left:40px;
+}
+
+/************** END Dialog Style ****************/
+
+/************** BEGIN New View ****************/
+
+#new-view .new-button {
+	float:left;
+	
+}
+
+/************** END New View ****************/
