@@ -326,4 +326,21 @@ div.tooltip {
 	
 }
 
+#new-view .new-toolbar {
+	height:30px;
+	padding-left:10px;
+}
+
+#new-view .new-button {
+	margin-right: 1em;
+	padding:5px 10px 5px 25px;
+	cursor:hand;
+}
+
+#new-view .new-selected {
+	background-color:#ededed;
+	border:1px inset #000;
+	-webkit-border-radius:3px;
+}
+
 /************** END New View ****************/
