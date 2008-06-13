@@ -36,6 +36,7 @@
 		
         <!-- Status bar message -->
         <div id="statusbar">
+			<div id="refresh-button">Refresh</div>
         	<div id="status-message"></div>
         </div>
 		
@@ -236,12 +237,12 @@
 			</div>
 	        <textarea id="body" onfocus="if(this.value=='post a note...')this.value='';" onblur="if(this.value==''||this.value=='post a note...')this.value='post a note...';">post a note...</textarea>
 			<input id="cancel-new" type="button" value="Cancel"/>
+			<input id="postit" type="button" value="Post it!"/>
 			<div id="send-to-box">
 	            <input type="text" id="send-to-text" value="the public"/>
 				<input type="hidden" id="send-to-id" value="public"/>
 				<ul id="send-to-filter" style="display:none;"></ul>
 	        </div>
-			<input id="postit" type="button" value="Post it!"/>
 		</div>
 		
 		<div id="DELETEMELATER" style="display:none;">

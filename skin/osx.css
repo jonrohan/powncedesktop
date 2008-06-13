@@ -119,6 +119,14 @@ div.tooltip {
 	margin-top: 3px;
 }
 
+#statusbar #refresh-button {
+	display:none;
+	float:right;
+	cursor:hand;
+	padding-top:4px;
+	padding-right:15px;
+}
+
 /************** END Statusbar ****************/
 
 
