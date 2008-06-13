@@ -7,6 +7,8 @@
  * - Toolbar
  * - Tool win
  * - Notes View
+ * - Dialog Style
+ * - New View
  * 
  */
 
@@ -17,12 +19,17 @@ a {
 	cursor:hand;
 }
 
+
 body {
 	font-family:"Lucida Grande";
 }
 
 .toolwin, .messagewin {
 	display:none;
+}
+
+input[type=button] {
+	padding: 6px 20px;
 }
 
 div.tooltip {
@@ -49,10 +56,6 @@ div.tooltip {
 	margin:0 20px 0 20px;
 	padding: 30px 0 0 0;
 	text-align:center;
-}
-
-.login input[type=button] {
-	padding: 6px 20px;
 }
 
 .login img {
@@ -114,6 +117,14 @@ div.tooltip {
 
 #statusbar #status-message {
 	margin-top: 3px;
+}
+
+#statusbar #refresh-button {
+	display:none;
+	float:right;
+	cursor:hand;
+	padding-top:4px;
+	padding-right:15px;
 }
 
 /************** END Statusbar ****************/
@@ -259,3 +270,156 @@ div.tooltip {
 }
 
 /************** END Notes View ****************/
+
+/************** BEGIN Dialog Style ****************/
+
+.transparent-screen {
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#cfcfcf;
+	opacity: 0.7;
+	z-index:7;
+}
+
+.dialog {
+	display:none;
+	background-color: #cfcfcf;
+	position:absolute;
+	top:50px;
+    left: 1%;
+    right: 1%;
+	margin-left:auto;
+	margin-right:auto;
+	width:280px;
+	z-index:8;
+	border:2px solid #000;
+	-webkit-border-radius: 6px;
+	-webkit-box-shadow: 15px 15px 10px #000;
+	opacity:1;
+	padding:20px 10px 15px 10px;
+}
+
+.dialog img {
+	float:left;
+}
+
+.dialog input {
+	float:right;
+}
+
+.dialog h3 {
+	margin-left:40px;
+}
+
+.dialog p {
+	margin-left:40px;
+}
+
+/************** END Dialog Style ****************/
+
+/************** BEGIN New View ****************/
+
+#new-view {
+	background-color: #cfcfcf;
+	top: 30px;
+	bottom: 22px;
+}
+
+#new-view .new-button {
+	float:left;
+	
+}
+
+#new-view .new-toolbar {
+	height:30px;
+	padding-left:10px;
+}
+
+#new-view .new-button {
+	margin-right: 1em;
+	padding:5px 10px 5px 25px;
+	cursor:hand;
+}
+
+#new-view .new-selected {
+	background-color:#ededed;
+	border:1px inset #000;
+	-webkit-border-radius:3px;
+}
+
+#new-message {
+	background:url(images/new-message.png) no-repeat 5px center;
+}
+
+#new-link {
+	background:url(images/new-link.png) no-repeat 5px center;
+}
+
+#new-file {
+	background:url(images/new-file.png) no-repeat 5px center;
+}
+
+#new-event {
+	background:url(images/new-event.png) no-repeat 5px center;
+}
+
+.new-message-type #when, .new-message-type #what, .new-message-type #where, .new-message-type #url, .new-message-type #file,
+.new-link-type #when, .new-link-type #what, .new-link-type #where, .new-link-type #file,
+.new-file-type #when, .new-file-type #what, .new-file-type #where, .new-file-type #url, 
+.new-event-type #url, .new-event-type #file {
+	display:none;
+}
+
+#send-to-filter, #forward-to-filter {
+	position:relative;
+	background-color:#fff;
+	z-index:4000;
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+	border:1px solid #eee;
+	height:200px;
+	width:200px;
+	overflow:auto;
+	margin-top:-2px;
+	margin-left:45px;
+	margin-bottom:-200px;
+	color: #394244;
+}
+
+#forward-to-filter {
+	margin-left:55px;
+}
+
+#send-to-filter li, #forward-to-filter li {
+	margin:0px;
+	padding:5px;
+	cursor:hand;
+	border-bottom:1px solid #eee;
+	height:30px;
+}
+
+#send-to-filter li:hover, #send-to-filter #selectedsendto, #forward-to-filter li:hover, #forward-to-filter #selectedsendto {
+	background-color:#C2D7EF;
+}
+
+#send-to-filter .photo, #forward-to-filter .photo {
+	float:left;
+	margin-right:5px;
+}
+
+#send-to-filter .name, #forward-to-filter .name {
+	font-weight:normal;
+	font-size:10pt;
+}
+
+#send-to-filter .username, #forward-to-filter .username {
+	font-weight:normal;
+	font-size:8pt;
+}
+
+/************** END New View ****************/
