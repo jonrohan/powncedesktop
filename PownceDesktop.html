@@ -33,7 +33,7 @@
             }
 		</script>
     </head>
-    <body class="fontSize2">
+    <body>
 		
         <!-- Status bar message -->
         <div id="statusbar">
@@ -62,7 +62,9 @@
 			</div>
 		</div>
 		
-		<div id="alert-box" class="messagewin">
+		<div id="screen" class="transparent-screen"></div>
+
+		<div id="alert-box" class="dialog-info">
 			<div id="alert-div">
 				<h3>Alert!</h3>
 				<img src="icons/icon128.png" width="60px" height="60px"/>
@@ -71,16 +73,14 @@
 			</div>
 		</div>
 		
-		<div id="screen" class="transparent-screen"></div>
-		
-		<div id="dialog" class="dialog">
+		<div id="dialog" class="dialog-confirm">
 			<img src="icons/icon32.png"/>
 			<h3 id="dialog-title">What do you think?</h3>
 			<p id="dialog-message">
 				Should we do something really important or should we wait a while?
 			</p>
 			<input id="dialog-ok" type="button" value="OK"/>
-			<input onclick="chat.cancelDialog();" type="button" value="Cancel"/>
+			<input onclick="chat.cancelDialog(this.parent, this.parent.getElementsByTagName("input")[0]);" type="button" value="Cancel"/>
 		</div>
 		
 		<div id="forward-note" class="messagewin">
