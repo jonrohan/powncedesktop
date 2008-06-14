@@ -83,7 +83,7 @@ div.tooltip {
 	display:block;
 	font-size: 12pt;
 	width: 300px;
-	border:1px solid #7e7e7e;
+	border: 1px solid #7e7e7e;
 	padding: 3px 5px;
 }
 
@@ -269,11 +269,13 @@ div.tooltip {
 	margin-left: 1em;
 	font-weight: bold;
 	font-size: 8pt;
+	word-spacing: -0.2em;
 }
 
 #notes li .bottomdetails span {
 	margin-left: 1em;
 	font-size: 8pt;
+	word-spacing: -0.2em;
 }
 
 .note-forward, .note-delete, .note-favorite {
@@ -300,6 +302,11 @@ div.tooltip {
 
 #notes .reply .note-delete {
 	left: -2px;
+}
+
+#notes .reply {
+	background: #eee;
+	color: #666;
 }
 
 #notes li:hover .note-delete, #notes li:hover .note-favorite, #notes li:hover .note-forward {
@@ -443,8 +450,10 @@ input.button-1 {
 
 #send-to-text {
 	padding: 5px;
-	margin-top: 2px;
+	margin-top: 4px;
+	width: 150px;
 }
+
 
 #new-message {
 	background:url(images/new-message.png) no-repeat 5px center;
@@ -478,24 +487,23 @@ input.button-1 {
 	list-style-type:none;
 	border:1px solid #eee;
 	height:200px;
-	width:200px;
+	width:150px;
 	overflow:auto;
 	margin-top:-2px;
-	margin-left:45px;
 	margin-bottom:-200px;
 	color: #394244;
-}
-
-#forward-to-filter {
-	margin-left:55px;
+	margin-left: 10px;
 }
 
 #send-to-filter li, #forward-to-filter li {
-	margin:0px;
-	padding:5px;
+	margin: 0;
+	padding: 2px 5px;
 	cursor:hand;
-	border-bottom:1px solid #eee;
-	height:30px;
+	border-bottom: 1px solid #eee;
+	font-size: 7pt;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 #send-to-filter li:hover, #send-to-filter #selectedsendto, #forward-to-filter li:hover, #forward-to-filter #selectedsendto {
@@ -503,13 +511,22 @@ input.button-1 {
 }
 
 #send-to-filter .photo, #forward-to-filter .photo {
-	float:left;
-	margin-right:5px;
+	display: inline;
+}
+
+#send-to-filter img, #forward-to-filter img {
+	margin-right: 5px;
+	width: 16px;
+	height: 16px;
+	padding: 1px;
+	border: 1px solid #ccc;
+	vertical-align: middle;
+	background: #fff;
 }
 
 #send-to-filter .name, #forward-to-filter .name {
 	font-weight:normal;
-	font-size:10pt;
+	display: inline;
 }
 
 #send-to-filter .username, #forward-to-filter .username {
