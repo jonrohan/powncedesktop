@@ -76,7 +76,7 @@ div.tooltip {
 	display: block;
 	margin-top: 3px;
 	font-weight: bold;
-	font-size: 7pt;
+	font-size: 8pt;
 }
 
 .login form input[type=text], .login form input[type=password] {
@@ -90,6 +90,7 @@ div.tooltip {
 .login form input[type=checkbox] {
 	float: left;
 	clear: both;
+	margin-top: -1px;
 }
 
 .login form a {
@@ -261,11 +262,52 @@ div.tooltip {
 #notes li .bottomdetails {
 	padding-top: 6px;
 	text-align: right;
+	color: #666;
 }
 
 #notes li .bottomdetails a {
 	margin-left: 1em;
 	font-weight: bold;
+	font-size: 8pt;
+}
+
+#notes li .bottomdetails span {
+	margin-left: 1em;
+	font-size: 8pt;
+}
+
+.note-forward, .note-delete, .note-favorite {
+	display: block;
+	text-indent: 5000px;
+	background: url(images/note-favorite.png) no-repeat;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	left: -2px;
+	bottom: 5px;
+	display: none;
+}
+
+.note-forward {
+	left: 12px;
+	background-image: url(images/note-forward.png);
+}
+
+.note-delete {
+	left: 24px;
+	background-image: url(images/note-delete.png);
+}
+
+#notes .reply .note-delete {
+	left: -2px;
+}
+
+#notes li:hover .note-delete, #notes li:hover .note-favorite, #notes li:hover .note-forward {
+	display: block;
+}
+
+.media-audio {
+	padding: 1px;
 }
 
 /************** END Notes View ****************/
