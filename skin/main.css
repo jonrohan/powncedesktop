@@ -543,8 +543,33 @@ input.button-1 {
 
 /************** END New View ****************/
 
-/************** BEGIN Permalink Note View ****************/
+/************** BEGIN Pagination ****************/
 
+.paging {
+	padding: 15px;
+}
 
+.next-notes, .prev-notes {
+	float: right;
+	padding: 5px 20px;
+	border: 1px solid #999;
+	font-weight: bold;
+	background: #fff url(images/page-next.png) 100% 50% no-repeat;
+	-webkit-border-radius: 3px;
+}
 
-/************** END Permalink Note ****************/
+.next-notes:hover, .prev-notes:hover {
+	border-color: #666;
+	cursor: hand;
+}
+
+.prev-notes {
+	float: left;
+	background: #fff url(images/page-prev.png) 0 50% no-repeat;
+}
+
+.first-notes {
+	display: none;
+}
+
+/************** END Pagination ****************/
