@@ -384,24 +384,66 @@ input.button-1 {
 
 #new-view .new-button {
 	float:left;
-	
 }
 
 #new-view .new-toolbar {
-	height:30px;
-	padding-left:10px;
+	height: 44px;
+	padding: 0 10px;
+	border-top: 1px solid #999;
 }
 
 #new-view .new-button {
-	margin-right: 1em;
-	padding:5px 10px 5px 25px;
-	cursor:hand;
+	padding: 5px 5px 5px 23px;
+	cursor: hand;
+	margin: 10px 3px 0 1px;
+	font-weight: bold;
 }
 
 #new-view .new-selected {
+	margin: 10px 2px 0 0;
 	background-color:#ededed;
-	border:1px inset #000;
+	border: 1px inset #999;
 	-webkit-border-radius:3px;
+}
+
+#new-view textarea {
+	width: 95%;
+	margin: 5px 0 0 10px;
+	height: 7em;
+	padding: 5px;
+}
+
+#new-view #postit {
+	float: right;
+	margin-right: 10px;
+}
+
+#new-view input[type='text'] {
+	padding: 4px;
+	margin-left: 10px;
+}
+
+#new-view #what, #new-view #where, #new-view #url {
+	width: 95%;
+}
+
+#file-browse {
+	margin-left: 10px;
+	font-size: 7pt;
+	padding: 4px 10px;
+}
+
+#new-view #cancel-new {
+	padding: 3px 8px;
+	font-size: 7pt;
+	position: absolute;
+	margin: 5px 0 0 10px;
+	float: left;
+}
+
+#send-to-text {
+	padding: 5px;
+	margin-top: 2px;
 }
 
 #new-message {
@@ -475,4 +517,14 @@ input.button-1 {
 	font-size:8pt;
 }
 
+#send-to-box {
+	float: right;
+}
+
 /************** END New View ****************/
+
+/************** BEGIN Permalink Note View ****************/
+
+
+
+/************** END Permalink Note ****************/
