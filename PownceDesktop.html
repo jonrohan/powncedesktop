@@ -58,7 +58,7 @@
 					<dd><input type="checkbox" id="filter-messages"/> <label for="filter-messages">Messages</label> <input type="checkbox" id="filter-links"/> <label for="filter-links">Links</label> <input type="checkbox" id="filter-files"/> <label for="filter-files">Files</label> <input type="checkbox" id="filter-events"/> <label for="filter-events">Events</label> 
 					<br/><input type="checkbox" id="filter-reply"/> <label for="filter-reply">Replies</label></dd>
 				</dl>
-				<input type="button" value="Ok" id="filter-ok"/>
+				<input type="button" value="Ok" id="filter-ok" class="button-1" />
 			</div>
 		</div>
 		
@@ -69,17 +69,16 @@
 				<h3>Alert!</h3>
 				<img src="icons/icon128.png" width="60px" height="60px"/>
 				<div id="alert-message">Alert Message</div>
-				<input type="button" value="Ok" id="alert-ok"/>
+				<input type="button" value="Ok" id="alert-ok" class="button-1" />
 			</div>
 		</div>
 		
 		<div id="dialog" class="dialog-confirm">
-			<img src="icons/icon32.png"/>
 			<h3 id="dialog-title">What do you think?</h3>
 			<p id="dialog-message">
 				Should we do something really important or should we wait a while?
 			</p>
-			<input id="dialog-ok" type="button" value="OK"/>
+			<input id="dialog-ok" type="button" value="OK" class="button-1" />
 			<input onclick="chat.cancelDialog(this.parent, this.parent.getElementsByTagName("input")[0]);" type="button" value="Cancel"/>
 		</div>
 		
@@ -95,7 +94,7 @@
 					<ul id="forward-to-filter" style="display:none;"></ul>
 		            <select id="sendtoforward" style="display:none;"></select>
 		        </div>
-				<input type="button" value="Forward It!" id="forward-it"/>
+				<input type="button" value="Forward It!" id="forward-it" class="button-1" />
 				<input type="button" value="Cancel" id="cancel-forward"/>
 			</div>
 		</div>
@@ -107,7 +106,7 @@
 				<div id="request-add-message">Add a message (optional)</div>
 				<textarea id="request-message"></textarea>
 				<input type="hidden" value="" id="request-username"/>
-				<input type="button" value="Send Request" id="send-request"/>
+				<input type="button" value="Send Request" id="send-request" class="button-1" />
 				<input type="button" value="Cancel" id="cancel-request"/>
 			</div>
 		</div>

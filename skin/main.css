@@ -12,7 +12,6 @@
  * 
  */
 
-
 a {
 	color:#004899;
 	text-decoration:none;
@@ -285,38 +284,47 @@ div.tooltip {
 	z-index:7;
 }
 
-.dialog {
-	display:none;
+.dialog, .dialog-info, .dialog-confirm {
+	display: none;
 	background-color: #cfcfcf;
-	position:absolute;
-	top:50px;
+	background-position: 15px 15px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 50px;
     left: 1%;
     right: 1%;
-	margin-left:auto;
-	margin-right:auto;
-	width:280px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 270px;
 	z-index:8;
-	border:2px solid #000;
-	-webkit-border-radius: 6px;
-	-webkit-box-shadow: 15px 15px 10px #000;
-	opacity:1;
-	padding:20px 10px 15px 10px;
+	border: 1px solid #666;
+	-webkit-border-radius: 3px;
+	padding: 15px 15px 15px 45px;
+	opacity: 1;
 }
 
-.dialog img {
-	float:left;
+.dialog-info {
+	 background-image: url(images/dialog-warning.png);
 }
 
-.dialog input {
-	float:right;
+.dialog-confirm {
+	background-image: url(images/dialog-information.png);
 }
 
-.dialog h3 {
-	margin-left:40px;
+.dialog input, .dialog-info input, .dialog-confirm input  {
+	float: right;
 }
 
-.dialog p {
-	margin-left:40px;
+.dialog h3, .dialog-info h3, .dialog-confirm h3 {
+	margin: 0 0 5px 0;
+}
+
+.dialog p, .dialog-info p, .dialog-confirm p {
+	margin: 0 0 5px 0;
+}
+
+input.button-1 {
+	font-weight: bold;
 }
 
 /************** END Dialog Style ****************/
