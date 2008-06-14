@@ -519,9 +519,12 @@ input.button-1 {
 	width: 16px;
 	height: 16px;
 	padding: 1px;
-	border: 1px solid #ccc;
 	vertical-align: middle;
+}
+
+#send-to-filter .to-user img {
 	background: #fff;
+	border: 1px solid #ccc;
 }
 
 #send-to-filter .name, #forward-to-filter .name {
