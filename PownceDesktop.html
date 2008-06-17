@@ -263,62 +263,40 @@
 		</div>
 		
         <div id="settings" class="toolwin">
-            <div id="settings-alerts-pane" class="tab-pane">
-                <fieldset>
-                    <legend>Behavior</legend>
-                    <input type="checkbox" id="settings-play-sound"/>
-                    <label for="settings-play-sound">Play sound upon receiving new note. </label>
-					<div><input type="button" id="pick-sound" value="Pick Sound" style="position:static;display:none;"/><input type="text" id="sound-name" disabled="true" value="chimp" style="display:none;"/><span id="play-sound">Test Sound</span></div>
-                    <input type="checkbox" id="settings-friend-requests"/>
-                    <label for="settings-friend-requests">Alert about new friend requests.</label>
-                </fieldset>
-            </div>
-            <div id="settings-notes-pane" class="tab-pane">
-                <fieldset>
-                    <legend>Appearance</legend>
-					<select id="settings-max-notes">
-						<option value="10">10</option>
-						<option value="20" selected="true">20</option>
-						<option value="50">50</option>
-						<option value="100">100</option>
-					</select>
-					<label for="settings-max-notes">Number of Notes</label>
-                    <input type="checkbox" id="settings-notes-collapsible"/>
-                    <label for="settings-notes-collapsible">Allow notes to collapse</label>
-					<div><b>Font Size</b></div>
-					<span id="font-size-1">Smaller</span> 
-					<span id="font-size-2" class="current-font-size">Normal</span> 
-					<span id="font-size-3">Larger</span> 
-					<span id="font-size-4">Largest</span>
-                </fieldset>
-            </div>
-            <div id="settings-general-pane" class="tab-pane">
-                <fieldset>
-                    <legend>Appearance</legend>
-                    <input type="checkbox" id="settings-download-theme"/>
-                    <label for="settings-download-theme">Use Pownce profile theme.</label>
-					<div>Your current theme is a <span id="user-current-header-color">brown</span> header, with a <span id="user-current-note-color">blue</span> note color.</div>
-                    <!--input type="checkbox" id="settings-hide-contact-list"/>
-                    <label for="settings-hide-contact-list">Hide the list of users.</label-->
-                    <input style="display:none;" type="checkbox" id="settings-hide-offline-users" checked="true"/>
-                    <label style="display:none;" for="settings-hide-offline-users" title="Users who don't have a note on your screen">Hide "offline" users.</label>
-                    <input type="checkbox" id="settings-hide-toolbar"/>
-                    <label for="settings-hide-toolbar">Hide Toolbar</label>
-                    <input type="checkbox" id="settings-toolbar-text"/>
-                    <label for="settings-toolbar-text">Show Toolbar Icons Text</label>
-					<div>Transparency <span id="settings-app-transparency">95%</span>:</div>
-					<div id="settings-app-transparency-track" style="width:200px; height:10px;">
-						<div id="settings-app-transparency-handle" style="width:5px; height:10px; cursor:move;"></div>
-					</div>
-	                </fieldset>
-                <fieldset>
-                    <legend>Behavior</legend>
-                    <input type="checkbox" id="settings-min-to-tray"/>
-                    <label id="min-to-tray-label" for="settings-min-to-tray">Minimize to tray</label>
-                    <input type="checkbox" id="settings-auto-login"/>
-                    <label for="settings-auto-login">Auto Login</label>
-                </fieldset>
-            </div>
+            <fieldset>
+                <legend>Alerts</legend>
+                <input type="checkbox" id="settings-play-sound"/>
+                <label for="settings-play-sound">Play sound upon receiving new note. </label>
+                <div>
+                    <input type="button" id="pick-sound" value="Pick Sound" style="position:static;display:none;"/><input type="text" id="sound-name" disabled="true" value="chimp" style="display:none;"/><span id="play-sound">Test Sound</span>
+                </div>
+                <input type="checkbox" id="settings-friend-requests"/>
+                <label for="settings-friend-requests">Alert about new friend requests.</label>
+            </fieldset>
+            <fieldset>
+                <legend>Appearance</legend>
+                <input type="checkbox" id="settings-download-theme"/>
+                <label for="settings-download-theme">Use Pownce profile theme.</label>
+                <div>
+                    Your current theme is a <span id="user-current-header-color">brown</span>
+                    header, with a <span id="user-current-note-color">blue</span>
+                    note color.
+                </div>
+                <select id="settings-max-notes">
+                    <option value="10">10</option>
+                    <option value="20" selected="true">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+                <label for="settings-max-notes">Number of Notes</label>
+            </fieldset>
+            <fieldset>
+                <legend>Behavior</legend>
+                <input type="checkbox" id="settings-min-to-tray"/>
+                <label id="min-to-tray-label" for="settings-min-to-tray">Minimize to tray</label>
+                <input type="checkbox" id="settings-auto-login"/>
+                <label for="settings-auto-login">Remember Me?</label>
+            </fieldset>
         </div>
 		
         <div id="login" class="login">
