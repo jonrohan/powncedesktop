@@ -541,8 +541,6 @@ input.button-1 {
 	float: right;
 }
 
-/************** END New View ****************/
-
 /************** BEGIN Pagination ****************/
 
 #notes .paging {
@@ -572,4 +570,77 @@ input.button-1 {
 	display: none;
 }
 
-/************** END Pagination ****************/
+
+
+/************** START People View ****************/
+ 
+#people-view {
+	padding: 10px;
+	text-align: center;
+}
+
+#people-search-filter {
+	padding: 4px;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 3px;
+}
+
+#people-view input {
+	margin: 10px 10px 10px 0;
+	width: 70%;
+}
+
+#people-view label {
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+#people-view ul, #people-view li {
+	margin: 0;
+	padding: 0;
+	list-style: none;	
+}
+
+#people-view li {
+	position: relative;
+	min-height: 48px;
+	padding: 6px 0 6px 60px;
+	border-bottom: 1px solid #ddd;
+	text-align: left;
+}
+
+#people-view li img {
+	position: absolute;
+	top: 6px;
+	left: 0;
+	padding: 1px;
+	background: #fff;
+	border: 1px solid #666;
+	width: 48px;
+	height: 48px;
+}
+
+#people-view .name {
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+#people-view .name:hover, #people-view img:hover, #people-view .private-note:hover, #people-view .unfriend:hover,
+#people-view .name, #people-view img, #people-view .private-note, #people-view .unfriend {
+	color: #004899;
+	cursor: hand;
+}
+
+#people-view .private-note, #people-view .unfriend {
+	display: inline;
+	margin-right: 1em;
+}
+
+#people-view .online, #people-view .offline, #people-view .away {
+	margin-left: 1em;
+	color: #666;
+}
+
+#people-view .online {
+	color: #386d00;
+}
