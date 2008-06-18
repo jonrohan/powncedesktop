@@ -278,16 +278,16 @@ div.tooltip {
 	background-image: url(images/note-delete.png);
 }
 
-#notes .reply .note-delete {
+.notes .reply .note-delete {
 	left: -2px;
 }
 
-#notes .reply {
+.notes .reply {
 	background: #eee;
 	color: #666;
 }
 
-#notes li:hover .note-delete, #notes li:hover .note-favorite, #notes li:hover .note-forward {
+.notes li:hover .note-delete, .notes li:hover .note-favorite, .notes li:hover .note-forward {
 	display: block;
 }
 
