@@ -123,8 +123,22 @@ div.tooltip {
 	display:none;
 	float:right;
 	cursor:hand;
-	padding-top:4px;
-	padding-right:15px;
+	margin-top:4px;
+	margin-right:15px;
+	margin-left:5px;
+	padding-left:18px;
+	background:url(images/view-refresh.png) no-repeat left center;
+}
+
+#statusbar #new-friends {
+	display:none;
+	float:right;
+	cursor:hand;
+	margin-top:4px;
+	padding-right:5px;
+	border-right:1px dotted #878787;
+	padding-left:18px;
+	background:url(images/software-update-available.png) no-repeat left center;
 }
 
 /************** END Statusbar ****************/
