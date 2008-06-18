@@ -169,35 +169,13 @@ div.tooltip {
 
 /************** BEGIN Notes View ****************/
 
-/*
- * Note HTML Layout
- * 
- * <li>
- * 		<div class="note link">
- * 			<div class="recipients">Public</div>
- * 			<a class="imglnk">
- * 				<img src="http://api.pownce.com/profile_photos/b/l/o/blogkitten/14596_small.jpg">
- * 			</a>
- * 			<p>NOTE BODY</p>
- * 			<div class="media-object">
- * 				<a class="media-object-link">
- * 					{embed object or image}
- * 				</a>
- * 			</div>
- * 			<a class="media-link" href="#">http://blog.pownce.com/20...</a>
- * 			<div class="bottomdetails"><a href="#" style="color: rgb(0, 72, 153); " id="2436127_replies">1 Reply</a><a style="color: rgb(0, 72, 153); " href="#" class="forwardlink">Forward</a><a style="color: rgb(0, 72, 153); " href="#" class="favoritelink">Favorite</a></div>
- * 		</div>
- * </li>
- * 
- */
-
-#notes {
+.notes {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-#notes li {
+.notes li {
 	padding: 6px 6px 6px 43px;
 	margin: 0;
 	display:block;
@@ -207,23 +185,23 @@ div.tooltip {
 	border-bottom: 1px solid #cfcfcf;
 }
 
-#notes li .imglnk {
+.notes li .imglnk {
 	position: absolute;
 	left: 6px;
 	top: 6px;
 }
 
-#notes li p {
+.notes li p {
 	margin-top: 0;
 }
 
-#notes li .media-object img {
+.notes li .media-object img {
 	max-width: 90%;
 	border: 1px solid #8fb4c7;
 	padding: 2px;
 }
 
-#notes .imglnk img {
+.notes .imglnk img {
 	-webkit-border-radius: 3px;
 	border: 1px solid #8fb4c7;
 	padding: 2px;
@@ -231,7 +209,7 @@ div.tooltip {
 	height: 24px;
 }
 
-#notes .recipients {
+.notes .recipients {
 	background: #999;
 	float: right;
 	color: #fff;
@@ -242,12 +220,12 @@ div.tooltip {
 	-webkit-border-bottom-left-radius: 2px;
 }
 
-#notes li .media-link {
+.notes li .media-link {
 	min-height: 1.3em;
 	margin: 10px 0 6px 0;
 }
 
-#notes li div.media-link a {
+.notes li div.media-link a {
 	background: #8fb4c7;
 	color: #355362;
 	-webkit-border-radius: 3px;
@@ -255,24 +233,24 @@ div.tooltip {
 	padding: 3px 14px;
 }
 
-#notes li .media-object {
+.notes li .media-object {
 	margin-bottom: 10px;
 }
 
-#notes li .bottomdetails {
+.notes li .bottomdetails {
 	padding-top: 6px;
 	text-align: right;
 	color: #666;
 }
 
-#notes li .bottomdetails a {
+.notes li .bottomdetails a {
 	margin-left: 1em;
 	font-weight: bold;
 	font-size: 8pt;
 	word-spacing: -0.2em;
 }
 
-#notes li .bottomdetails span {
+.notes li .bottomdetails span {
 	margin-left: 1em;
 	font-size: 8pt;
 	word-spacing: -0.2em;
