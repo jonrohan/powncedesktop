@@ -209,13 +209,13 @@ div.tooltip {
 	margin-top: 0;
 }
 
-.notes li .media-object img {
+.media-object img {
 	max-width: 90%;
 	border: 1px solid #8fb4c7;
 	padding: 2px;
 }
 
-.notes .imglnk img {
+.imglnk img {
 	-webkit-border-radius: 3px;
 	border: 1px solid #8fb4c7;
 	padding: 2px;
@@ -234,12 +234,12 @@ div.tooltip {
 	-webkit-border-bottom-left-radius: 2px;
 }
 
-.notes li .media-link {
+.media-link {
 	min-height: 1.3em;
 	margin: 10px 0 6px 0;
 }
 
-.notes li div.media-link a {
+div.media-link a {
 	background: #8fb4c7;
 	color: #355362;
 	-webkit-border-radius: 3px;
@@ -247,24 +247,24 @@ div.tooltip {
 	padding: 3px 14px;
 }
 
-.notes li .media-object {
+.media-object {
 	margin-bottom: 10px;
 }
 
-.notes li .bottomdetails {
+.bottomdetails {
 	padding-top: 6px;
 	text-align: right;
 	color: #666;
 }
 
-.notes li .bottomdetails a {
+.bottomdetails a {
 	margin-left: 1em;
 	font-weight: bold;
 	font-size: 8pt;
 	word-spacing: -0.2em;
 }
 
-.notes li .bottomdetails span {
+.bottomdetails span {
 	margin-left: 1em;
 	font-size: 8pt;
 	word-spacing: -0.2em;
@@ -635,4 +635,43 @@ input.button-1 {
 
 #people-view .online {
 	color: #386d00;
+}
+
+/************** START Note format ****************/
+
+#note-detail {
+	position: relative;
+	padding: 10px 10px 10px 48px;
+}
+
+#note-detail img {
+	-webkit-border-radius: 3px;
+	border: 1px solid #8fb4c7;
+	padding: 2px;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+#note-detail p {
+	margin-top: 0;
+}
+
+/************** START Settings ****************/
+
+fieldset {
+	margin: 15px;
+	border-color: #ccc;
+	-webkit-border-radius: 3px;
+}
+
+legend {
+	font-weight: bold;
+	color: #666;
+}
+
+fieldset input {
+	margin: 1em 0;
 }
