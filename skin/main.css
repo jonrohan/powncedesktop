@@ -243,8 +243,14 @@ div.media-link a {
 	background: #8fb4c7;
 	color: #355362;
 	-webkit-border-radius: 3px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 	font-size: 10px !important;
 	padding: 3px 14px;
+	max-width: 80%;
+	display: block;
+	float: left;
 }
 
 .media-object {
@@ -677,6 +683,23 @@ textarea#reply-body {
 	list-style: none;
 	display: inline;
 	margin: 5px;
+}
+
+/************** START Digg ****************/
+
+.digg-user {
+	display: none;
+}
+
+.digg-shade {
+	background: url(images/digg-shade.png) no-repeat !important;
+	margin-top: -3px;
+	padding-top: 9px !important;
+}
+
+.digg-comments {
+	padding-left: 0 !important;
+	opacity: 0.7;
 }
 
 /************** START Settings ****************/
