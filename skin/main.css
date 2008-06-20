@@ -685,6 +685,10 @@ textarea#reply-body {
 	margin: 5px;
 }
 
+#reply-people {
+	display: none;
+}
+
 /************** START Digg ****************/
 
 .digg-user {
@@ -717,4 +721,12 @@ legend {
 
 fieldset input {
 	margin: 1em 0;
+}
+
+/************** START Dialog ****************/
+
+.inline-message {
+	background: url(images/notice-message.png) 20px 50% no-repeat;
+	padding: 10px 15px 10px 42px;
+	margin: 0 0 0 -50px;
 }
