@@ -666,6 +666,20 @@ input.button-1 {
 	margin-top: 0;
 }
 
+#note-detail #note-bottom-details {
+	margin: 1em 0 -1em -28px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#note-detail #note-bottom-details .favoritelink,
+#note-detail #note-bottom-details .forwardlink {
+	float: right;
+	font-size: 11px;
+	font-weight: normal;
+	margin-left: 0.6em;
+}
+
 #reply-notes li {
 	list-style: none;
 	margin: 0 10px 0 -28px;
@@ -673,6 +687,12 @@ input.button-1 {
 	position: relative;
 	border-top: 1px solid #ccc;
 	position: relative;
+}
+
+#reply-notes .stars-note {
+	position: absolute;
+	bottom: 5px;
+	right: 0;
 }
 
 #reply-notes .bottomdetails {
@@ -686,19 +706,20 @@ input.button-1 {
 }
 
 textarea#reply-body {
-	width: 90%;
-	margin: 10px;
+	display: block;
+	width: 94%;
+	margin: 15px;
 	height: 8em;	
-}
-
-#rating li {
-	list-style: none;
-	display: inline;
-	margin: 5px;
 }
 
 #reply-people {
 	display: none;
+}
+
+#reply-button {
+	float: right;
+	margin-right: 20px;
+	margin-bottom: 60px;
 }
 
 /************** START Digg ****************/
@@ -833,7 +854,6 @@ fieldset input {
 .stars-note div {
 	float: left;
 	margin-right: 3px;
-	font-weight: bold;
 }
 
 .stars {
@@ -903,4 +923,8 @@ fieldset input {
 
 .stars-05, .stars-10, .stars-15, .stars-20, .stars-25, .stars-30, .stars-35, .stars-40, .stars-45, .stars-50 {
     background: url(images/stars-small.png) 0 0 repeat-x;
+}
+
+#reply-view #rating {
+	margin: 0 15px;
 }
