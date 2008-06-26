@@ -270,18 +270,9 @@
                 <div>
                     <input type="button" id="pick-sound" value="Pick Sound" style="position:static;display:none;"/><input type="text" id="sound-name" disabled="true" value="chimp" style="display:none;"/><span id="play-sound">Test Sound</span>
                 </div>
-                <input type="checkbox" id="settings-friend-requests"/>
-                <label for="settings-friend-requests">Alert about new friend requests.</label>
             </fieldset>
             <fieldset>
                 <legend>Appearance</legend>
-                <input type="checkbox" id="settings-download-theme"/>
-                <label for="settings-download-theme">Use Pownce profile theme.</label>
-                <div>
-                    Your current theme is a <span id="user-current-header-color">brown</span>
-                    header, with a <span id="user-current-note-color">blue</span>
-                    note color.
-                </div>
                 <select id="settings-max-notes">
                     <option value="10">10</option>
                     <option value="20" selected="true">20</option>
@@ -311,7 +302,7 @@
                     <input type="password" id="password"/>
                 </div>
                 <div>
-                    <input type="checkbox" id="remember_me"/><label id="remember-me-label" for="remember_me">Remember password</label>
+                    <input type="checkbox" id="auto-login"/><label id="remember-me-label" for="auto-login">Remember password</label>
                 </div>
                 <div>
                     <input id="login-button" type="button" onclick="chat.doLogin()" value="Login"/>
