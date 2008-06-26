@@ -651,7 +651,7 @@ input.button-1 {
 	padding: 10px 10px 10px 48px;
 }
 
-#note-detail img, #reply-notes img {
+#note-detail #user-note-image img, #reply-notes img {
 	-webkit-border-radius: 3px;
 	border: 1px solid #8fb4c7;
 	padding: 2px;
