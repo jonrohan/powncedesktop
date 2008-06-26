@@ -265,28 +265,34 @@
         <div id="settings" class="toolwin">
             <fieldset>
                 <legend>Alerts</legend>
-                <input type="checkbox" id="settings-play-sound"/>
-                <label for="settings-play-sound">Play sound upon receiving new note. </label>
-                <div>
-                    <input type="button" id="pick-sound" value="Pick Sound" style="position:static;display:none;"/><input type="text" id="sound-name" disabled="true" value="chimp" style="display:none;"/><span id="play-sound">Test Sound</span>
-                </div>
+				<div>
+	                <input type="checkbox" id="settings-play-sound"/>
+    	            <label for="settings-play-sound">Play sound upon receiving new note. </label>
+					<span id="play-sound">Test Sound</span>
+				</div>
             </fieldset>
             <fieldset>
                 <legend>Appearance</legend>
-                <select id="settings-max-notes">
-                    <option value="10">10</option>
-                    <option value="20" selected="true">20</option>
-                    <option value="50">50</option>
-                    <option value="100">100</option>
-                </select>
-                <label for="settings-max-notes">Number of Notes</label>
+				<div>
+	                <select id="settings-max-notes">
+	                    <option value="10">10</option>
+	                    <option value="20" selected="true">20</option>
+	                    <option value="50">50</option>
+	                    <option value="100">100</option>
+	                </select>
+	                <label for="settings-max-notes">Number of Notes</label>
+				</div>
             </fieldset>
             <fieldset>
                 <legend>Behavior</legend>
-                <input type="checkbox" id="settings-min-to-tray"/>
-                <label id="min-to-tray-label" for="settings-min-to-tray">Minimize to tray</label>
-                <input type="checkbox" id="settings-auto-login"/>
-                <label for="settings-auto-login">Remember Me?</label>
+                <div>
+                	<input type="checkbox" id="settings-min-to-tray"/>
+                	<label id="min-to-tray-label" for="settings-min-to-tray">Minimize to tray</label>
+				</div>
+				<div>
+	                <input type="checkbox" id="settings-auto-login"/>
+	                <label for="settings-auto-login">Remember Me?</label>
+				</div>
             </fieldset>
         </div>
 		
