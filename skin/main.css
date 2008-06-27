@@ -32,12 +32,13 @@ input[type=button] {
 }
 
 div.tooltip {
-    padding: 2px 5px 2px 5px;
-    margin: 5px;
-    background-color: #FFFFDD;
-    border: 1px dotted #AAAAAA;
+    -webkit-box-shadow: 3px 3px 10px #000;
+	padding: 2px 5px 2px 5px;
+	margin: 5px;
+    background-color: InfoBackground;
+    border: 1px solid InfoText;
     z-index: 6;
-    color: #394244;
+    color: InfoText;
 }
 
 /************** BEGIN Login Win ***************/
@@ -172,6 +173,7 @@ div.tooltip {
 
 /************** BEGIN Tool win ****************/
 .toolwin {
+	background-color:#fff;
 	position: absolute;
 	top: 31px;
 	left: 0;
@@ -574,6 +576,7 @@ input.button-1 {
 /************** START People View ****************/
  
 #people-view {
+	background-color:#fff;
 	padding: 10px;
 	text-align: center;
 }

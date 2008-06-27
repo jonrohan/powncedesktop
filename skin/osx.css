@@ -3,23 +3,23 @@ html {
 }
 
 .login {
-	background-color:inherit;
+	background-color:WindowFrame;
 }
 
 #statusbar {
-	background-color:inherit;
+	background-color:WindowFrame;
 }
 
 #toolbar {
-	background-color:inherit;
+	background-color:WindowFrame;
 }
 
 .dialog {
-	background-color:inherit;
+	background-color:ActiveCaption;
 }
 
 #new-view {
-	background-color:inherit;
+	background-color:WindowFrame;
 }
 
 #new-view .new-selected {
