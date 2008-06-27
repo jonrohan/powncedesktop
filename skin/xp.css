@@ -1,25 +1,21 @@
-html {
-	background-color:WindowFrame;
-}
-
 .login {
-	background-color:inherit;
+	background-color:#eae6d3;
 }
 
 #statusbar {
-	background-color:inherit;
+	background-color: #eae6d3;
 }
 
 #toolbar {
-	background-color:inherit;
+	background-color: #eae6d3;
 }
 
 .dialog {
-	background-color:inherit;
+	background-color: #eae6d3;
 }
 
 #new-view {
-	background-color:inherit;
+	background-color: #eae6d3;
 }
 
 #new-view .new-selected {
