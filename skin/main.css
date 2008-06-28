@@ -573,15 +573,6 @@ input.button-1 {
 
 
 
-/************** START Sounds ****************/
-.sounds-enabled {
-	
-}
-
-.sounds-disabled {
-	color:#eeeeee;
-}
-
 /************** START People View ****************/
  
 #people-view {
@@ -766,6 +757,34 @@ legend {
 
 fieldset input {
 	margin: 1em 0;
+}
+
+.sounds-enabled li {
+	cursor:hand;
+}
+
+.sounds-disabled {
+	color:#eeeeee;
+}
+
+.sounds-disabled li {
+	cursor:default;
+}
+
+#sounds {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+#sounds li {
+	margin:0;
+	padding:5px 10px 5px 10px;
+	-webkit-border-radius: 3px;
+}
+
+li.selected-sound {
+	background-color:#8fb4c7;
 }
 
 /************** START Dialog ****************/
