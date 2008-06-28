@@ -32,8 +32,7 @@ input[type=button] {
 }
 
 div.tooltip {
-    -webkit-box-shadow: 3px 3px 10px #000;
-	padding: 2px 5px 2px 5px;
+    padding: 2px 5px 2px 5px;
 	margin: 5px;
     background-color: InfoBackground;
     border: 1px solid InfoText;
@@ -759,18 +758,6 @@ fieldset input {
 	margin: 1em 0;
 }
 
-.sounds-enabled li {
-	cursor:hand;
-}
-
-.sounds-disabled {
-	color:#eeeeee;
-}
-
-.sounds-disabled li {
-	cursor:default;
-}
-
 #sounds {
 	margin:0;
 	padding:0;
@@ -778,6 +765,7 @@ fieldset input {
 }
 
 #sounds li {
+	cursor:hand;
 	margin:0;
 	padding:5px 10px 5px 10px;
 	-webkit-border-radius: 3px;
