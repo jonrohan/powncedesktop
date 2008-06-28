@@ -573,6 +573,15 @@ input.button-1 {
 
 
 
+/************** START Sounds ****************/
+.sounds-enabled {
+	
+}
+
+.sounds-disabled {
+	color:#eeeeee;
+}
+
 /************** START People View ****************/
  
 #people-view {
