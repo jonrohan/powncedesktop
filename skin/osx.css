@@ -14,8 +14,8 @@ html {
 	background-color:WindowFrame;
 }
 
-.dialog {
-	background-color:ActiveCaption;
+.dialog, .dialog-info, .dialog-confirm, #forward-note {
+	background-color:WindowFrame;
 }
 
 #new-view {
