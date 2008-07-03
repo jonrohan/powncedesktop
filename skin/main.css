@@ -486,7 +486,7 @@ input.button-1 {
 	padding:0px;
 	list-style-type:none;
 	border:1px solid #eee;
-	height:200px;
+	max-height:200px;
 	width:150px;
 	overflow:auto;
 	margin-top:-2px;
