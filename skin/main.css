@@ -212,6 +212,7 @@ div.tooltip {
 
 .media-object img {
 	max-width: 90%;
+	max-height: 200px;
 	border: 1px solid #8fb4c7;
 	padding: 2px;
 }
@@ -946,4 +947,70 @@ li.selected-sound {
 
 #reply-view #rating {
 	margin: 0 15px;
+}
+
+#rsvp_block {
+	display: block;
+	float: left;
+	margin-left: 15px;
+}
+/************** PROFILE Dialog ****************/
+
+#profile-view {
+	padding: 15px;
+}
+
+#profile-image {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+#profile-image img {
+	width: 120px;
+	height: 120px;
+	border: 1px solid #ccc;
+	padding: 5px;
+	background: #fff;
+	-webkit-border-radius: 3px;
+}
+
+#profile-link a,
+#profile-send-note a,
+#profile-unfriend a,
+#profile-cancel-request a,
+#profile-addfriend a,
+#profile-other-profiles div a {
+	display: block;
+	padding: 5px 10px;
+	min-width: 8em;
+	max-width: 12em;
+	-webkit-border-radius: 3px;
+	border: 1px solid #8fb4c7;
+	margin: 2px 0;
+}
+
+#profile-link a:hover,
+#profile-send-note a:hover,
+#profile-unfriend a:hover,
+#profile-cancel-request a:hover,
+#profile-addfriend a:hover,
+#profile-other-profiles div a:hover {
+	border: 1px solid #3a708b;
+}
+
+#profile-other-profiles {
+	margin: 2em 0 1em 0;
+}
+
+#profile-short-name {
+	font-size: 15px;
+}
+
+#profile-username {
+	color: #999;
+	margin-bottom: 0.5em;
+}
+
+#profile-details {
+	margin: 0.5em 0 2em 0;
 }
