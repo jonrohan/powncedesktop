@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/1.0">
+    
+    <id>PownceDesktop</id>
+    <filename>Pownce</filename>
+    <name>Pownce</name>
+    <version>2.0</version>
+    <description>Pownce is a way to send stuff to your friends. What kind of stuff? You can send just about anything: music, photos, messages, links, events, and more.</description>
+    <copyright>Copyright (c) 2008 Megatechtronium Inc.</copyright>
+    <initialWindow>
+        <content>PownceDesktop.html</content>
+        <title>Pownce</title>
+        <systemChrome>standard</systemChrome>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <minimizable>true</minimizable>
+        <maximizable>true</maximizable>
+        <resizable>true</resizable>
+        <width>370</width>
+        <height>400</height>
+        <x>200</x>
+        <y>200</y>
+        <minSize>370 400</minSize>
+    </initialWindow>
+    
+    <!-- The subpath of the standard default installation location to use. Optional. -->
+    <!-- <installFolder></installFolder> -->
+    
+    <!-- The subpath of the Windows Start/Programs menu to use. Optional. -->
+    <!-- <programMenuFolder></programMenuFolder> -->
+    
+    <icon>
+        <image16x16>icons/icon16.png</image16x16>
+        <image32x32>icons/icon32.png</image32x32>
+        <image48x48>icons/icon48.png</image48x48>
+        <image128x128>icons/icon128.png</image128x128>
+    </icon>
+    
+    <!-- Whether the application handles the update when a user double-clicks an update version
+    of the AIR file (true), or the default AIR application installer handles the update (false).
+    Optional. Default false. -->
+    <!-- <customUpdateUI></customUpdateUI> -->
+    
+    <!-- Whether the application can be launched when the user clicks a link in a web browser.
+    Optional. Default false. -->
+    <!-- <allowBrowserInvocation></allowBrowserInvocation> -->
+    
+</application>

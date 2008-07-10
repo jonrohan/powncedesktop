@@ -1,0 +1,327 @@
+<html>
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Pownce</title>
+        <link rel="stylesheet" href="skin/main.css" type="text/css"/>
+        <link id="system-style" rel="stylesheet" href="skin/osx.css" type="text/css"/>
+        <link rel="stylesheet" href="skin/muxtape.css" type="text/css"/>
+        <link rel="stylesheet" href="skin/digget.css" type="text/css"/>
+        <!--link id="note-body-style" rel="stylesheet" href="skin/images/n-blue/nblue.css" type="text/css"/-->
+        <!--link id="header-style" rel="stylesheet" href="skin/images/h-brown/hbrown.css" type="text/css"/-->
+		<script src="lib/AIRAliases.js" type="text/javascript"></script>
+        <script type="text/javascript" src="lib/prototype/prototype.js"></script>
+        <script type="text/javascript" src="lib/tooltip-v0.2.js"></script>
+        <script type="text/javascript" src="lib/muxtape.js"></script>
+        <script type="text/javascript" src="lib/digg.js"></script>
+        <script type="text/javascript" src="lib/PownceDesktop.js"></script>
+        <script type="text/javascript" src="lib/PownceDesktop.properties.js"></script>
+        <script type="text/javascript" src="lib/PownceDesktop.Actions.js"></script>
+        <script type="text/javascript" src="lib/PownceDesktop.AJAX.js"></script>
+        <script type="text/javascript" src="lib/PownceDesktop.cronjobs.js"></script>
+        <script type="text/javascript" src="lib/PownceDesktop.DB.js"></script>
+        <script type='text/javascript'>
+            var chat;
+            window.onload = function(){
+                chat = new PownceDesktop();
+		      $$("*").findAll(function(node){
+		        return node.getAttribute('title');
+		      }).each(function(node){
+		        new Tooltip(node,node.title);
+		        node.removeAttribute("title");
+		      });
+            }
+		</script>
+    </head>
+    <body>
+		
+        <!-- Status bar message -->
+        <div id="statusbar">
+			<div id="refresh-button">Refresh</div>
+			<div id="new-friends" title="New Friend Requests"></div>
+        	<div id="status-message"></div>
+        </div>
+		
+		<div id="toolbar">
+			<div id="toolbutton-home" class="toolbutton" title="Home"><img src="skin/images/home.png"/></div>
+			<div id="toolbutton-new-note" class="toolbutton" title="New Note"><img src="skin/images/new-note.png"/></div>
+			<div id="toolbutton-people" class="toolbutton" title="People"><img src="skin/images/people.png"/></div>
+			<div id="toolbutton-favorites" class="toolbutton" title="Favorites"><img src="skin/images/favorite.png"/></div>
+		</div>
+	
+		<div id="filter-build-box" class="messagewin">
+			<div id="filter-div">
+				<h3>Filter</h3>
+				<dl>
+					<dt>Keywords:</dt>
+					<dd><input type="text" value="" id="filter-keyword"/></dd>
+					<dt>Type:</dt>
+					<dd><input type="checkbox" id="filter-messages"/> <label for="filter-messages">Messages</label> <input type="checkbox" id="filter-links"/> <label for="filter-links">Links</label> <input type="checkbox" id="filter-files"/> <label for="filter-files">Files</label> <input type="checkbox" id="filter-events"/> <label for="filter-events">Events</label> 
+					<br/><input type="checkbox" id="filter-reply"/> <label for="filter-reply">Replies</label></dd>
+				</dl>
+				<input type="button" value="Ok" id="filter-ok" class="button-1" />
+			</div>
+		</div>
+		
+		<div id="screen" class="transparent-screen"></div>
+
+		<div id="alert-box" class="dialog-info">
+			<div id="alert-div">
+				<h3>Alert!</h3>
+				<img src="icons/icon128.png" width="60px" height="60px"/>
+				<div id="alert-message">Alert Message</div>
+				<input type="button" value="Ok" id="alert-ok" class="button-1" />
+			</div>
+		</div>
+		
+		<div id="dialog" class="dialog-confirm">
+			<h3 id="dialog-title">What do you think?</h3>
+			<p id="dialog-message">
+				Should we do something really important or should we wait a while?
+			</p>
+			<input id="dialog-ok" type="button" value="OK" class="button-1" />
+			<input onclick="chat.cancelDialog();" type="button" value="Cancel"/>
+		</div>
+		
+		<div id="forward-note" class="messagewin">
+			<div id="forward-div">
+				<h3 id="forward-confirm">Forward a Note</h3>
+				<textarea id="forward-message"></textarea>
+				<input type="hidden" value="" id="forward-username"/>
+				<input type="hidden" value="" id="forward-noteid"/>
+		        <div id="sendtoforwardgroup">
+		            Forward to: <input type="text" id="forward-to-text" value="the public"/>
+					<input type="hidden" id="forward-to-id" value="newbies"/>
+					<ul id="forward-to-filter" style="display:none;"></ul>
+		            <select id="sendtoforward" style="display:none;"></select>
+		        </div>
+				<input type="button" value="Forward It!" id="forward-it" class="button-1" />
+				<input type="button" value="Cancel" id="cancel-forward"/>
+			</div>
+		</div>
+		
+		<div id="request-friend" class="messagewin">
+			<div id="request-div">
+				<div id="request-img"></div>
+				<h3 id="request-confirm"></h3>
+				<div id="request-add-message">Add a message (optional)</div>
+				<textarea id="request-message"></textarea>
+				<input type="hidden" value="" id="request-username"/>
+				<input type="button" value="Send Request" id="send-request" class="button-1" />
+				<input type="button" value="Cancel" id="cancel-request"/>
+			</div>
+		</div>
+		
+		<div id="reply-view" class="toolwin">
+			    <div id="note-detail">
+		        	<div id="user-note-image"></div>
+					<p id="note-detail-body"></p>
+					<div id="note-detail-event"></div>
+					<div id="note-detail-media-object"></div>
+					<div id="note-link"></div>
+					<div id="note-details"></div>
+					<div id="note-stars"></div>
+					<div id="note-bottom-details"></div>
+		        </div>
+				<ul id="reply-notes"></ul>
+				<ul id="reply-people">
+		            <li>
+		                <ul id="repliers"></ul>
+		            </li>
+				</ul>
+			<textarea id="reply-body"></textarea>
+            <div id="rating">
+                <strong id="rate-user-note"></strong>
+                <input type="hidden" name="stars" id="id_stars"/>
+                <ul>
+                    <li class="current-rating" id="current-rating"/>
+                    <li class="one-star">
+                        <a href="#" onclick="chat.doRateIt(1,'16px');">1 star</a>
+                    </li>
+                    <li class="two-stars">
+                        <a href="#" onclick="chat.doRateIt(2,'32px');">2 stars</a>
+                    </li>
+                    <li class="three-stars">
+                        <a href="#" onclick="chat.doRateIt(3,'48px');">3 stars</a>
+                    </li>
+                    <li class="four-stars">
+                        <a href="#" onclick="chat.doRateIt(4,'64px');">4 stars</a>
+                    </li>
+                    <li class="five-stars">
+                        <a href="#" onclick="chat.doRateIt(5,'80px');">5 stars</a>
+                    </li>
+                </ul>
+            </div>
+            <span class="rsvp" id="rsvp_block">
+                <label for="rsvp">
+                    RSVP: 
+                    <select id="rsvp">
+                        <option value="0">----</option>
+                        <option value="1">Attending</option>
+                        <option value="2">Busy Already</option>
+                        <option value="3">Not Attending</option>
+                        <option value="4">Running Late</option>
+                        <option value="5">Bringing Friends</option>
+                        <option value="6">Undecided</option>
+                        <option value="7">Wishing I Could Come!</option>
+                    </select>
+                </label>
+            </span>
+			<input id="reply-button" type="button" value="Add Reply" onclick="chat.doPostReply();"/>
+		</div>
+		
+		<div id="profile-view" class="toolwin">
+			<div id="profile-image"></div>
+			<div id="profile-short-name"></div>
+			<div id="profile-username"></div>
+			<div id="profile-details"></div>
+			<div id="profile-actions">
+				<div id="profile-link"></div>
+				<div id="profile-send-note"></div>
+				<div id="profile-unfriend"></div>
+				<div id="profile-cancel-request"></div>
+				<div id="profile-addfriend"></div>
+				<div id="profile-other-profiles" class="network"></div>
+			</div>
+			<div id="profile-facts">
+				<h3>About</h3>
+				<div id="profile-blurb"></div>
+				<h3>Facts</h3>
+				<div id="profile-friend-count"></div>
+				<div id="profile-fan-count"></div>
+				<div id="profile-fanof-count"></div>
+				<div id="profile-member-join"></div>
+				<h3>Last Pownce</h3>
+				<div id="profile-last-pownce"></div>
+			</div>
+		</div>
+		
+		<div id="people-view" class="toolwin">
+			<div id="people-search-filter">
+			<label for="people-filter">Search:</label> <input type="text" id="people-filter"/>
+			</div>
+			<div id="clear-people-filter" title="Clear Search"></div>
+			<ul id="people"></ul>
+		</div>
+		
+		<div id="favorites-view" class="toolwin">
+	        <ul id="favorites" class="notes"></ul>
+		</div>
+		
+		<div id="new-view" class="toolwin new-message-type">
+			<div class="new-toolbar">
+				<div id="new-message" class="new-button new-selected">
+					Message
+				</div>
+				<div id="new-link" class="new-button">
+					Link
+				</div>
+				<div id="new-file" class="new-button">
+					File
+				</div>
+				<div id="new-event" class="new-button">
+					Event
+				</div>
+			</div>
+			<input type="hidden" id="note-type" value="message"/>
+            <input type="text" value="What's Happening?" id="what" onfocus="if(this.value=='What\'s Happening?')this.value='';" onblur="if(this.value==''||this.value=='What\'s Happening?')this.value='What\'s Happening?';"/>
+			<input type="text" value="Where at?" id="where" onfocus="if(this.value=='Where at?')this.value='';" onblur="if(this.value==''||this.value=='Where at?')this.value='Where at?';"/>
+            <div id="when">
+                <input type="text" value="" id="time"/> on <input type="text" value="" id="date"/>
+            </div>
+			<input type="text" value="http://" id="url" onfocus="if(this.value=='http://')this.value='';" onblur="if(this.value==''||this.value=='http://')this.value='http://';"/>
+			<div id="file"><input type="button" id="file-browse" value="browse"/><input type="text" id="file-url" disabled="true"/></div>
+			<div id="file-upload-progress">
+				<div id="file-upload-message"></div>
+				<div id="file-upload-track">
+					<div id="file-upload-bar">&nbsp;</div>
+				</div>
+			</div>
+	        <textarea id="body" onfocus="if(this.value=='post a note...')this.value='';" onblur="if(this.value==''||this.value=='post a note...')this.value='post a note...';">post a note...</textarea>
+			<input id="cancel-new" type="button" value="Cancel"/>
+			<input id="postit" type="button" value="Post it!" class="button-1" />
+			<div id="send-to-box">
+	            <input type="text" id="send-to-text" value="the public"/>
+				<input type="hidden" id="send-to-id" value="public"/>
+				<ul id="send-to-filter" style="display:none;"></ul>
+	        </div>
+		</div>
+		
+		<div id="DELETEMELATER" style="display:none;">
+			<div id="new-box" class="ca-type-message">
+			</div>
+			<div id="filter-box" class="filter">
+				filter: <span id="filter-message">type:message,links user:dburka</span>
+				<span id="delete-filter"></span>
+			</div>
+		</div>
+		
+		<div id="note-view" class="toolwin">
+			<!-- Messages --->
+	        <ul id="notes" class="notes"></ul>
+		</div>
+		
+        <div id="settings" class="toolwin">
+            <fieldset>
+                <legend>Alerts</legend>
+				<h4>Select Sound</h4>
+				<ul id="sounds">
+					<li id="sound-default" class="selected-sound">Default</li>
+					<li id="sound-ting">Ting</li>
+					<li id="sound-whoom">Whoom</li>
+					<li id="sound-none">None</li>
+				</ul>
+            </fieldset>
+            <fieldset>
+                <legend>Appearance</legend>
+				<div>
+	                <select id="settings-max-notes">
+	                    <option value="10">10</option>
+	                    <option value="20" selected="true">20</option>
+	                    <option value="50">50</option>
+	                    <option value="100">100</option>
+	                </select>
+	                <label for="settings-max-notes">Number of Notes</label>
+				</div>
+            </fieldset>
+            <fieldset>
+                <legend>Behavior</legend>
+                <div>
+                	<input type="checkbox" id="settings-min-to-tray"/>
+                	<label id="min-to-tray-label" for="settings-min-to-tray">Minimize to tray</label>
+				</div>
+				<div>
+	                <input type="checkbox" id="settings-auto-login"/>
+	                <label for="settings-auto-login">Remember Me?</label>
+				</div>
+            </fieldset>
+        </div>
+		
+        <div id="login" class="login">
+            <form onsubmit="chat.doLogin();return false;">
+                <div id="login-error"></div>
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" id="username"/>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password"/>
+                </div>
+                <div>
+                    <input type="checkbox" id="auto-login"/><label id="remember-me-label" for="auto-login">Remember password</label>
+                </div>
+                <div>
+                    <input id="login-button" type="button" onclick="chat.doLogin()" value="Login"/>
+					<a onclick="chat.doNavigateToURL('http:\/\/pownce.com\/login\/');">Forgot username or password?</a>
+                </div>
+            </form>
+			
+			<div>
+				<img src="skin/images/pownce-login-icon.png"/>
+				<input type="button" onclick="chat.doNavigateToURL('http:\/\/pownce.com\/signup\/');" value="Join Pownce"/>
+			</div>
+			
+        </div>
+		
+    </body>
+</html>
