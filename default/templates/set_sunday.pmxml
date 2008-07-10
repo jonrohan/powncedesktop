@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pmtemplate>
+<name>Set Sunday</name>
+<type>message</type>
+<to>public</to>
+<body><![CDATA[[Set Sunday - A Post that details your current setup of Pownce sets, and how many people in each]
+
+]]></body>
+</pmtemplate>
