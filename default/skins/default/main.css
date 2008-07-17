@@ -40,11 +40,120 @@ div.tooltip {
     color: InfoText;
 }
 
+/************** BEGIN OS Style ****************/
+body.mac-os {
+	background-color:WindowFrame;
+}
+
+.mac-os .login {
+	background-color:WindowFrame;
+}
+
+.mac-os #statusbar {
+	background-color:WindowFrame;
+}
+
+.mac-os #toolbar {
+	background-color:WindowFrame;
+}
+
+.mac-os .dialog, .mac-os .dialog-info, .mac-os .dialog-confirm, .mac-os #forward-note {
+	background-color:WindowFrame;
+}
+
+.mac-os #new-view {
+	background-color:WindowFrame;
+}
+
+.mac-os #new-view .new-selected {
+	background-color:#ededed;
+}
+
+.mac-os #title-bar {
+	background-color:WindowFrame;
+	border-left:1px solid #999999;
+	border-top:1px solid #999999;
+	border-right:1px solid #999999;
+}
+
+.mac-os #title-bar .title {
+	font-size:10.5pt;
+}
+
+.mac-os #title-bar .controls-box {
+	float:left;
+	margin-top:3px;
+	margin-left:7px;
+	position:absolute;
+}
+
+.mac-os #statusbar {
+	border:1px solid #999999;
+}
+
+.mac-os .toolwin, .mac-os #toolbar {
+	border-left:1px solid #999999;
+	border-right:1px solid #999999;
+}
+
+.mac-os #controls-resize {
+	width:15px;
+	height:15px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	background-color:blue;
+	z-index:10;
+}
+
+/************** BEGIN Title Bar ***************/
+
+#title-bar {
+	z-index:10;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:20px;
+	text-align:center;
+}
+
+#title-bar .title {
+	cursor:default;
+}
+
+#title-bar .controls-box div {
+	float:left;
+	margin-right:7px;
+}
+
+.deactive #title-bar .title {
+	color:#999999;
+}
+
+.mac-os .controls-box #controls-close {
+	height:15px;
+	width:15px;
+	background:red;
+}
+
+.mac-os .controls-box #controls-min {
+	height:15px;
+	width:15px;
+	background:yellow;
+}
+
+.mac-os .controls-box #controls-max {
+	height:15px;
+	width:15px;
+	background:green;
+}
+
 /************** BEGIN Login Win ***************/
 .login {
 	background-color:inherit;
 	position:absolute;
-	top: 0;
+	top: 25px;
 	left: 0;
 	right: 0;
 	bottom: 22px;
@@ -110,7 +219,6 @@ div.tooltip {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	border-top: 1px solid #878787;
 	height: 22px;
 	padding: 0 0 0 10px;
 }
@@ -149,7 +257,7 @@ div.tooltip {
 	background-color:inherit;
 	border-bottom: 1px solid #999;
 	position: absolute;
-	top: 0;
+	top: 20px;
 	left: 0;
 	right: 0;
 	padding-left: 10px;
@@ -174,7 +282,7 @@ div.tooltip {
 .toolwin {
 	background-color:#fff;
 	position: absolute;
-	top: 31px;
+	top: 51px;
 	left: 0;
 	right: 0;
 	bottom: 23px;
@@ -386,7 +494,7 @@ input.button-1 {
 
 #new-view {
 	background-color:inherit;
-	top: 30px;
+	top: 51px;
 	bottom: 22px;
 }
 
@@ -397,7 +505,6 @@ input.button-1 {
 #new-view .new-toolbar {
 	height: 44px;
 	padding: 0 10px;
-	border-top: 1px solid #999;
 }
 
 #new-view .new-button {

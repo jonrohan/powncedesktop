@@ -10,7 +10,7 @@
     <initialWindow>
         <content>PownceDesktop.html</content>
         <title>Pownce</title>
-        <systemChrome>standard</systemChrome>
+        <systemChrome>none</systemChrome>
         <transparent>false</transparent>
         <visible>true</visible>
         <minimizable>true</minimizable>
