@@ -1,0 +1,54 @@
+.mux-widget {
+	width:250px;
+	height:200px;
+	background-color:#fff;
+}
+
+.mux-head {
+	padding:5px;
+	padding-left:10px;
+	text-transform:uppercase;
+	color:#fff;
+	font-weight:bold;
+}
+
+
+.mux-widget .songs {
+	margin:0px;
+	padding:0px;
+	overflow:auto;
+	color:#000;
+	height:170px;
+	list-style-type:none;
+}
+
+.mux-widget .songs .song:hover {
+	background-color:#F3F3F3;
+}
+
+.mux-widget .songs .song {
+	padding:5px;
+	cursor:hand;
+}
+
+.mux-widget .songs .song .clock {
+	float:right;
+	font-size:25pt;
+	color:#009400;
+	position:absolute;
+	top:5px;
+	right:5px;
+	padding-top:10px;
+}
+.mux-widget .songs .song {
+	position:relative;
+}
+.mux-widget .songs .playing {
+	background-color:#EAEAEA;
+}
+
+.mux-widget .buy {
+	display:none;
+}
+
+

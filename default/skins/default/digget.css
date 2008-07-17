@@ -1,0 +1,45 @@
+.digg-shade {
+	background:url(images/digg-shade-compact.gif) no-repeat top left;
+	color:#93883F;
+	width:36px;
+	height:36px;
+	text-decoration:none;
+	text-align:center;
+	padding-top:6px;
+	margin-right:5px;
+	display:block;
+	float:left;
+	padding-bottom:14px;
+}
+
+.digg-title {
+	text-decoration:none;
+	cursor:hand;
+}
+
+.digg-comments {
+	text-decoration:none;
+	cursor:hand;
+	background:url(images/digg-comments.gif) no-repeat left top;
+	padding-left:17px;
+	padding-bottom:2px;
+	font-size:8pt;
+	margin-right:10px;
+}
+
+.digg-user img {
+	vertical-align:top;
+	margin-right:3px;
+	min-width:10px!important;
+	width:15px!important;
+	height:15px!important;
+	border-width:1px!important;
+}
+
+.digg-user {
+	text-decoration:none;
+	cursor:hand;
+	padding-bottom:2px;
+	font-size:8pt;
+	margin-right:5px;
+}

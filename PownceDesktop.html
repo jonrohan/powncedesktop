@@ -51,10 +51,10 @@
         </div>
 		
 		<div id="toolbar">
-			<div id="toolbutton-home" class="toolbutton" title="Home"><img src="skin/images/home.png"/></div>
-			<div id="toolbutton-new-note" class="toolbutton" title="New Note"><img src="skin/images/new-note.png"/></div>
-			<div id="toolbutton-people" class="toolbutton" title="People"><img src="skin/images/people.png"/></div>
-			<div id="toolbutton-favorites" class="toolbutton" title="Favorites"><img src="skin/images/favorite.png"/></div>
+			<div id="toolbutton-home" class="toolbutton" title="Home"><div class="img"></div></div>
+			<div id="toolbutton-new-note" class="toolbutton" title="New Note"><div class="img"></div></div>
+			<div id="toolbutton-people" class="toolbutton" title="People"><div class="img"></div></div>
+			<div id="toolbutton-favorites" class="toolbutton" title="Favorites"><div class="img"></div></div>
 		</div>
 	
 		<div id="filter-build-box" class="messagewin">
@@ -76,7 +76,6 @@
 		<div id="alert-box" class="dialog-info">
 			<div id="alert-div">
 				<h3>Alert!</h3>
-				<img src="icons/icon128.png" width="60px" height="60px"/>
 				<div id="alert-message">Alert Message</div>
 				<input type="button" value="Ok" id="alert-ok" class="button-1" />
 			</div>
@@ -327,7 +326,7 @@
             </form>
 			
 			<div>
-				<img src="skin/images/pownce-login-icon.png"/>
+				<span class="pownce-login-logo"></span>
 				<input type="button" onclick="chat.doNavigateToURL('http:\/\/pownce.com\/signup\/');" value="Join Pownce"/>
 			</div>
 			
