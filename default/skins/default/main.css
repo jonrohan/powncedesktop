@@ -77,7 +77,8 @@ body.mac-os {
 }
 
 .mac-os #title-bar .title {
-	font-size:10.5pt;
+	padding-top:3px;
+	font-size:10pt;
 }
 
 .mac-os #title-bar .controls-box {
@@ -102,7 +103,7 @@ body.mac-os {
 	position:absolute;
 	bottom:0;
 	right:0;
-	background-color:blue;
+	background:url(images/resize.png)no-repeat 2px 2px;
 	z-index:10;
 }
 
@@ -116,6 +117,8 @@ body.mac-os {
 	right:0;
 	height:20px;
 	text-align:center;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
 }
 
 #title-bar .title {
@@ -127,27 +130,44 @@ body.mac-os {
 	margin-right:7px;
 }
 
-.deactive #title-bar .title {
+.mac-os.deactive #title-bar .title {
 	color:#999999;
 }
 
 .mac-os .controls-box #controls-close {
 	height:15px;
 	width:15px;
-	background:red;
+	background:url(images/mac-controls.png) no-repeat -2px -19px;
+}
+
+.mac-os.active .controls-box:hover #controls-close {
+	background-position: -2px 0px;
+}
+
+.mac-os.deactive .controls-box #controls-close, .mac-os.deactive .controls-box #controls-min, .mac-os.deactive .controls-box #controls-max {
+	background-position: -2px -38px;
 }
 
 .mac-os .controls-box #controls-min {
 	height:15px;
 	width:15px;
-	background:yellow;
+	background:url(images/mac-controls.png) no-repeat -23px -19px;
+}
+
+.mac-os.active .controls-box:hover #controls-min {
+	background-position: -23px 0px;
 }
 
 .mac-os .controls-box #controls-max {
 	height:15px;
 	width:15px;
-	background:green;
+	background:url(images/mac-controls.png) no-repeat -44px -19px;
 }
+
+.mac-os.active .controls-box:hover #controls-max {
+	background-position: -44px 0px;
+}
+
 
 /************** BEGIN Login Win ***************/
 .login {
@@ -217,6 +237,14 @@ body.mac-os {
 	vertical-align:middle;
 }
 
+#login-error {
+	display:none;
+	padding:5px 10px 5px 20px;
+	background-color:#FFBFBF;
+	border:1px solid #FF1F1F;
+	-webkit-border-radius: 3px;
+}
+
 /************** END Login Win ****************/
 
 
@@ -229,7 +257,7 @@ body.mac-os {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 22px;
+	height: 21px;
 	padding: 0 0 0 10px;
 }
 
@@ -271,6 +299,10 @@ body.mac-os {
 	left: 0;
 	right: 0;
 	padding-left: 10px;
+}
+
+.mac-os.active #toolbar {
+	background:url(images/mac-gradient.png) repeat-x bottom left;
 }
 
 #toolbar .toolbutton {
