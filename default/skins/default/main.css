@@ -45,6 +45,10 @@ body.mac-os {
 	background-color:WindowFrame;
 }
 
+.linux-os, .linux-os .login {
+	background-color:#EFEBE7;
+}
+
 .mac-os .login {
 	background-color:WindowFrame;
 }
@@ -169,6 +173,33 @@ body.mac-os {
 }
 
 
+/************** BEGIN Applicaiton Menu ***************/
+
+.mac-os #application-menu {
+	display:none;
+}
+
+.linux-os #application-menu {
+	position:absolute;
+	left:0;
+	right:0;
+	top:20px;
+	border-bottom:1px solid #B1A598;
+	border-left:1px solid #B1A598;
+	border-right:1px solid #B1A598;
+	padding-left:3px;
+}
+
+.linux-os #application-menu .menu-item {
+	display:block;
+	float:left;
+	height:25px;
+	padding:5px 10px 5px 10px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+	cursor:default;
+}
+
 /************** BEGIN Login Win ***************/
 .login {
 	background-color:inherit;
@@ -179,6 +210,14 @@ body.mac-os {
 	bottom: 22px;
 	border-right:1px solid #999;
 	border-left:1px solid #999;
+}
+
+.linux-os #auto-login, .linux-os #remember-me-label {
+	display:none;
+}
+
+.linux-os .login {
+	top:40px;
 }
 
 .login div {
@@ -301,6 +340,10 @@ body.mac-os {
 	padding-left: 10px;
 }
 
+.linux-os #toolbar {
+	top:40px;
+}
+
 .mac-os.active #toolbar {
 	background:url(images/mac-gradient.png) repeat-x bottom left;
 }
@@ -353,6 +396,10 @@ body.mac-os {
 	right: 0;
 	bottom: 23px;
 	overflow: auto;
+}
+
+.linux-os .toolwin {
+	top: 75px;
 }
 /************** END Tool win ****************/
 
