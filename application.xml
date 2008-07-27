@@ -16,11 +16,11 @@
         <minimizable>true</minimizable>
         <maximizable>true</maximizable>
         <resizable>true</resizable>
-        <width>370</width>
-        <height>400</height>
+        <width>353</width>
+        <height>320</height>
         <x>200</x>
         <y>200</y>
-        <minSize>370 400</minSize>
+        <minSize>353 320</minSize>
     </initialWindow>
     
     <!-- The subpath of the standard default installation location to use. Optional. -->
