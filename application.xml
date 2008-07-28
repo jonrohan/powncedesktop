@@ -12,7 +12,7 @@
         <title>Pownce</title>
         <systemChrome>none</systemChrome>
         <transparent>false</transparent>
-        <visible>true</visible>
+        <visible>false</visible>
         <minimizable>true</minimizable>
         <maximizable>true</maximizable>
         <resizable>true</resizable>
