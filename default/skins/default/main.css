@@ -208,7 +208,7 @@ body {
 	border-left:1px solid #999;
 }
 
- #auto-login,  #remember-me-label {
+.linux-os #auto-login,  .linux-os #remember-me-label {
 	display:none;
 }
 
