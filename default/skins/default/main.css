@@ -41,67 +41,63 @@ div.tooltip {
 }
 
 /************** BEGIN OS Style ****************/
-body.mac-os {
+body {
 	background-color:WindowFrame;
 }
 
-.linux-os, .linux-os .login {
-	background-color:#EFEBE7;
-}
-
-.mac-os .login {
+.login {
 	background-color:WindowFrame;
 }
 
-.mac-os #statusbar {
+#statusbar {
 	background-color:WindowFrame;
 }
 
-.mac-os #toolbar {
+ #toolbar {
 	background-color:WindowFrame;
 }
 
-.mac-os .dialog, .mac-os .dialog-info, .mac-os .dialog-confirm, .mac-os #forward-note {
+ .dialog,  .dialog-info,  .dialog-confirm,  #forward-note {
 	background-color:WindowFrame;
 }
 
-.mac-os #new-view {
+ #new-view {
 	background-color:WindowFrame;
 }
 
-.mac-os #new-view .new-selected {
+ #new-view .new-selected {
 	background-color:#ededed;
 }
 
-.mac-os #title-bar {
+ #title-bar {
 	background-color:WindowFrame;
 	border-left:1px solid #999999;
 	border-top:1px solid #999999;
 	border-right:1px solid #999999;
 }
 
-.mac-os #title-bar .title {
+ #title-bar .title {
 	padding-top:3px;
 	font-size:10pt;
 }
 
-.mac-os #title-bar .controls-box {
+ #title-bar .controls-box {
 	float:left;
 	margin-top:3px;
 	margin-left:7px;
 	position:absolute;
 }
 
-.mac-os #statusbar {
+ #statusbar {
 	border:1px solid #999999;
 }
 
-.mac-os .toolwin, .mac-os #toolbar {
+ .toolwin,  #toolbar {
 	border-left:1px solid #999999;
 	border-right:1px solid #999999;
 }
 
-.mac-os #controls-resize {
+ #controls-resize {
 	width:15px;
 	height:15px;
 	position:absolute;
@@ -134,52 +130,52 @@ body.mac-os {
 	margin-right:7px;
 }
 
-.mac-os.deactive #title-bar .title {
+.deactive #title-bar .title {
 	color:#999999;
 }
 
-.mac-os .controls-box #controls-close {
+ .controls-box #controls-close {
 	height:15px;
 	width:15px;
 	background:url(images/mac-controls.png) no-repeat -2px -19px;
 }
 
-.mac-os.active .controls-box:hover #controls-close {
+.active .controls-box:hover #controls-close {
 	background-position: -2px 0px;
 }
 
-.mac-os.deactive .controls-box #controls-close, .mac-os.deactive .controls-box #controls-min, .mac-os.deactive .controls-box #controls-max {
+.deactive .controls-box #controls-close, .deactive .controls-box #controls-min, .deactive .controls-box #controls-max {
 	background-position: -2px -38px;
 }
 
-.mac-os .controls-box #controls-min {
+ .controls-box #controls-min {
 	height:15px;
 	width:15px;
 	background:url(images/mac-controls.png) no-repeat -23px -19px;
 }
 
-.mac-os.active .controls-box:hover #controls-min {
+.active .controls-box:hover #controls-min {
 	background-position: -23px 0px;
 }
 
-.mac-os .controls-box #controls-max {
+ .controls-box #controls-max {
 	height:15px;
 	width:15px;
 	background:url(images/mac-controls.png) no-repeat -44px -19px;
 }
 
-.mac-os.active .controls-box:hover #controls-max {
+.active .controls-box:hover #controls-max {
 	background-position: -44px 0px;
 }
 
 
 /************** BEGIN Applicaiton Menu ***************/
 
-.mac-os #application-menu {
+ #application-menu {
 	display:none;
 }
 
-.linux-os #application-menu {
+/* #application-menu {
 	position:absolute;
 	left:0;
 	right:0;
@@ -190,7 +186,7 @@ body.mac-os {
 	padding-left:3px;
 }
 
-.linux-os #application-menu .menu-item {
+ #application-menu .menu-item {
 	display:block;
 	float:left;
 	height:25px;
@@ -198,7 +194,7 @@ body.mac-os {
 	-webkit-border-top-left-radius:3px;
 	-webkit-border-top-right-radius:3px;
 	cursor:default;
-}
+} */
 
 /************** BEGIN Login Win ***************/
 .login {
@@ -212,13 +208,10 @@ body.mac-os {
 	border-left:1px solid #999;
 }
 
-.linux-os #auto-login, .linux-os #remember-me-label {
+ #auto-login,  #remember-me-label {
 	display:none;
 }
 
-.linux-os .login {
-	top:40px;
-}
 
 .login div {
 	border-top: 1px inset #000;
@@ -340,11 +333,8 @@ body.mac-os {
 	padding-left: 10px;
 }
 
-.linux-os #toolbar {
-	top:40px;
-}
 
-.mac-os.active #toolbar {
+.active #toolbar {
 	background:url(images/mac-gradient.png) repeat-x bottom left;
 }
 
@@ -398,9 +388,6 @@ body.mac-os {
 	overflow: auto;
 }
 
-.linux-os .toolwin {
-	top: 75px;
-}
 /************** END Tool win ****************/
 
 /************** BEGIN Notes View ****************/
