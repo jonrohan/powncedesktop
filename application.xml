@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/1.0">
+    
+    <id>PownceMonkey</id>
+    <filename>Pownce Monkey</filename>
+    <name>Pownce Monkey</name>
+    <version>0.35</version>
+    <description>The purpose of this project is to supply a chat client for Pownce.</description>
+    <copyright>Copyright (c) 2008 Jon Rohan</copyright>
+    <initialWindow>
+        <content>PownceMonkey.html</content>
+        <title>Pownce Monkey</title>
+        <systemChrome>none</systemChrome>
+        <transparent>true</transparent>
+        <visible>true</visible>
+        <minimizable>true</minimizable>
+        <maximizable>false</maximizable>
+        <resizable>true</resizable>
+        <width>370</width>
+        <height>600</height>
+        <x>200</x>
+        <y>200</y>
+        <minSize>370 400</minSize>
+        <!--maxSize>1280 1024</maxSize-->
+    </initialWindow>
+    
+    <!-- The subpath of the standard default installation location to use. Optional. -->
+    <!-- <installFolder></installFolder> -->
+    
+    <!-- The subpath of the Windows Start/Programs menu to use. Optional. -->
+    <!-- <programMenuFolder></programMenuFolder> -->
+    
+    <icon>
+        <image16x16>icons/icon16.png</image16x16>
+        <image32x32>icons/icon32.png</image32x32>
+        <image48x48>icons/icon48.png</image48x48>
+        <image128x128>icons/icon128.png</image128x128>
+    </icon>
+    
+    <!-- Whether the application handles the update when a user double-clicks an update version
+    of the AIR file (true), or the default AIR application installer handles the update (false).
+    Optional. Default false. -->
+    <!-- <customUpdateUI></customUpdateUI> -->
+    
+    <!-- Whether the application can be launched when the user clicks a link in a web browser.
+    Optional. Default false. -->
+    <!-- <allowBrowserInvocation></allowBrowserInvocation> -->
+    
+    <!-- Listing of file types for which the application can register. Optional. -->
+    <fileTypes>
+        <!-- Defines one file type. Optional. -->
+        <fileType>
+	        <!-- The name that the system displays for the registered file type. Required. -->
+	        <name>powncemonkey.TemplateFile</name>
+	        <!-- The extension to register. Required. -->
+	        <extension>pmxml</extension>
+	        <!-- The description of the file type. Optional. -->
+	        <description>Pownce Monkey Template File</description>
+	        <!-- The MIME type. Optional. -->
+	        <contentType>text/xml</contentType>
+	        <!-- The icon to display for the file type. Optional. -->
+		    <icon>
+		        <image16x16>icons/icon16.png</image16x16>
+		        <image32x32>icons/icon32.png</image32x32>
+		        <image48x48>icons/icon48.png</image48x48>
+		        <image128x128>icons/icon128.png</image128x128>
+		    </icon>
+        </fileType>
+    </fileTypes>
+    
+</application>

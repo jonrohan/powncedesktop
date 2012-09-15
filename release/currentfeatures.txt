@@ -1,0 +1,19 @@
+* Reply to notes from client
+* Minimize to tray (Windows)
+* Audio notes alert
+* Play videos in full-screen/seperate window (youtube, qik, revision3, viddler)
+* Image previews
+* Automatic notification of new version and update
+* Optional Allow notes to collapse
+* Change the amount of notes to download
+* Filter notes by Type and/or User
+* Preview mp3 files
+* Urls in notes are clickable
+* Notifications of new friend requests.
+* Option to increase/decrease the font size.
+* Delete your notes
+* Theme changes to match Pownce profile theme
+* Ability to add friends, right click on repliers to a note and Add them as a friend
+* Forwarded notes links to user's profile
+* Show's Online users
+* Remebers position and size from previous logon

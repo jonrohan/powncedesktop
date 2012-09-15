@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pmtemplate>
+<name>Story Saturday</name>
+<type>message</type>
+<to>public</to>
+<body><![CDATA[[Story Saturday - A short story about something significant during the week.]
+
+]]></body>
+</pmtemplate>

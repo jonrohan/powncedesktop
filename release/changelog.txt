@@ -1,0 +1,258 @@
+Date: 06/10/2008
+Version: 0.35
+This version has:
+- Fixed: Login problems by using 2.0 api sacrifices embeds for now
+- Fixed: File note type json structure changes
+
+Date: 05/19/2008
+Version: 0.32
+This version has:
+- Replies linked to parent note
+
+Date: 05.14.2008
+Version: 0.31
+This version has:
+- Bug Fix: Popup login box
+- Peeps stored in Database for faster access and less strain on the API
+- Code cleaning and refactoring
+- Send files to public
+
+Date: 05.08.2008
+Version: 0.30
+This version has:
+- Bug Fix: Logging in problem
+- View Photo in Separate Window (Flickr)
+
+Date: 05.06.2008
+Version: 0.29
+This version has:
+- UI Improvements
+- Settings improvements
+- Native menus
+- Form validation
+
+Date: 05.02.2008
+Version: 0.28
+This version has:
+- Favorites
+- !username now takes you to the profile view
+- Digg widget
+- Viddler video support
+
+Date: 04.30.2008
+Version: 0.275
+This version has:
+- Bux Fix: 404 hell!
+
+Date: 04.29.2008
+Version: 0.27
+This version has:
+- Muxtape widget added to stream
+- Revision3 video support
+- Send to is now an autocomplete box
+- Removing extra views, for now
+- Posting notes ui change
+- Bug Fix: When < or + is used in posting messages it gets stripped out of the message
+- Bug Fix: < in a message body is treated as actual html
+
+Date: 04.26.2008
+Version: 0.26
+This version has:
+- Bug Fix: Collapsed notes has recipients tag visible
+- Icon redesign
+- Update points to new website
+
+Date: 04.24.2008
+Version: 0.25
+This version has:
+- Bug Fix: Some Youtube videos aren't playing
+- Bug Fix: Restore not bringing window to front
+- Bug Fix: Clicking on taskbar doesn't min window (Windows)
+- Visual feedback for private notes to you
+- New Keyboard shortcuts, n - notes view, p - peeps view
+- 'Last Pownce' added to profile view
+- 'First Page' in navigation to take you to first note page
+- Filter Peeps by Username
+- Filter Peeps searches offline users
+
+Date: 04.23.2008
+Version: 0.24
+This version has:
+- Bug Fix: Friend Request Confirm on profile view.
+- Bug Fix: Event time/date format
+- Bug Fix: Music/file view colors
+- Remember Size and Position from previous logon
+- Refresh button
+- Set Transparency
+
+Date: 04.19.2008
+Version: 0.23
+This version has:
+- Profile View, view any user in the app before visiting website
+- Emoticons
+
+Date: 04.17.2008
+Version: 0.22
+This version has:
+- Bug Fix: Umlauts not appearing in replies, under reply view
+- Keyboard shortcuts
+
+Date: 04.16.2008
+Version: 0.211
+This version has:
+- Bug Fix: Expand Video buttons visible on collapsed notes
+
+Date: 04.16.2008
+Version: 0.21
+This version has:
+- Bug Fix: Expand Video buttons visible on collapsed notes
+- Peeps, View and Search your Friends and Fanof
+
+Date: 04.15.2008
+Version: 0.2
+This version has:
+- New Filter system
+- More compact look
+- New Toolbar for easy tool access
+
+Date: 04.13.2008
+Version: 0.185
+This version has:
+- Bug Fix: Reply body clearing
+- Bug Fix: Auto Logout after login
+- Bug Fix: ; in message/reply body breaks post
+
+Date: 04.12.2008
+Version: 0.18
+This version has:
+- Bug Fix: Minor login problems
+- More default Note Templates
+- Application logging
+
+Date: 04.10.2008
+Version: 0.17
+This version has:
+- Bug Fix: Minor login problems
+- Note Templates Support
+
+Date: 04.10.2008
+Version: 0.161
+This version has:
+- Bug Fix: Application not loging in
+- 0.16 uses an unreleased pownce api,
+which isn't stable yet. 0.161 downgrades
+to the latest stable api, but at the cost
+of the media objects (vids, photos) embeded
+in the page. 
+
+Date: 04.09.2008
+Version: 0.16
+This version has:
+- Bug Fix: Unicode character support
+- Bug Fix: Random Posting bugs
+- support for !powneruser
+
+Date: 04.08.2008
+Version: 0.15
+This version has:
+- Shows flickr photo details, (title, author)
+- Shows preview image of youtube video
+- Bug fix: File upload now works
+- Drag file onto app to upload
+- Small side button to toggle user contact list
+
+Date: 04.05.2008
+Version: 0.14
+This version has:
+- True friend request, doesn't just send you to the website.
+- True forward, doesn't just create a new note, forwards like website.
+- UI Improvements, "no replies" feedback
+- Remove friends (right click on userlist)
+- Cancel friend requests (right click on userlist)
+
+Date: 04.04.2008
+Version: 0.12
+This version has:
+- UI improvements
+- Bux fix: reply bugs
+- Code refactoring
+- More user feedback
+
+Date: 04.02.2008
+Version: 0.11
+This version has:
+- UI improvements
+- Bug fix: Reply box exands to fill reply screen
+- Photo View, view photos shared by your friends.
+
+Date: 04.01.2008
+Version: 0.10
+This version has:
+- Option to hide friends list
+- Pagination
+- Font change San-serif family
+- styled mp3 player
+
+Date: 04.01.2008
+Version: 0.09
+This version has:
+- [username] says: now links to the original user's profile.
+- Option to hide users who haven't posted a note in the last x notes
+- Show's Online users (users who posted in the last 30 min)
+
+Date: 03.31.2008
+Version: 0.08
+This version has:
+- Music View (View the music each of your friends uploaded as a playlist)
+- Ability to add friends, right click on repliers to a note and Add them as a friend
+
+Date: 03.27.2008
+Version: 0.07
+This version has:
+- Custom theme matches Pownce profile theme
+- Improved login flow
+
+Date: 03.26.2008
+Version: 0.06
+This version has:
+- Icon change when note recieved
+- Taskbar flash when note recieved (Windows)
+- Icon bounce when note recieved (Mac)
+- Links in notes clickable
+- Alert when friend requests received
+- Added option to increase/decrease the font size.
+- Fixed bug with opening About page
+- Delete Notes
+- Clicking links adds download count to Pownce.
+- qik video support fullscreen view
+
+Date: 03.24.2008
+Version: 0.05
+This version has:
+- About page
+- File View (View/Preview/Download all your friends file notes like you would in finder/Windows Explorer.)
+- Preview mp3 files
+
+Date: 03.23.2008
+Version: 0.04
+This version has:
+- Audio message Alert
+- Doc icon bounce (Mac OSX)
+- Added pro tag to user photos
+- Added rsvp status
+
+Date: 03.21.2008
+Version: 0.03
+This version has:
+- Added Settings Panel
+- Optional Minimize to tray (Windows)
+- Optional Allow notes to collapse 
+- Change the amount of notes to download
+- Name Change 'Pownce Monkey'
+
+Version: 0.02
+This version has:
+- Styled Login window
+- Added Menu
+- Added ratings to notes
+- Added application auto update
