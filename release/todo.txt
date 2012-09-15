@@ -1,8 +1,0 @@
-- more error feedback
-- templates
-- condensed notes
-- languages
-- voicemail
-- calendar view
-- video view
-

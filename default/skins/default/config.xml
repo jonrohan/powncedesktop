@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+	<name>Default</name>
+	<foldername>default</foldername>
+	<author>Pownce</author>
+	<stylesheets>
+		<path>main.css</path>
+		<path>digget.css</path>
+		<path>muxtape.css</path>
+	</stylesheets>
+</skin>

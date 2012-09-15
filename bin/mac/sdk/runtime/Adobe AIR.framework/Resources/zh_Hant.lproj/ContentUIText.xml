@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><!DOCTYPE asf SYSTEM "http://ns.adobe.com/asf/asf_1_0.dtd"><asf locale="en_US" version="1.0" xmlns="http://ns.adobe.com/asf">
+   <str name="ERROR__CAPTION__ADOBE_AIR" translate="yes">
+     <val>Adobe AIR</val> 
+   </str>
+   <str name="ERROR__DAMAGED_APPLICATION" translate="yes">
+     <val>此應用程式的安裝程式已損毀。請嘗試重新安裝，或聯絡發行者以取得協助。</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__NAVIGATION__STOP" translate="yes">
+     <val>停止</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__NAVIGATION__RELOAD" translate="yes">
+     <val>重新載入</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__NAVIGATION__GO_BACK" translate="yes">
+     <val>後移</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__NAVIGATION__GO_FORWARD" translate="yes">
+     <val>前移</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__NAVIGATION__OPEN_FRAME_IN_NEW_WINDOW" translate="yes">
+     <val>在新視窗中開啟影格</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__NAVIGATION__OPEN_LINK" translate="yes">
+     <val>開啟連結</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__NAVIGATION__OPEN_LINK_IN_NEW_WINDOW" translate="yes">
+     <val>在新視窗中開啟連結</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__NAVIGATION__DOWNLOAD_LINKED_FILE" translate="yes">
+     <val>下載連結的檔案</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__NAVIGATION__OPEN_IMAGE_IN_NEW_WINDOW" translate="yes">
+     <val>在新視窗中開啟影像</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__NAVIGATION__DOWNLOAD_IMAGE" translate="yes">
+     <val>下載影像</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__EDIT__COPY_LINK" translate="yes">
+     <val>複製連結</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__EDIT__COPY_IMAGE" translate="yes">
+     <val>複製影像</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__SEARCH__SEARCH_IN_SPOTLIGHT" translate="yes">
+     <val>在 Spotlight 中搜尋</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__SEARCH__SEARCH_IN_GOOGLE" translate="yes">
+     <val>在 Google 中搜尋</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__SPELLING__SEARCH_IN_DICTIONARY" translate="yes">
+     <val>在字典中尋找</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__SPELLING__NO_GUESSES_FOUND" translate="yes">
+     <val>找不到猜測文字</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__SPELLING__IGNORE_SPELLING" translate="yes">
+     <val>忽略拼字</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__SPELLING__LEARN_SPELLING" translate="yes">
+     <val>學習拼字</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__SPELLING__IGNORE_GRAMMAR" translate="yes">
+     <val>忽略文法</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__SPELLING__SPELLING_AND_GRAMMAR" translate="yes">
+     <val>拼字與文法</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__SPELLING__SETTINGS" translate="yes">
+     <val>拼字…</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__SPELLING__CHECK_SPELLING" translate="yes">
+     <val>拼字檢查</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__SPELLING__CHECK_WHILE_TYPING" translate="yes">
+     <val>在輸入時檢查拼字</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__SPELLING__CHECK_GRAMMAR" translate="yes">
+     <val>文法與拼字檢查</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__STYLE__FONT" translate="yes">
+     <val>字型</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__STYLE__SHOW_FONTS" translate="yes">
+     <val>顯示字型</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__STYLE__BOLD" translate="yes">
+     <val>粗體</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__STYLE__ITALICS" translate="yes">
+     <val>斜體</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__STYLE__UNDERLINE" translate="yes">
+     <val>底線</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__STYLE__OUTLINE" translate="yes">
+     <val>外框</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__STYLE__STYLES" translate="yes">
+     <val>樣式..."</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__STYLE__SHOW_COLORS" translate="yes">
+     <val>顯示顏色</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__STYLE__WRITING_DIRECTION" translate="yes">
+     <val>書寫方向</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__STYLE__WRITING_DIRECTION__DEFAULT" translate="yes">
+     <val>預設</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__STYLE__WRITING_DIRECTION__LEFT_TO_RIGHT" translate="yes">
+     <val>從左到右</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__STYLE__WRITING_DIRECTION__RIGHT_TO_LEFT" translate="yes">
+     <val>從右到左</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__SPEECH__SPEECH" translate="yes">
+     <val>語音</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__SPEECH__START" translate="yes">
+     <val>開始說話</val> 
+   </str>
+   <str name="HTML_CONTEXTMENU__SPEECH__STOP" translate="yes">
+     <val>停止說話</val> 
+   </str>
+  <str name="EDIT__CUT" translate="yes">
+    <val>剪下</val>
+  </str>
+  <str name="EDIT__COPY" translate="yes">
+    <val>複製</val>
+  </str>
+  <str name="EDIT__PASTE" translate="yes">
+    <val>貼上</val>
+  </str>
+  <str name="EDIT__SELECT_ALL" translate="yes">
+    <val>全選</val>
+  </str>
+  <str name="HTML_RESET_BUTTON_DEFAULT" translate="yes">
+    <val>重設</val>
+  </str>
+  <str name="HTML_FILE_BUTTON_CHOOSE_FILE" translate="yes">
+    <val>瀏覽...</val>
+  </str>
+  <str name="HTML_SEARCHABLE_INDEX_INTRO" translate="yes">
+    <val>可搜尋的索引</val>
+  </str>
+  <str name="HTML_SUBMIT_BUTTON_DEFAULT" translate="yes">
+    <val>送出</val>
+  </str>
+  <str name="HTML_UNKNOWN_FILE_SIZE" translate="yes">
+    <val>不明</val>
+  </str>
+</asf>

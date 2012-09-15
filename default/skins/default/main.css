@@ -1,0 +1,1223 @@
+/**
+ * Pownce Desktop Style
+ * 
+ * TOC
+ * - Login Win
+ * - Statusbar
+ * - Toolbar
+ * - Tool win
+ * - Notes View
+ * - Dialog Style
+ * - New View
+ * 
+ */
+
+a {
+	color:#004899;
+	text-decoration:none;
+	cursor:hand;
+}
+
+
+body {
+	font-family:"Lucida Grande";
+}
+
+.toolwin, .messagewin {
+	display:none;
+}
+
+input[type=button] {
+	padding: 6px 20px;
+}
+
+div.tooltip {
+    padding: 2px 5px 2px 5px;
+	margin: 5px;
+    background-color: InfoBackground;
+    border: 1px solid InfoText;
+    z-index: 6;
+    color: InfoText;
+}
+
+/************** BEGIN OS Style ****************/
+body {
+	background-color:WindowFrame;
+}
+
+.login {
+	background-color:WindowFrame;
+}
+
+#statusbar {
+	background-color:WindowFrame;
+}
+
+ #toolbar {
+	background-color:WindowFrame;
+}
+
+ .dialog,  .dialog-info,  .dialog-confirm,  #forward-note {
+	background-color:WindowFrame;
+}
+
+ #new-view {
+	background-color:WindowFrame;
+}
+
+ #new-view .new-selected {
+	background-color:#ededed;
+}
+
+ #title-bar {
+	background-color:WindowFrame;
+	border-left:1px solid #999999;
+	border-top:1px solid #999999;
+	border-right:1px solid #999999;
+}
+
+ #title-bar .title {
+	padding-top:3px;
+	font-size:10pt;
+}
+
+ #title-bar .controls-box {
+	float:left;
+	margin-top:3px;
+	margin-left:7px;
+	position:absolute;
+}
+
+ #statusbar {
+	border:1px solid #999999;
+}
+
+ .toolwin,  #toolbar {
+	border-left:1px solid #999999;
+	border-right:1px solid #999999;
+}
+
+ #controls-resize {
+	width:15px;
+	height:15px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	background:url(images/resize.png)no-repeat 2px 2px;
+	z-index:10;
+}
+
+/************** BEGIN Title Bar ***************/
+
+#title-bar {
+	z-index:10;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:20px;
+	text-align:center;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+}
+
+#title-bar .title {
+	cursor:default;
+}
+
+#title-bar .controls-box div {
+	float:left;
+	margin-right:7px;
+}
+
+.deactive #title-bar .title {
+	color:#999999;
+}
+
+ .controls-box #controls-close {
+	height:15px;
+	width:15px;
+	background:url(images/mac-controls.png) no-repeat -2px -19px;
+}
+
+.active .controls-box:hover #controls-close {
+	background-position: -2px 0px;
+}
+
+.deactive .controls-box #controls-close, .deactive .controls-box #controls-min, .deactive .controls-box #controls-max {
+	background-position: -2px -38px;
+}
+
+ .controls-box #controls-min {
+	height:15px;
+	width:15px;
+	background:url(images/mac-controls.png) no-repeat -23px -19px;
+}
+
+.active .controls-box:hover #controls-min {
+	background-position: -23px 0px;
+}
+
+ .controls-box #controls-max {
+	height:15px;
+	width:15px;
+	background:url(images/mac-controls.png) no-repeat -44px -19px;
+}
+
+.active .controls-box:hover #controls-max {
+	background-position: -44px 0px;
+}
+
+
+/************** BEGIN Applicaiton Menu ***************/
+
+ #application-menu {
+	display:none;
+}
+
+/* #application-menu {
+	position:absolute;
+	left:0;
+	right:0;
+	top:20px;
+	border-bottom:1px solid #B1A598;
+	border-left:1px solid #B1A598;
+	border-right:1px solid #B1A598;
+	padding-left:3px;
+}
+
+ #application-menu .menu-item {
+	display:block;
+	float:left;
+	height:25px;
+	padding:5px 10px 5px 10px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+	cursor:default;
+} */
+
+/************** BEGIN Login Win ***************/
+.login {
+	background-color:inherit;
+	position:absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	bottom: 22px;
+	border-right:1px solid #999;
+	border-left:1px solid #999;
+}
+
+.linux-os #auto-login,  .linux-os #remember-me-label {
+	display:none;
+}
+
+
+.login div {
+	border-top: 1px inset #000;
+	margin:0 20px 0 20px;
+	padding: 30px 0 0 0;
+	text-align:center;
+}
+
+.login img {
+	vertical-align: middle;
+}
+
+.login form {
+	margin: 30px 30px 0px 30px;
+}
+
+.login form div {
+	border:none;
+	margin:0 0 12px 0;
+	text-align:left;
+	padding: 0;
+}
+
+.login form label {
+	display: block;
+	margin-top: 3px;
+	font-weight: bold;
+	font-size: 8pt;
+}
+
+.login form input[type=text], .login form input[type=password] {
+	display:block;
+	font-size: 12pt;
+	width: 300px;
+	border: 1px solid #7e7e7e;
+	padding: 3px 5px;
+}
+
+.login form input[type=checkbox] {
+	float: left;
+	clear: both;
+	margin-top: -1px;
+}
+
+.login form a {
+	float: right;
+	margin-top: 8px;
+}
+
+.pownce-login-logo {
+	width:31px;
+	height:48px;
+	background:url(images/pownce-login-icon.png) no-repeat center center;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+#login-error {
+	display:none;
+	padding:5px 10px 5px 20px;
+	background-color:#FFBFBF;
+	border:1px solid #FF1F1F;
+	-webkit-border-radius: 3px;
+}
+
+/************** END Login Win ****************/
+
+
+
+/************** BEGIN Statusbar ****************/
+
+#statusbar {
+	background-color:inherit;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 21px;
+	padding: 0 0 0 10px;
+}
+
+#statusbar #status-message {
+	margin-top: 3px;
+}
+
+#statusbar #refresh-button {
+	display:none;
+	float:right;
+	cursor:hand;
+	margin-top:4px;
+	margin-right:15px;
+	margin-left:5px;
+	padding-left:18px;
+	background:url(images/view-refresh.png) no-repeat left center;
+}
+
+#statusbar #new-friends {
+	display:none;
+	float:right;
+	cursor:hand;
+	margin-top:4px;
+	padding-right:5px;
+	border-right:1px dotted #878787;
+	padding-left:18px;
+	background:url(images/software-update-available.png) no-repeat left center;
+}
+
+/************** END Statusbar ****************/
+
+
+/************** BEGIN Toolbar ****************/
+#toolbar {
+	background-color:inherit;
+	border-bottom: 1px solid #999;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	padding-left: 10px;
+}
+
+
+.active #toolbar {
+	background:url(images/mac-gradient.png) repeat-x bottom left;
+}
+
+#toolbar .toolbutton {
+	width: 30px;
+	height: 30px;
+	float: left;
+	padding-right: 3px;
+}
+
+#toolbar .selected-toolbutton {
+	background: url(images/selected-toolbutton.png) no-repeat top left;
+}
+
+#toolbutton-home .img {
+	width:30px;
+	height:30px;
+	background: url(images/home.png) no-repeat center center;
+}
+
+#toolbutton-new-note .img {
+	width:30px;
+	height:30px;
+	background: url(images/new-note.png) no-repeat center center;
+}
+
+#toolbutton-people .img {
+	width:30px;
+	height:30px;
+	background: url(images/people.png) no-repeat center center;
+}
+
+#toolbutton-favorites .img {
+	width:30px;
+	height:30px;
+	background: url(images/favorite.png) no-repeat center center;
+}
+
+/************** END Toolbar ****************/
+
+
+
+/************** BEGIN Tool win ****************/
+.toolwin {
+	background-color:#fff;
+	position: absolute;
+	top: 51px;
+	left: 0;
+	right: 0;
+	bottom: 23px;
+	overflow: auto;
+}
+
+/************** END Tool win ****************/
+
+/************** BEGIN Notes View ****************/
+
+.notes {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.notes li {
+	padding: 6px 6px 6px 43px;
+	margin: 0;
+	display:block;
+	overflow: hidden;
+	text-overflow: ellipsis;	
+	position: relative;
+	border-bottom: 1px solid #cfcfcf;
+}
+
+.notes li .imglnk {
+	position: absolute;
+	left: 6px;
+	top: 6px;
+}
+
+.notes li p {
+	margin-top: 0;
+}
+
+.media-object img {
+	max-width: 90%;
+	max-height: 200px;
+	border: 1px solid #8fb4c7;
+	padding: 2px;
+}
+
+.imglnk img {
+	-webkit-border-radius: 3px;
+	border: 1px solid #8fb4c7;
+	padding: 2px;
+	width: 24px;
+	height: 24px;
+}
+
+.notes .recipients {
+	background: #999;
+	float: right;
+	color: #fff;
+	padding: 5px 5px 3px 5px;
+	margin: -10px -2px 5px 10px;
+	font-size: 10px !important;
+	-webkit-border-bottom-right-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+}
+
+.media-link {
+	min-height: 1.3em;
+	margin: 10px 0 6px 0;
+}
+
+div.media-link a {
+	background: #8fb4c7;
+	color: #355362;
+	-webkit-border-radius: 3px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 10px !important;
+	padding: 3px 14px;
+	max-width: 80%;
+	display: block;
+	float: left;
+}
+
+.media-object {
+	margin-bottom: 10px;
+}
+
+.bottomdetails {
+	padding-top: 6px;
+	text-align: right;
+	color: #666;
+}
+
+.bottomdetails a {
+	margin-left: 1em;
+	font-weight: bold;
+	font-size: 8pt;
+	word-spacing: -0.2em;
+}
+
+.bottomdetails span {
+	margin-left: 1em;
+	font-size: 8pt;
+	word-spacing: -0.2em;
+}
+
+.note-forward, .note-delete, .note-favorite {
+	display: block;
+	text-indent: 5000px;
+	background: url(images/note-favorite.png) no-repeat;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	left: -2px;
+	bottom: 5px;
+	display: none;
+}
+
+.note-forward {
+	left: 12px;
+	background-image: url(images/note-forward.png);
+}
+
+.note-delete {
+	left: 24px;
+	background-image: url(images/note-delete.png);
+}
+
+.notes .reply .note-delete {
+	left: -2px;
+}
+
+.notes .reply {
+	background: #eee;
+	color: #666;
+}
+
+.notes li:hover .note-delete, .notes li:hover .note-favorite, .notes li:hover .note-forward {
+	display: block;
+}
+
+.media-audio embed {
+	border: 1px solid #999;
+	-webkit-border-radius: 3px;
+	height: 26px;
+	padding-right: 3px;
+}
+
+/************** END Notes View ****************/
+
+/************** BEGIN Dialog Style ****************/
+
+.transparent-screen {
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#cfcfcf;
+	opacity: 0.7;
+	z-index:7;
+}
+
+.dialog, .dialog-info, .dialog-confirm, #forward-note {
+	display: none;
+	background-color:inherit;
+	background-position: 15px 15px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 50px;
+    left: 1%;
+    right: 1%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 270px;
+	z-index:8;
+	border: 1px solid #666;
+	-webkit-border-radius: 3px;
+	padding: 15px 15px 15px 45px;
+	opacity: 1;
+	z-index: 99999999999999;
+}
+
+.dialog-info {
+	 background-image: url(images/dialog-warning.png);
+}
+
+.dialog-confirm {
+	background-image: url(images/dialog-information.png);
+}
+
+.dialog input, .dialog-info input, .dialog-confirm input  {
+	float: right;
+}
+
+.dialog h3, .dialog-info h3, .dialog-confirm h3 {
+	margin: 0 0 5px 0;
+}
+
+.dialog p, .dialog-info p, .dialog-confirm p {
+	margin: 0 0 5px 0;
+}
+
+input.button-1 {
+	font-weight: bold;
+}
+
+/************** END Dialog Style ****************/
+
+/************** BEGIN New View ****************/
+
+#new-view {
+	background-color:inherit;
+	top: 51px;
+	bottom: 22px;
+}
+
+#new-view .new-button {
+	float:left;
+}
+
+#new-view .new-toolbar {
+	height: 44px;
+	padding: 0 10px;
+}
+
+#new-view .new-button {
+	padding: 5px 5px 5px 23px;
+	cursor: hand;
+	margin: 10px 3px 0 1px;
+	font-weight: bold;
+}
+
+#new-view .new-selected {
+	margin: 10px 2px 0 0;
+	background-color:#ededed;
+	border: 1px inset #999;
+	-webkit-border-radius:3px;
+}
+
+#new-view textarea {
+	width: 95%;
+	margin: 5px 0 0 10px;
+	height: 7em;
+	padding: 5px;
+}
+
+#new-view #postit {
+	float: right;
+	margin-right: 10px;
+}
+
+#new-view input[type='text'] {
+	padding: 4px;
+	margin-left: 10px;
+}
+
+#new-view #what, #new-view #where, #new-view #url {
+	width: 95%;
+}
+
+#file-browse {
+	margin-left: 10px;
+	font-size: 7pt;
+	padding: 4px 10px;
+}
+
+#new-view #cancel-new {
+	padding: 3px 8px;
+	font-size: 7pt;
+	position: absolute;
+	margin: 5px 0 0 10px;
+	float: left;
+}
+
+#send-to-text {
+	padding: 5px;
+	margin-top: 4px;
+	width: 150px;
+}
+
+
+#new-message {
+	background:url(images/new-message.png) no-repeat 5px center;
+}
+
+#new-link {
+	background:url(images/new-link.png) no-repeat 5px center;
+}
+
+#new-file {
+	background:url(images/new-file.png) no-repeat 5px center;
+}
+
+#new-event {
+	background:url(images/new-event.png) no-repeat 5px center;
+}
+
+.new-message-type #when, .new-message-type #what, .new-message-type #where, .new-message-type #url, .new-message-type #file,
+.new-link-type #when, .new-link-type #what, .new-link-type #where, .new-link-type #file,
+.new-file-type #when, .new-file-type #what, .new-file-type #where, .new-file-type #url, 
+.new-event-type #url, .new-event-type #file {
+	display:none;
+}
+
+#send-to-filter, #forward-to-filter {
+	position:relative;
+	background-color:#fff;
+	z-index:4000;
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+	border:1px solid #eee;
+	max-height:200px;
+	width:150px;
+	overflow:auto;
+	margin-top:-2px;
+	margin-bottom:-200px;
+	color: #394244;
+	margin-left: 10px;
+}
+
+#send-to-filter li, #forward-to-filter li {
+	margin: 0;
+	padding: 2px 5px;
+	cursor:hand;
+	border-bottom: 1px solid #eee;
+	font-size: 7pt;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#send-to-filter li:hover, #send-to-filter #selectedsendto, #forward-to-filter li:hover, #forward-to-filter #selectedsendto {
+	background-color:#C2D7EF;
+}
+
+#send-to-filter .photo, #forward-to-filter .photo {
+	display: inline;
+}
+
+#send-to-filter img, #forward-to-filter img {
+	margin-right: 5px;
+	width: 16px;
+	height: 16px;
+	padding: 1px;
+	vertical-align: middle;
+}
+
+#send-to-filter .to-user img {
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+#send-to-filter .name, #forward-to-filter .name {
+	font-weight:normal;
+	display: inline;
+}
+
+#send-to-filter .username, #forward-to-filter .username {
+	font-weight:normal;
+	font-size:8pt;
+}
+
+#send-to-box {
+	float: right;
+}
+
+/************** BEGIN Pagination ****************/
+
+#notes .paging {
+	padding: 15px;
+}
+
+.next-notes, .prev-notes {
+	float: right;
+	padding: 5px 20px;
+	border: 1px solid #999;
+	font-weight: bold;
+	background: #fff url(images/page-next.png) 100% 50% no-repeat;
+	-webkit-border-radius: 3px;
+}
+
+.next-notes:hover, .prev-notes:hover {
+	border-color: #666;
+	cursor: hand;
+}
+
+.prev-notes {
+	float: left;
+	background: #fff url(images/page-prev.png) 0 50% no-repeat;
+}
+
+.first-notes {
+	display: none;
+}
+
+
+
+/************** START People View ****************/
+ 
+#people-view {
+	background-color:#fff;
+	padding: 10px;
+	text-align: center;
+}
+
+#people-search-filter {
+	padding: 4px;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 3px;
+}
+
+#people-view input {
+	margin: 10px 10px 10px 0;
+	width: 70%;
+}
+
+#people-view label {
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+#people-view ul, #people-view li {
+	margin: 0;
+	padding: 0;
+	list-style: none;	
+}
+
+#people-view li {
+	position: relative;
+	min-height: 48px;
+	padding: 6px 0 6px 60px;
+	border-bottom: 1px solid #ddd;
+	text-align: left;
+}
+
+#people-view li img {
+	position: absolute;
+	top: 6px;
+	left: 0;
+	padding: 1px;
+	background: #fff;
+	border: 1px solid #666;
+	width: 48px;
+	height: 48px;
+}
+
+#people-view .name {
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+#people-view .name:hover, #people-view img:hover, #people-view .private-note:hover, #people-view .unfriend:hover,
+#people-view .name, #people-view img, #people-view .private-note, #people-view .unfriend {
+	color: #004899;
+	cursor: hand;
+}
+
+#people-view .private-note, #people-view .unfriend {
+	display: inline;
+	margin-right: 1em;
+}
+
+#people-view .online, #people-view .offline, #people-view .away {
+	margin-left: 1em;
+	color: #666;
+}
+
+#people-view .online {
+	color: #386d00;
+}
+
+/************** START Note format ****************/
+
+#note-detail {
+	position: relative;
+	padding: 10px 10px 10px 48px;
+}
+
+#note-detail #user-note-image img, #reply-notes img {
+	-webkit-border-radius: 3px;
+	border: 1px solid #8fb4c7;
+	padding: 2px;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+#note-detail p {
+	margin-top: 0;
+}
+
+#note-detail #note-bottom-details {
+	margin: 1em 0 -1em -28px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#note-detail #note-bottom-details .favoritelink,
+#note-detail #note-bottom-details .forwardlink {
+	float: right;
+	font-size: 11px;
+	font-weight: normal;
+	margin-left: 0.6em;
+}
+
+#reply-notes li {
+	list-style: none;
+	margin: 0 10px 0 -28px;
+	padding: 10px 10px 10px 48px;
+	position: relative;
+	border-top: 1px solid #ccc;
+	position: relative;
+}
+
+#reply-notes .stars-note {
+	position: absolute;
+	bottom: 5px;
+	right: 0;
+}
+
+#reply-notes .bottomdetails {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+#reply-notes .details {
+	opacity: 0.7;
+}
+
+textarea#reply-body {
+	display: block;
+	width: 94%;
+	margin: 15px;
+	height: 8em;	
+}
+
+#reply-people {
+	display: none;
+}
+
+#reply-button {
+	float: right;
+	margin-right: 20px;
+	margin-bottom: 60px;
+}
+
+/************** START Digg ****************/
+
+.digg-user {
+	display: none;
+}
+
+.digg-shade {
+	background: url(images/digg-shade.png) no-repeat !important;
+	margin-top: -3px;
+	padding-top: 9px !important;
+}
+
+.digg-comments {
+	padding-left: 0 !important;
+	opacity: 0.7;
+}
+
+/************** START Settings ****************/
+
+fieldset {
+	margin: 15px;
+	border-color: #ccc;
+	-webkit-border-radius: 3px;
+}
+
+legend {
+	font-weight: bold;
+	color: #666;
+}
+
+fieldset input {
+	margin: 1em 0;
+}
+
+#sounds {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+#sounds li {
+	cursor:hand;
+	margin:0;
+	padding:5px 10px 5px 10px;
+	-webkit-border-radius: 3px;
+}
+
+li.selected-sound {
+	background-color:#8fb4c7;
+}
+
+/************** START Dialog ****************/
+
+.inline-message {
+	background: url(images/notice-message.png) 20px 50% no-repeat;
+	padding: 10px 15px 10px 42px;
+	margin: 0 0 0 -50px;
+}
+
+.reply-to-link {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 0.4em;
+}
+
+/**************** Star Ratings ****************/
+
+ #rating ul {
+    position: relative;
+    width: 80px;
+    height: 16px;
+}
+
+#rating strong, #rating ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#rating strong {
+    display: block;
+    padding: 2px 5px 0 0;
+    font-size: 85%;
+    float: left;
+}
+
+#rating ul, #rating li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#rating ul a {
+    width: 16px;
+    height: 16px;
+    display: block;
+    text-indent: -2000em;
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 20;
+}
+
+#rating ul a:hover {
+     background-position: 0 0;
+     z-index: 1;
+     left: 0 !important;
+}
+
+#rating li.one-star a { left: 0; }
+#rating li.one-star a:hover { width:16px; }
+
+#rating li.two-stars a { left:16px; }
+#rating li.two-stars a:hover { width: 32px; }
+
+#rating li.three-stars a { left: 32px; }
+#rating li.three-stars a:hover { width: 48px; }
+
+#rating li.four-stars a { left: 48px; }
+#rating li.four-stars a:hover { width: 64px; }
+
+#rating li.five-stars a { left: 64px; }
+#rating li.five-stars a:hover{ width: 80px; }
+
+#rating li.current-rating {
+    height: 16px;
+    display: block;
+    text-indent: -2000em;
+    position: absolute;
+    z-index: 1;
+}
+
+.rating {
+    width: 80px;
+    height: 16px;
+    clear: left;
+    padding-top: 10px;
+}
+
+.stars-note {
+	clear: left;
+	padding-top: 5px;
+	height: 16px;
+}
+
+.stars-note div {
+	float: left;
+	margin-right: 3px;
+}
+
+.stars {
+    height: 16px;
+    width: 60px;
+    margin: 2px 0 0 0;
+    float: left;
+}
+
+.rating-05, .rating-10, .rating-15, .rating-20, .rating-25, .rating-30, .rating-35, .rating-40, .rating-45, .rating-50 {
+    display: block;
+    width: 8px;
+    height: 16px;
+    text-indent: -2000em;
+}
+
+.stars-05, .stars-10, .stars-15, .stars-20, .stars-25, .stars-30, .stars-35, .stars-40, .stars-45, .stars-50 {
+    display: block;
+    width: 6px;
+    height: 12px;
+    text-indent: -2000em;
+}
+
+.rating-10 { width: 16px; }
+.rating-15 { width: 24px; }
+.rating-20 { width: 32px; }
+.rating-25 { width: 40px; }
+.rating-30 { width: 48px; }
+.rating-35 { width: 56px; }
+.rating-40 { width: 64px; }
+.rating-45 { width: 72px; }
+.rating-50 { width: 80px; }
+
+.stars-10 { width: 12px; }
+.stars-15 { width: 18px; }
+.stars-20 { width: 24px; }
+.stars-25 { width: 30px; }
+.stars-30 { width: 36px; }
+.stars-35 { width: 42px; }
+.stars-40 { width: 48px; }
+.stars-45 { width: 54px; }
+.stars-50 { width: 60px; }
+ 
+ #rating ul {
+    background: url(images/stars.png) 0 -100px;
+}
+
+#rating ul a {
+    background: url(images/stars.png) 0 -50px; /*invisible*/
+}
+
+#rating li.current-rating {
+    background: url(images/stars.png) 0 -200px;
+}
+
+.rating {
+    background: url(images/stars.png) 0 -90px repeat-x;
+}
+
+.stars {
+    background: url(images/stars-small.png) 0 -100px repeat-x;
+}
+
+.rating-05, .rating-10, .rating-15, .rating-20, .rating-25, .rating-30, .rating-35, .rating-40, .rating-45, .rating-50 {
+    background: url(images/stars.png) 0 -200px repeat-x;
+}
+
+.stars-05, .stars-10, .stars-15, .stars-20, .stars-25, .stars-30, .stars-35, .stars-40, .stars-45, .stars-50 {
+    background: url(images/stars-small.png) 0 0 repeat-x;
+}
+
+#reply-view #rating {
+	margin: 0 15px;
+}
+
+#rsvp_block {
+	display: block;
+	float: left;
+	margin-left: 15px;
+}
+/************** PROFILE Dialog ****************/
+
+#profile-view {
+	padding: 15px;
+}
+
+#profile-image {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+#profile-image img {
+	width: 120px;
+	height: 120px;
+	border: 1px solid #ccc;
+	padding: 5px;
+	background: #fff;
+	-webkit-border-radius: 3px;
+}
+
+#profile-link a,
+#profile-send-note a,
+#profile-unfriend a,
+#profile-cancel-request a,
+#profile-addfriend a,
+#profile-other-profiles div a {
+	display: block;
+	padding: 5px 10px;
+	min-width: 8em;
+	max-width: 12em;
+	-webkit-border-radius: 3px;
+	border: 1px solid #8fb4c7;
+	margin: 2px 0;
+}
+
+#profile-link a:hover,
+#profile-send-note a:hover,
+#profile-unfriend a:hover,
+#profile-cancel-request a:hover,
+#profile-addfriend a:hover,
+#profile-other-profiles div a:hover {
+	border: 1px solid #3a708b;
+}
+
+#profile-other-profiles {
+	margin: 2em 0 1em 0;
+}
+
+#profile-short-name {
+	font-size: 15px;
+}
+
+#profile-username {
+	color: #999;
+	margin-bottom: 0.5em;
+}
+
+#profile-details {
+	margin: 0.5em 0 2em 0;
+}

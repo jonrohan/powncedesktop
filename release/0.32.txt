@@ -1,4 +1,0 @@
-Date: 05/19/2008
-Version: 0.32
-This version has:
-- Replies linked to parent note

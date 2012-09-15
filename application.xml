@@ -4,23 +4,23 @@
     <id>PownceDesktop</id>
     <filename>Pownce</filename>
     <name>Pownce</name>
-    <version>2.0</version>
+    <version>2.1</version>
     <description>Pownce is a way to send stuff to your friends. What kind of stuff? You can send just about anything: music, photos, messages, links, events, and more.</description>
     <copyright>Copyright (c) 2008 Megatechtronium Inc.</copyright>
     <initialWindow>
         <content>PownceDesktop.html</content>
         <title>Pownce</title>
-        <systemChrome>standard</systemChrome>
+        <systemChrome>none</systemChrome>
         <transparent>false</transparent>
-        <visible>true</visible>
+        <visible>false</visible>
         <minimizable>true</minimizable>
         <maximizable>true</maximizable>
         <resizable>true</resizable>
-        <width>370</width>
-        <height>400</height>
+        <width>353</width>
+        <height>320</height>
         <x>200</x>
         <y>200</y>
-        <minSize>370 400</minSize>
+        <minSize>353 320</minSize>
     </initialWindow>
     
     <!-- The subpath of the standard default installation location to use. Optional. -->
